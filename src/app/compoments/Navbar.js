@@ -9,9 +9,9 @@ export default function Navabar () {
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
-          <li><a href="#whyus">Why Us</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="/#whyus">Why Us</a></li>
+          <li><a href="/#projects">Projects</a></li>
+          <li><a href="/#testimonials">Testimonials</a></li>
 
 
           {/* <li>

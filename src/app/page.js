@@ -17,7 +17,7 @@ export default function Home() {
           className="inline-flex items-center gap-x-2 bg-white border border-gray-200 text-xs text-gray-600 p-2 px-3 rounded-full transition hover:border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:hover:border-gray-600 dark:text-gray-400"
           href="#projects"
         >
-          Explore CC Tech's Projects
+          {`Explore CC Tech's Projects`}
           <span className="flex items-center gap-x-1">
             <span className="border-s border-gray-200 text-blue-600 ps-2 dark:text-blue-500">
               Explore
@@ -76,7 +76,7 @@ export default function Home() {
           We tackle the IT challenges you face
         </h2>
         <p className="mt-2 md:mt-4 text-gray-500">
-        In addition to collaborating with emerging businesses to drive digital transformation, we've developed enterprise-grade solutions to address common challenges encountered across diverse products and projects.
+       {`In addition to collaborating with emerging businesses to drive digital transformation, we've developed enterprise-grade solutions to address common challenges encountered across diverse products and projects.`}
         </p>
       </div>
       {/* End Col */}
@@ -355,7 +355,7 @@ export default function Home() {
           <div className="flex flex-col bg-white rounded-xl dark:bg-slate-900">
             <div className="flex-auto p-4 md:p-6">
               <p className="text-base italic md:text-lg text-gray-800 dark:text-gray-200">
-              "Working with CC Tech was a game-changer for our business. Their innovative IT solutions transformed our operations, and their dedicated team provided exceptional support every step of the way."
+              &quot;Working with CC Tech was a game-changer for our business. Their innovative IT solutions transformed our operations, and their dedicated team provided exceptional support every step of the way.&quot;
               </p>
             </div>
             <div className="p-4 bg-gray-100 rounded-b-xl md:px-2 dark:bg-slate-700">
@@ -385,7 +385,7 @@ export default function Home() {
           <div className="flex flex-col bg-white rounded-xl dark:bg-slate-900">
             <div className="flex-auto p-4 md:p-6">
               <p className="text-base italic md:text-lg text-gray-800 dark:text-gray-200">
-              "I can't recommend CC Tech enough! Their expertise in web development helped us launch a stunning website that exceeded all our expectations. Their attention to detail and commitment to excellence truly sets them apart."
+              {`"I can't recommend CC Tech enough! Their expertise in web development helped us launch a stunning website that exceeded all our expectations. Their attention to detail and commitment to excellence truly sets them apart."`}
               </p>
             </div>
             <div className="p-4 bg-gray-100 rounded-b-xl md:px-2 dark:bg-slate-700">
@@ -415,7 +415,7 @@ export default function Home() {
           <div className="flex flex-col bg-white rounded-xl dark:bg-slate-900">
             <div className="flex-auto p-4 md:p-6">
               <p className="text-base italic md:text-lg text-gray-800 dark:text-gray-200">
-              "Partnering with CC Tech has been an absolute pleasure. Their proactive IT support has allowed us to focus on growing our business, knowing that our technology needs are in capable hands. Thank you for your professionalism and dedication!"
+              {`"Partnering with CC Tech has been an absolute pleasure. Their proactive IT support has allowed us to focus on growing our business, knowing that our technology needs are in capable hands. Thank you for your professionalism and dedication!"`}
               </p>
             </div>
             <div className="p-4 bg-gray-100 rounded-b-xl md:px-2 dark:bg-slate-700">

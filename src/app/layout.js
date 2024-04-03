@@ -2,7 +2,6 @@ import "./globals.css";
 import Navabar from "./compoments/Navbar";
 import Footer from "./compoments/Footer";
 
-import { ThemeProvider } from 'next-themes'
 
 
 export const metadata = {
@@ -12,11 +11,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html data-theme="dark" suppressHydrationWarning lang="en">
+    <html  suppressHydrationWarning lang="en">
 
       <body>
 
-      <ThemeProvider>
       <Navabar />
 
       <main>
@@ -27,7 +25,6 @@ export default function RootLayout({ children }) {
       
       <Footer />
 
-      </ThemeProvider>
         
         
       </body>

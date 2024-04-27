@@ -1,6 +1,7 @@
 import "./globals.css";
-import Navabar from "./compoments/Navbar";
-import Footer from "./compoments/Footer";
+import Navabar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Providers from './components/ProgressBarProvider';
 
 
 
@@ -18,7 +19,7 @@ export default function RootLayout({ children }) {
       <Navabar />
 
       <main>
-        {children}
+      <Providers>{children}</Providers>
 
         </main>
 

@@ -1,74 +1,165 @@
-
+"use client"
 import { GrTechnology } from "react-icons/gr";
 import { TfiWrite } from "react-icons/tfi";
 import { LuBuilding } from "react-icons/lu";
+import { TiTickOutline } from "react-icons/ti";
+import { useEffect } from 'react';
+import Link from "next/link"
 
 export default function Home() {
+  useEffect(() => {
+    // JavaScript code to animate the counters
+    const projectsCounter = document.getElementById('projectsCounter');
+    const teamCounter = document.getElementById('teamCounter');
+    const customerCounter = document.getElementById('customerCounter');
+
+    function animateCounter(element, finalValue) {
+      let currentValue = 0;
+      const increment = Math.ceil(finalValue / 50); // Adjust the increment value as needed for smoother animation
+
+      const interval = setInterval(() => {
+        if (currentValue >= finalValue) {
+          clearInterval(interval);
+          return;
+        }
+        currentValue += increment;
+        if (currentValue > finalValue) {
+          currentValue = finalValue;
+        }
+        element.textContent = currentValue;
+      }, 20); // Adjust the interval duration for smoother animation
+    }
+
+    // Call animateCounter function for each counter...
+    animateCounter(projectsCounter, 20); // Adjust the final value as needed
+    animateCounter(teamCounter, 15); // Adjust the final value as needed
+    animateCounter(customerCounter, 100); // Adjust the final value as needed
+  }, []);
+
+
   return(
     <>
-      <section>
+    <section>
+    <div className="min-h-screen relative overflow-hidden flex hero" >
+    <img
+            src="https://profiletree.com/wp-content/uploads/2023/02/technology-3.webp"
+            alt="Technology"
+            className="absolute inset-0 object-cover w-full h-full blur-sm "
+          />
+          <div className="container relative mx-auto px-4 sm:px-6 lg:px-8 pt-18 pb-10 flex flex-wrap justify-center items-center">
+            <div className="w-full lg:w-1/2 px-4 flex flex-wrap justify-content-center">
+              <h1 className="text-4xl text-gray-900 font-bold text-left mb-8">
+              Expert website development company india for optimal web experiences and effective SEO strategies.
+              </h1>
+              <p className="text-left font-semibold text-gray-900 text-xl mb-8">
+              A seamless website design and development services backed by our SEO strategies to boost online visibility. With a variety of solutions to boost your online success, we offer web design & development, digital marketing and creative services.                </p>
+              <div className="flex justify-left">
+                <button href="/services" className="btn btn-primary hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                  <Link href="/services">What we do?</Link>
+                </button>
+              </div>
+            </div>
+            <div className="w-full lg:w-1/2 px-4">
+              <form className="bg-gray-900 p-8 rounded-xl shadow-md">
+                <h2 className="text-3xl font-bold mb-2">Upgrade your website design to level up online success!</h2>
+                <h2 className="text-xl  mb-4">
+                Ready to speak with a website development company india?
+                </h2>
+                <div className=" flex mb-4">
+                  <div className="w-1/2 mr-2">
+                    <label
+                      className="block text-gray-700 text-sm font-bold mb-2"
+                      htmlFor="name"
+                    >
+                      Name
+                    </label>
+                    <input
+                      className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
+                      id="name"
+                      type="text"
+                      placeholder="Enter your name"
+                    />
+                  </div>
+                  <div className="w-1/2 ml-2">
+                    <label
+                      className="block text-gray-700 text-sm font-bold mb-2"
+                      htmlFor="email"
+                    >
+                      Email
+                    </label>
+                    <input
+                      className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
+                      id="email"
+                      type="email"
+                      placeholder="Enter your email"
+                    />
+                  </div>
+                </div>
+                <div className="flex mb-4">
+                  <div className="w-1/2 mr-2">
+                    <label
+                      className="block text-gray-700 text-sm font-bold mb-2"
+                      htmlFor="contact"
+                    >
+                      Contact
+                    </label>
+                    <input
+                      className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
+                      id="contact"
+                      type="number"
+                      placeholder="Enter your contact number"
+                    ></input>
+                  </div>
+                  <div className="w-1/2 ml-2 mt-8">
+                    <button className="btn btn-primary hover:bg-blue-600 text-white font-bold py-3 px-6  focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
 
-  <div className="min-h-screen relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('https://preline.co/assets/svg/examples/squared-bg-element.svg')] before:bg-no-repeat before:bg-top before:size-full before:-z-[1] before:transform before:-translate-x-1/2 dark:before:bg-[url('https://preline.co/assets/svg/examples-dark/squared-bg-element.svg')]">
-    <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-10">
-      {/* Announcement Banner */}
-      <div className="flex justify-center">
 
-        <a
-          className="inline-flex items-center gap-x-2 bg-white border border-gray-200 text-xs text-gray-600 p-2 px-3 rounded-full transition hover:border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:hover:border-gray-600 dark:text-gray-400"
-          href="#projects"
-        >
-          {`Explore CC Tech's Projects`}
-          <span className="flex items-center gap-x-1">
-            <span className="border-s border-gray-200 text-blue-600 ps-2 dark:text-blue-500">
-              Explore
-            </span>
-            <svg
-              className="flex-shrink-0 size-4 text-blue-600"
-              xmlns="http://www.w3.org/2000/svg"
-              width={24}
-              height={24}
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="m9 18 6-6-6-6" />
-            </svg>
-          </span>
-        </a>
-      </div>
-      {/* End Announcement Banner */}
-      {/* Title */}
-      <div className="mt-5 max-w-xl text-center mx-auto">
-        <h1 className="block font-bold text-gray-800 text-4xl md:text-5xl lg:text-6xl dark:text-gray-200">
-          Your trusted partner for all your IT needs
-        </h1>
-      </div>
-      {/* End Title */}
-      <div className="mt-5 max-w-3xl text-center mx-auto">
-        <p className="text-lg text-gray-600 dark:text-gray-400">
-        We specialize in creating fast, polished websites and getting your apps on the Google Play Store. Let us help you achieve your digital goals
-        </p>
-      </div>
+    </section>
 
-
-      {/* Buttons */}
+  <section>
+    <div  className="min-h-screen relative overflow-hidden">
+  <div className="container mx-auto flex flex-wrap px-4 py-16">
+          <div className="w-full lg:w-1/2 px-4">
+          <img
+            src="/section-2.png"
+            alt="Technology"
+            className="skew-y-3 "
+          />
+          <h2 className="text-xl font-bold mb-8">Design, Develop & Market</h2>
+            <p className="text-lg">
+              We specialize in the design, development, and marketing of products or services.
+            </p>
+          </div>
+          <div className="w-full lg:w-1/2 px-4">
+          <h3 className="box-border h-8 w-32 border-4 text-center font-semibold mb-4">Who We Are?</h3>
+          <h1 className="text-4xl font-bold mb-8">Your trusted website development company India</h1>
+            <p className="text-lg mb-8">
+            CC-Tech is a leading website development & SEO Company Mumbai. With our deep industry knowledge and experience in delivering complex technology solutions for some of the world's most recognizable brands, we work across all business sectors to help our clients achieve their goals. Our team is dedicated to helping our clients stay ahead of the competition and meet the ever-changing demands of the digital landscape.
+            </p>
+            <p className="text-lg mb-8">
+            CC-Tech best website development company india, we are dedicated to helping individuals, brands, and startups grow their online presence and reach their vast potential audiences. We provide a wide range of technology and digital services, including website design & development services, digital marketing, and end-to-end graphic design solutions.            </p>
+          </div>
+        </div>
+        </div>
+  </section>
       
-      {/* End Buttons */}
-    </div>
-  </div>
-      </section>
-
+<div className="bg-slate-800 overflow-hidden">
   <div id="whyus" className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-    <div>
+    {/* <div>
       <img
         className="w-full 	 object-cover rounded-xl"
         src="https://images.unsplash.com/photo-1484417894907-623942c8ee29"
         alt="Image Description"
       />
-    </div>
+    </div> */}
     {/* Grid */}
     <div className="mt-5 lg:mt-16 grid lg:grid-cols-3 gap-8 lg:gap-12">
       <div className="lg:col-span-1">
@@ -204,6 +295,41 @@ export default function Home() {
     {/* End Grid */}
   </div>
 
+  </div>
+
+  <div className="bg-gray-900 py-12">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
+    <h1 className="text-4xl font-bold text-white mb-6">Contact web development company India today to get started.</h1>
+    <p className="text-lg text-white mb-8">Take the first step on your digital journey and contact us today to get started.</p>
+    <div class="flex space-x-6 mb-8">
+      <div class="flex items-center hover:text-yellow-400">
+      <div className="focus:outline-none ">
+      <TiTickOutline className="h-6 w-6 mr-2 " />
+      </div>
+       <span class="text-white">Outcome focused</span>
+      </div>
+      <div class="flex items-center hover:text-yellow-400">
+      <div className="focus:outline-none">
+      <TiTickOutline className="h-6 w-6 mr-2 " />
+      </div>
+         <span class="text-white">Agile methodology</span>
+      </div>
+      <div class="flex items-center hover:text-yellow-400">
+      <div className="focus:outline-none">
+      <TiTickOutline className="h-6 w-6 mr-2 " />
+      </div>
+           <span class="text-white">Strategic solutions</span>
+      </div>
+      <div class="flex items-center hover:text-yellow-400">
+      <div className="focus:outline-none">
+      <TiTickOutline className="h-6 w-6 mr-2 " />
+      </div>
+        <span class="text-white">Reliable support</span>
+      </div>
+    </div>
+    <button className="bg-white text-gray-500 px-6 py-3 rounded-lg font-semibold hover:bg-gray-400 hover:text-white transition duration-300"><Link href="/contact">Schedule a free consultation</Link></button>
+  </div>
+</div>
 
 
 
@@ -440,52 +566,59 @@ export default function Home() {
           </div>
         </div>
         {/* End Card */}
+        </div>
+      </div>
       </div>
       {/* End Grid */}
       {/* Grid */}
-      <div className="mt-20 grid gap-6 grid-cols-2 sm:gap-12 lg:grid-cols-3 lg:gap-8">
-        
+      <div className="mt-8 mb-10 max-h-screen">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Second Section: Web Design & Development Services */}
+        <div className="lg:text-center">
+          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-400 sm:text-4xl">
+          Empowering businesses with technology, creative & strategic marketing solutions
+          </p>
+          <p className="mt-4 max-w-7xl text-xl text-gray-500 mx-auto">
+          As a best web development company india, our website design & digital marketing services have been delivered for more than 20+ projects. Our goal is to achieve your goals no matter how long it takes!
+          </p>
+        </div> 
+      <div className="mt-10 grid gap-6 grid-cols-2 sm:gap-12 lg:grid-cols-3 lg:gap-8">
       <div>
-          <h4 className="text-lg sm:text-xl font-semibold text-white">
-            Projects Completed
-          </h4>
-          <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500">
-            20+
-          </p>
-          <p className="mt-1 text-gray-400">partner with CC Tech</p>
-        </div>
+        <h4 className="text-lg sm:text-xl font-semibold text-white">
+          Projects Completed
+        </h4>
+        <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500">
+          <span id="projectsCounter" className="counter">0</span>+
+        </p>
+        <p className="mt-1 text-gray-400">partner with CC Tech</p>
+      </div>
+      
+      <div>
+        <h4 className="text-lg sm:text-xl font-semibold text-white">
+          A team of
+        </h4>
+        <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500">
+          <span id="teamCounter" className="counter">0</span>+
+        </p>
+        <p className="mt-1 text-gray-400">working in CC Tech</p>
+      </div>
+      
+      <div>
+        <h4 className="text-lg sm:text-xl font-semibold text-white">
+          Happy customer
+        </h4>
+        <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500">
+          <span id="customerCounter" className="counter">0</span>%
+        </p>
+        <p className="mt-1 text-gray-400">this year alone</p>
+      </div>
 
-        
-        {/* Stats */}
-        <div>
-          <h4 className="text-lg sm:text-xl font-semibold text-white">
-            A team of
-          </h4>
-          <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500">
-            15+
-          </p>
-          <p className="mt-1 text-gray-400">working in CC Tech</p>
-        </div>
-        {/* End Stats */}
-        {/* Stats */}
-        
-        {/* End Stats */}
-        {/* Stats */}
-        <div>
-          <h4 className="text-lg sm:text-xl font-semibold text-white">
-            Happy customer
-          </h4>
-          <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500">
-            100%
-          </p>
-          <p className="mt-1 text-gray-400">this year alone</p>
-        </div>
         {/* End Stats */}
       </div>
       {/* End Grid */}
       {/* SVG Element */}
-      <div
-        className="absolute bottom-0 end-0 transform lg:translate-x-32"
+      {/* <div
+        className="absolute bottom-10 end-0 transform lg:translate-x-32"
         aria-hidden="true"
       >
         <svg
@@ -512,10 +645,11 @@ export default function Home() {
             className="fill-white"
           />
         </svg>
+      </div> */}
+      </div>
       </div>
       {/* End SVG Element */}
-    </div>
-  </div>
+  
   {/* End Testimonials */}
 </>
 

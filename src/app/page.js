@@ -142,7 +142,7 @@ export default function Home() {
           <h3 className="box-border h-8 w-32 border-4 text-center font-semibold mb-4">Who We Are?</h3>
           <h1 className="text-4xl font-bold mb-8">Your trusted website development company India</h1>
             <p className="text-lg mb-8">
-            CC-Tech is a leading website development & SEO Company Mumbai. With our deep industry knowledge and experience in delivering complex technology solutions for some of the world's most recognizable brands, we work across all business sectors to help our clients achieve their goals. Our team is dedicated to helping our clients stay ahead of the competition and meet the ever-changing demands of the digital landscape.
+            {`CC-Tech is a leading website development & SEO Company Mumbai. With our deep industry knowledge and experience in delivering complex technology solutions for some of the world's most recognizable brands, we work across all business sectors to help our clients achieve their goals. Our team is dedicated to helping our clients stay ahead of the competition and meet the ever-changing demands of the digital landscape.`}
             </p>
             <p className="text-lg mb-8">
             CC-Tech best website development company india, we are dedicated to helping individuals, brands, and startups grow their online presence and reach their vast potential audiences. We provide a wide range of technology and digital services, including website design & development services, digital marketing, and end-to-end graphic design solutions.            </p>

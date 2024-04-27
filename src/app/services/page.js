@@ -136,11 +136,11 @@ export default function Services() {
           </p>
         </div>
         {/* Render cards for Designing Services */}
-        <div className="mt-10 grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-10 grid gap-10 lg:grid-cols-3">
           {designServicesData.map((service, index) => (
             <div
               key={index}
-              className="card w-96 glass hover:scale-105 transition-transform duration-300 ease-in-out"
+              className="card glass hover:scale-105 transition-transform duration-300 ease-in-out"
             >
               <figure className="h-[200px] flex items-center justify-center">
                 <img

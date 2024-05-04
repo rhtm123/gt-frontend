@@ -37,6 +37,7 @@
       },
       {
         "title": "UI & UX services",
+        "slug":"ui-ux-services",
         "description": "We offer user-centric UI & UX design solutions to solve the user’s problems which can increase user engagement and organic traffic to your website.",
         "imageUrl": "https://th.bing.com/th/id/OIP.i3LWBp_h2ifg-WZFgW4PQgHaFz?w=1025&h=804&rs=1&pid=ImgDetMain",
         "subtitle": "Enhanced User Experience",
@@ -72,6 +73,7 @@
       },
       {
         "title": "Landing page designing",
+        "slug":"landing-page-designing",
         "description": "CC Tech expert team developed highly convertible & performance-optimized Landing pages for your PPC marketing campaigns to generate quality leads & drive your ROI upward.",
         "imageUrl": "https://image.freepik.com/free-vector/landing-page-template_23-2148005324.jpg",
         "subtitle": "Optimized Landing Pages",
@@ -107,6 +109,7 @@
       },
       {
         "title": "Website redesigning",
+        "slug": "website-redesigning",
         "description": "Your website is the first point of contact, regardless of whether it's upgrading CMS, integrating new functionality, refined blogs, or a more modern user experience, you need website redesigning services.",
         "imageUrl": "https://th.bing.com/th/id/OIP.mNvbYocJm4utaAZRsuFscQHaE6?rs=1&pid=ImgDetMain",
         "subtitle": "Modern Website Redesign",
@@ -142,6 +145,7 @@
       },
       {
         "title": "E-mailer designing",
+        "slug":"emailer-designing",
         "description": "We offer a variety of email templates to suit your email marketing needs. From responsive layouts to simple designs with optimised HTML coding, we have you covered.",
         "imageUrl": "https://venngage-wordpress.s3.amazonaws.com/uploads/2021/05/lp-composite-email-maker-1.png",
         "subtitle": "Custom Email Design",
@@ -177,6 +181,7 @@
       },
       {
         "title": "Graphic design services",
+        "slug":"graphic-design-services",
         "description": "Design a strong & visually appealing brand identity with a conceptual & meaningful logo design from our creatively expert team.",
         "imageUrl": "https://th.bing.com/th/id/OIP.pn9XgUYbZE5lVJKVQLGvDgHaFu?rs=1&pid=ImgDetMain",
         "subtitle": "Creative Graphic Design Solutions",
@@ -213,6 +218,7 @@
       },
       {
         "title": "WordPress development",
+        "slug":"wordpress-development",
         "description": "We offer fully scalable, custom functionality, top performance, and secure WordPress Website Development solutions.",
         "imageUrl": "https://mlyvnso5vrvy.i.optimole.com/6w82sSc-QpSodU4b/w:1000/h:800/q:75/https://artechglobal.com/wp-content/uploads/2020/02/wp-development-1-1.jpg",
         "subtitle": "Custom WordPress Solutions",
@@ -250,6 +256,7 @@
       },
       {
         "title": "E-commerce Development",
+        "slug": "ecommerce-development",
         "description": "We developed a feature-rich, best user experience & end-to-end eCommerce website that can help you increase user traffic, boost online sales & retain your customers.",
         "imageUrl": "https://th.bing.com/th/id/OIP.HCKLr50nafiaajtSwkh6VAHaD4?rs=1&pid=ImgDetMain",
         "subtitle": "E-commerce Solutions Tailored to Your Business",
@@ -286,6 +293,7 @@
       },
       {
         "title": "CMS development",
+        "slug": "cms-development",
         "description": "Our CMS development service allows you to fulfil particular CMS web requirements, custom plugins, and templates & assure smooth and fast functioning of the website.",
         "imageUrl": "https://th.bing.com/th/id/OIP.XuA0VAfNvTKsYguhgCVrVQHaDz?rs=1&pid=ImgDetMain",
         "subtitle": "Custom CMS Solutions for Your Business",
@@ -323,6 +331,7 @@
       },
       {
         "title": "Mobile app development",
+        "slug": "mobile-app-development",
         "description": "Our mobile application development experts can assist you with building a user-centric, easy to use mobile application that will improve the product's user experience and create more engagement with your brand.",
         "imageUrl": "https://coralwebconcept.com/wp-content/uploads/2021/11/mobile-app-development.png",
         "subtitle": "Custom Mobile App Solutions",
@@ -360,6 +369,7 @@
       },
       {
         "title": "Website audit",
+        "slug": "website-audit",
         "description": "The purpose of a technical website audit is to determine the overall performance of your website. To rank high on Google, a healthy website utilizes both content and technical settings strategically.",
         "imageUrl": "https://th.bing.com/th/id/OIP.zZORJs9GAlu4et0m0FI8pgHaDj?rs=1&pid=ImgDetMain",
         "subtitle": "Comprehensive Website Analysis",
@@ -396,6 +406,7 @@
       },
       {
         "title": "Digital marketing services",
+        "slug": "digital-marketing-services",
         "description": "We offer comprehensive digital marketing services such as Google ads, SEO, Google Shopping campaigns, Google ads remarketing, and social media marketing.",
         "imageUrl": "https://th.bing.com/th/id/OIP.cNR0GYJ6lL-0GKSrw0GoYwHaC9?rs=1&pid=ImgDetMain",
         "subtitle": "Integrated Digital Marketing Solutions",
@@ -436,6 +447,7 @@
       },
       {
         "title": "Social media marketing",
+        "slug": "social-media-marketing",
         "description": "From increasing brand awareness to increasing sales, social media marketing and advertising can help your business reach its goals for businesses in B2B and B2C sectors.",
         "imageUrl": "https://helloericritter.com/wp-content/uploads/2019/03/social-media-marketing-campaign.jpeg",
         "subtitle": "Strategic Social Media Marketing Solutions",
@@ -474,6 +486,7 @@
       },
       {
         "title": "Content marketing",
+        "slug": "content-marketing",
         "description": "From strategy to content creation to promotion, and SEO, we help you launch your content marketing campaign.",
         "imageUrl": "https://th.bing.com/th/id/OIP.XgXv7raBTdwnBuX5C_5FXgHaFb?rs=1&pid=ImgDetMain",
         "subtitle": "Strategic Content Marketing Solutions",
@@ -511,6 +524,7 @@
       },
       {
         "title": "SEO services",
+        "slug": "seo-services",
         "description": "We provide comprehensive SEO services including on-page SEO, off-page SEO, and technical SEO to help your website rank higher in search engine results, driving organic traffic and increasing visibility.",
         "imageUrl": "https://th.bing.com/th/id/OIP.l9VDOo4NfdwCWl0H07GRHgAAAA?rs=1&pid=ImgDetMain",
         "subtitle": "Effective SEO Strategies",
@@ -547,6 +561,7 @@
       },
       {
         "title": "Remarketing",
+        "slug": "remarketing",
         "description": "We use remarketing to re-engage past website visitors, driving them back to your site to complete desired actions or conversions, such as making a purchase or submitting a form.",
         "imageUrl": "https://th.bing.com/th/id/OIP.veHsHl3SsMnRWzdK7V4ukwHaDh?rs=1&pid=ImgDetMain",
         "subtitle": "Effective Remarketing Strategies",
@@ -579,42 +594,10 @@
           ]
         }
       },
-      {
-        "title": "Remarketing",
-        "description": "We use remarketing to re-engage past website visitors, driving them back to your site to complete desired actions or conversions, such as making a purchase or submitting a form.",
-        "imageUrl": "https://th.bing.com/th/id/OIP.veHsHl3SsMnRWzdK7V4ukwHaDh?rs=1&pid=ImgDetMain",
-        "subtitle": "Effective Remarketing Strategies",
-        "subdescription": "Unlock the power of remarketing to reconnect with users who have previously visited your website, engaged with your content, or interacted with your brand. Our remarketing strategies leverage advanced targeting, personalized messaging, and strategic placements to deliver highly relevant and compelling ads that drive conversions and maximize ROI.",
-        "subServices": [
-          {"title": "Dynamic Remarketing", "description": "Creating dynamic remarketing campaigns that dynamically generate ads based on users' past interactions with your website or products, delivering personalized recommendations and offers to drive repeat visits and purchases."},
-          {"title": "Audience Segmentation", "description": "Segmenting your remarketing audience based on past behavior, demographics, interests, and other factors to deliver tailored ads and messaging that resonate with each audience segment and drive desired actions."},
-          {"title": "Cross-Channel Remarketing", "description": "Extending your remarketing reach across multiple channels and platforms, including display advertising, social media, email marketing, and search ads, to maintain visibility and engagement throughout the customer journey."},
-          {"title": "Retargeting Campaign Optimization", "description": "Continuously optimizing your retargeting campaigns based on performance data, audience insights, and industry trends to maximize efficiency, relevance, and conversion rates, driving incremental revenue and ROI."},
-          {"title": "Ad Creative Testing", "description": "Testing different ad creatives, messaging, offers, and formats to identify the most effective combinations for remarketing campaigns, improving engagement, click-through rates (CTR), and conversion metrics over time."}
-        ],
-        "technologies": [
-          {"title": "Google Ads (AdWords)", "description": "Utilizing Google Ads (formerly AdWords) for remarketing campaigns, leveraging advanced audience targeting options, ad formats, and bidding strategies to reach and re-engage past website visitors across the Google Display Network, YouTube, and other Google properties."},
-          {"title": "Facebook Pixel", "description": "Implementing the Facebook Pixel on your website to track user interactions, build custom remarketing audiences, and deliver highly targeted ads to Facebook and Instagram users who have previously engaged with your brand or visited your site."},
-          {"title": "Dynamic Ad Platforms", "description": "Leveraging dynamic ad platforms and services, such as AdRoll, Criteo, and Perfect Audience, to create personalized, dynamic ads that dynamically adjust content, images, and offers based on users' browsing history and preferences."}
-        ],
-        "industriesServed": [
-          {"title": "E-commerce", "description": "Driving repeat purchases and increasing customer lifetime value (CLV) for e-commerce businesses by targeting past visitors with relevant product recommendations, special offers, and incentives to complete their purchase journey."},
-          {"title": "Lead Generation", "description": "Generating high-quality leads and conversions for lead generation campaigns by re-engaging users who have shown interest in your products or services but have not yet taken the desired action, such as filling out a form or requesting a quote."},
-          {"title": "Travel and Hospitality", "description": "Reconnecting with travelers and prospective guests who have browsed your website, viewed specific destinations or properties, or abandoned bookings, to encourage them to return to your site and complete their booking or reservation."}
-        ],
-        "additionalData": {
-          "subServicesInfo": [
-            {"title": "Dynamic Remarketing Solutions", "description": "Discover how our dynamic remarketing solutions combine advanced audience segmentation, personalized ad creative, and real-time bidding to deliver highly relevant and engaging ads that drive conversions and ROI."},
-            {"title": "Cross-Channel Retargeting Strategies", "description": "Explore our cross-channel retargeting strategies, including Google Ads remarketing, Facebook retargeting, and display advertising, designed to reach users across multiple touchpoints and platforms throughout the customer journey."}
-          ],
-          "technologyInfo": [
-            {"title": "Ad Retargeting Platforms", "description": "Learn about the leading ad retargeting platforms and technologies used by our experts to execute remarketing campaigns, including Google Ads, Facebook Pixel, and dynamic ad platforms, ensuring maximum reach, relevance, and impact for your ads."},
-            {"title": "Audience Segmentation Tools", "description": "Discover how we leverage audience segmentation tools and technologies to analyze user behavior, preferences, and intent, enabling precise targeting and personalized messaging for remarketing campaigns across various channels and devices."}
-          ]
-        }
-      },
+      
       {
         "title": "Google Ads",
+        "slug":"google-ads-marketing",
         "description": "We offer expert Google Ads management services to help you reach your target audience, drive traffic, and increase conversions through strategic campaign planning, optimization, and performance tracking.",
         "imageUrl": "https://th.bing.com/th/id/OIP.4TTzi8Gb-HdP_yrOoU3TaAHaEk?rs=1&pid=ImgDetMain",
         "subtitle": "Strategic Google Ads Management",

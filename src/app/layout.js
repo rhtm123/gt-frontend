@@ -3,6 +3,7 @@ import Navabar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Providers from './components/ProgressBarProvider';
 
+import { ThemeProvider } from 'next-themes'
 
 
 export const metadata = {
@@ -15,18 +16,22 @@ export default function RootLayout({ children }) {
     <html  suppressHydrationWarning lang="en">
 
       <body>
+      <ThemeProvider>
+      <Providers>
 
       <Navabar />
 
       <main>
-      <Providers>{children}</Providers>
+      {children}
 
-        </main>
+      </main>
 
       
       <Footer />
 
         
+      </Providers>
+      </ThemeProvider>
         
       </body>
     </html>

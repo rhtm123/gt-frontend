@@ -3,6 +3,7 @@ import React from 'react';
 import servicesData from '../../data/services.json'; 
 import Head from 'next/head';
 import { BsArrowLeftCircle, BsArrowRightCircle } from 'react-icons/bs';
+import ContactForm from '@/app/components/ContactForm';
 
 export default function ServicePage({ params }){
    const { slug } = params;
@@ -26,7 +27,7 @@ const service = servicesData.services.find(service =>
         <Head>
           <title>{service.title}</title>
         </Head>
-        <div className="bg-gray-800 py-10 " >
+        <div className="bg-base-200 py-10 " >
           <div className="container mx-auto px-4 flex flex-wrap justify-center items-center">
             <div className="w-full lg:w-1/2 px-4 flex flex-wrap justify-content-center">
               <h1 className="text-4xl font-bold text-left mb-8">
@@ -34,70 +35,15 @@ const service = servicesData.services.find(service =>
               </h1>
               <p className="text-left text-lg mb-8">{service.description}</p>
               <div className="flex justify-left">
-                <button className="btn btn-primary hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                <button className="btn btn-primary">
                   Request Quote
                 </button>
               </div>
             </div>
             <div className="w-full lg:w-1/2 px-4">
-              <form className="bg-gray-900 p-8 rounded-xl shadow-md">
-                <h2 className="text-3xl font-bold mb-2">Request Quote</h2>
-                <h2 className="text-xl  mb-4">
-                  Request a free quote from our {service.title} services in
-                  india.
-                </h2>
-                <div className=" flex mb-4">
-                  <div className="w-1/2 mr-2">
-                    <label
-                      className="block text-gray-700 text-sm font-bold mb-2"
-                      htmlFor="name"
-                    >
-                      Name
-                    </label>
-                    <input
-                      className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
-                      id="name"
-                      type="text"
-                      placeholder="Enter your name"
-                    />
-                  </div>
-                  <div className="w-1/2 ml-2">
-                    <label
-                      className="block text-gray-700 text-sm font-bold mb-2"
-                      htmlFor="email"
-                    >
-                      Email
-                    </label>
-                    <input
-                      className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
-                      id="email"
-                      type="email"
-                      placeholder="Enter your email"
-                    />
-                  </div>
-                </div>
-                <div className="flex mb-4">
-                  <div className="w-1/2 mr-2">
-                    <label
-                      className="block text-gray-700 text-sm font-bold mb-2"
-                      htmlFor="contact"
-                    >
-                      Contact
-                    </label>
-                    <input
-                      className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
-                      id="contact"
-                      type="number"
-                      placeholder="Enter your contact number"
-                    ></input>
-                  </div>
-                  <div className="w-1/2 ml-2 mt-8">
-                    <button className="btn btn-primary hover:bg-blue-600 text-white font-bold py-3 px-6  focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
-                      Submit
-                    </button>
-                  </div>
-                </div>
-              </form>
+              <div className='bg-base-300 p-8 rounded-lg'>
+                <ContactForm />
+              </div>
             </div>
           </div>
         </div>
@@ -134,11 +80,11 @@ const service = servicesData.services.find(service =>
           </p>
         </div>
         {/* Render cards for Services */}
-        <div className="mt-10 grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-10 grid gap-10 lg:grid-cols-3 xl:grid-cols-3">
           {service.subServices.map((subServices, index) => (
             <div
               key={index}
-              className="card w-96 glass hover:scale-105 transition-transform duration-300 ease-in-out"
+              className="card glass hover:scale-105 transition-transform duration-300 ease-in-out"
             >
               <div className="card-body">
                 <h1 className="card-title text-2xl font-bold">
@@ -172,7 +118,7 @@ const service = servicesData.services.find(service =>
           {service.technologies.map((technologies, index) => (
             <div
               key={index}
-              className="card w-96 glass hover:scale-105 transition-transform duration-300 ease-in-out"
+              className="card glass hover:scale-105 transition-transform duration-300 ease-in-out"
             >
               <div className="card-body">
                 <h1 className="card-title text-2xl font-bold">

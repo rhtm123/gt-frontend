@@ -1,17 +1,39 @@
-import Link from "next/link"
+'use client'
+
+import Link from "next/link";
+import { useTheme } from 'next-themes'
+
 
 
 export default function Footer(){
 
+  const { theme, setTheme } = useTheme()
+
+
 
     return(
-      <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
+      <footer className="footer gap-y-4 footer-center p-10 bg-base-200 text-base-content rounded">
+
+      
+      <div className='py-0 flex'>
+            <span>Select Theme: </span>
+            <select className="select select-sm" value={theme} onChange={e => setTheme(e.target.value)}>
+              <option value="light">light</option>
+              <option value="cupcake">Cupcake</option>
+              <option value="dark">Dark</option>
+            </select>
+      </div>
+
       <nav className="grid grid-flow-col gap-4">
         {/* <a className="link link-hover">About us</a>
         <a className="link link-hover">Contact</a>
         <a className="link link-hover">Jobs</a>
         <a className="link link-hover">Press kit</a> */}
+        <Link href="/services" className="link link-hover">Services</Link>
+        <Link href="/contact" className="link link-hover">Contact Us</Link>
+
         <Link href="/privacy-policy" className="link link-hover">Privacy Policy</Link>
+
       </nav> 
       {/* <nav>
         <div className="grid grid-flow-col gap-4">
@@ -21,7 +43,7 @@ export default function Footer(){
         </div>
       </nav>  */}
       <aside>
-        <p>Copyright © 2024 - All right reserved by Learning Setu Private Ltd</p>
+        <p className="opacity-60">Copyright © 2024 - All right reserved by Learning Setu Private Ltd</p>
       </aside>
     </footer>
 

@@ -112,24 +112,19 @@ export default function Services() {
     },
   ];
 
-  const handleKnowMoreClick = (service) => {
-  
-    //   const serviceSlug = service.title.replace(/\s+/g, '-');
-      router.push(`/services/${service.replace(/\s+/g, '-')}`);
-  };
 
   return (
     <section id="services" className="py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* First Section: Designing Services */}
         <div className="lg:text-center">
-          <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
+          <h2 className="text-secondary font-semibold tracking-wide uppercase">
             Designing Services
           </h2>
-          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-400 sm:text-4xl">
+          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">
             Creatives which builds your brand image & engage the audience
           </p>
-          <p className="mt-4 max-w-7xl text-xl text-gray-500 mx-auto">
+          <p className="mt-4 max-w-7xl text-xl mx-auto">
             We offers strategic & performance-driven website design services be
             it corporate website designing and development, e-commerce website
             designing services, custom website design, website maintenance, etc.
@@ -155,13 +150,13 @@ export default function Services() {
                 </h1>
                 <p className="mt-2 text-sm">{service.description}</p>
                 <div className="card-actions justify-start">
-                  <button
+                  <Link
                     className="btn btn-primary"
-                    onClick={() => handleKnowMoreClick(service.title)}
+                    href={`/services/${service.title.replace(/\s+/g, '-')}`}
                   >
                     {" "}
                     Know More <IoIosArrowForward />
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -177,21 +172,21 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
         {/* Second Section: Web Design & Development Services */}
         <div className="lg:text-center">
-          <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
+          <h2 className="text-secondary font-semibold tracking-wide uppercase">
             Web Design & Development Services
           </h2>
-          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-400 sm:text-4xl">
+          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">
             A digital storefront, built and customized to maximize your organic
             traffic
           </p>
-          <p className="mt-4 max-w-7xl text-xl text-gray-500 mx-auto">
+          <p className="mt-4 max-w-7xl text-xl opacity-80 mx-auto">
             We offer strategic & performance-driven website design services be
             it corporate website designing and development, e-commerce website
             designing services, custom website design, website maintenance, etc.
           </p>
         </div>
         {/* Render cards for Web Design & Development Services */}
-        <div className="mt-10 grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-10 grid gap-10 lg:grid-cols-3">
           {webDevelopmentServicesData.map((service, index) => (
             <div
               key={index}
@@ -210,12 +205,14 @@ export default function Services() {
                 </h1>
                 <p className="mt-2 text-sm">{service.description}</p>
                 <div className="card-actions justify-start">
-                  <Link href={"/service/"+service.slug}>fd</Link>
-                  <button className="btn btn-primary"
-                  onClick={() => handleKnowMoreClick(service.title)}>
-                    {" "}
-                    Know More <IoIosArrowForward />
-                  </button>
+                  <Link className="btn btn-primary" 
+                  href={`/services/${service.title.replace(/\s+/g, '-')}`}
+
+                  >
+                  Know More <IoIosArrowForward />
+
+                  </Link>
+    
                 </div>
               </div>
             </div>
@@ -230,10 +227,10 @@ export default function Services() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
-          <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
+          <h2 className="text-secondary font-semibold tracking-wide uppercase">
             Online Marketing Services
           </h2>
-          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-400 sm:text-4xl">
+          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">
             Enhance your online presence with our marketing services
           </p>
           <p className="mt-4 max-w-7xl text-xl text-gray-500 mx-auto">
@@ -242,11 +239,11 @@ export default function Services() {
           </p>
         </div>
         {/* Render cards for Online Marketing Services */}
-        <div className="mt-10 grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-10 grid gap-10 lg:grid-cols-3">
           {onlineMarketingServicesData.map((service, index) => (
             <div
               key={index}
-              className="card w-96 glass hover:scale-105 transition-transform duration-300 ease-in-out"
+              className="card w-full glass hover:scale-105 transition-transform duration-300 ease-in-out"
             >
               <figure className="h-[200px] flex items-center justify-center">
                 <img
@@ -261,11 +258,14 @@ export default function Services() {
                 </h1>
                 <p className="mt-2 text-sm">{service.description}</p>
                 <div className="card-actions justify-start">
-                  <button className="btn btn-primary"
-                  onClick={() => handleKnowMoreClick(service.title)}>
+                  <Link className="btn btn-primary"
+                    href={`/services/${service.title.replace(/\s+/g, '-')}`}
+
+                  
+                  >
                     {" "}
                     Know More <IoIosArrowForward />
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

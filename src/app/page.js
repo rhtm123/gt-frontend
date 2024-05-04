@@ -1,10 +1,16 @@
 "use client"
+
 import { GrTechnology } from "react-icons/gr";
 import { TfiWrite } from "react-icons/tfi";
 import { LuBuilding } from "react-icons/lu";
 import { TiTickOutline } from "react-icons/ti";
 import { useEffect } from 'react';
-import Link from "next/link"
+import Link from "next/link";
+import Head from "next/head";
+import ContactForm from "./components/ContactForm";
+
+
+
 
 export default function Home() {
   useEffect(() => {
@@ -39,84 +45,34 @@ export default function Home() {
 
   return(
     <>
+    <Head>
+      <title></title>
+
+    </Head>
     <section>
     <div className="min-h-screen relative overflow-hidden flex hero" >
     <img
-            src="https://profiletree.com/wp-content/uploads/2023/02/technology-3.webp"
+            src="https://cdn.pixabay.com/photo/2016/12/01/13/10/lightbulb-1875247_1280.jpg"
             alt="Technology"
-            className="absolute inset-0 object-cover w-full h-full blur-sm "
+            className="absolute inset-0 object-cover w-full h-full"
           />
-          <div className="container relative mx-auto px-4 sm:px-6 lg:px-8 pt-18 pb-10 flex flex-wrap justify-center items-center">
-            <div className="w-full lg:w-1/2 px-4 flex flex-wrap justify-content-center">
-              <h1 className="text-4xl text-gray-900 font-bold text-left mb-8">
-              Expert website development company india for optimal web experiences and effective SEO strategies.
+          <div className="relative mx-auto md:py-4 py-12 px-4 md:px-8 pt-18 pb-10 flex flex-wrap justify-center items-center">
+            <div className="w-full lg:w-7/12 px-4 flex flex-wrap justify-content-center">
+              <h1 className="text-4xl text-white font-bold text-left mb-8">
+              Empowering your digital success
               </h1>
-              <p className="text-left font-semibold text-gray-900 text-xl mb-8">
-              A seamless website design and development services backed by our SEO strategies to boost online visibility. With a variety of solutions to boost your online success, we offer web design & development, digital marketing and creative services.                </p>
+              <p className="text-left font-semibold text-gray-100 text-xl mb-8">
+              Elevate Your Online Presence with Expert Website Development, Mobile App Creation, and Strategic Digital Marketing Solutions. Empower Your Brand with Our Seamless Integration of Design, Development, and Marketing Strategies.</p>
               <div className="flex justify-left">
-                <button href="/services" className="btn btn-primary hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
-                  <Link href="/services">What we do?</Link>
+                <button href="/services" className="btn btn-primary">
+                  <Link href="/services">View All Services</Link>
                 </button>
               </div>
             </div>
-            <div className="w-full lg:w-1/2 px-4">
-              <form className="bg-gray-900 p-8 rounded-xl shadow-md">
-                <h2 className="text-3xl font-bold mb-2">Upgrade your website design to level up online success!</h2>
-                <h2 className="text-xl  mb-4">
-                Ready to speak with a website development company india?
-                </h2>
-                <div className=" flex mb-4">
-                  <div className="w-1/2 mr-2">
-                    <label
-                      className="block text-gray-700 text-sm font-bold mb-2"
-                      htmlFor="name"
-                    >
-                      Name
-                    </label>
-                    <input
-                      className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
-                      id="name"
-                      type="text"
-                      placeholder="Enter your name"
-                    />
-                  </div>
-                  <div className="w-1/2 ml-2">
-                    <label
-                      className="block text-gray-700 text-sm font-bold mb-2"
-                      htmlFor="email"
-                    >
-                      Email
-                    </label>
-                    <input
-                      className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
-                      id="email"
-                      type="email"
-                      placeholder="Enter your email"
-                    />
-                  </div>
-                </div>
-                <div className="flex mb-4">
-                  <div className="w-1/2 mr-2">
-                    <label
-                      className="block text-gray-700 text-sm font-bold mb-2"
-                      htmlFor="contact"
-                    >
-                      Contact
-                    </label>
-                    <input
-                      className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
-                      id="contact"
-                      type="number"
-                      placeholder="Enter your contact number"
-                    ></input>
-                  </div>
-                  <div className="w-1/2 ml-2 mt-8">
-                    <button className="btn btn-primary hover:bg-blue-600 text-white font-bold py-3 px-6  focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
-                      Submit
-                    </button>
-                  </div>
-                </div>
-              </form>
+            <div className="w-full lg:w-5/12 px-4 md:py-4 py-12">
+              <div className="bg-base-300 p-8 rounded-lg">
+              <ContactForm />
+              </div>
             </div>
           </div>
         </div>
@@ -126,26 +82,37 @@ export default function Home() {
 
   <section>
     <div  className="min-h-screen relative overflow-hidden">
-  <div className="container mx-auto flex flex-wrap px-4 py-16">
+  <div className="mx-auto flex flex-wrap px-4 md:px-8 py-16">
           <div className="w-full lg:w-1/2 px-4">
           <img
             src="/section-2.png"
             alt="Technology"
-            className="skew-y-3 "
+            className=""
           />
-          <h2 className="text-xl font-bold mb-8">Design, Develop & Market</h2>
+          {/* <h2 className="text-2xl font-bold py-4">Design, Develop & Market</h2>
             <p className="text-lg">
               We specialize in the design, development, and marketing of products or services.
-            </p>
+            </p> */}
           </div>
           <div className="w-full lg:w-1/2 px-4">
-          <h3 className="box-border h-8 w-32 border-4 text-center font-semibold mb-4">Who We Are?</h3>
-          <h1 className="text-4xl font-bold mb-8">Your trusted website development company India</h1>
-            <p className="text-lg mb-8">
-            {`CC-Tech is a leading website development & SEO Company Mumbai. With our deep industry knowledge and experience in delivering complex technology solutions for some of the world's most recognizable brands, we work across all business sectors to help our clients achieve their goals. Our team is dedicated to helping our clients stay ahead of the competition and meet the ever-changing demands of the digital landscape.`}
+          {/* <h3 className="box-border h-8 w-32 border-2 text-center font-semibold mb-4">Who We Are?</h3> */}
+          <h1 className="text-4xl font-bold mb-8">Grow Your Business Online with Your Trusted IT Partner</h1>
+            <p className="mb-8 font-semibold">
+            {`We're CC-Tech, a leading Mumbai-based IT solutions provider. We specialize in the design, development, and marketing of products or services. We help businesses of all sizes achieve their digital goals with a powerful combination of services`}
             </p>
-            <p className="text-lg mb-8">
-            CC-Tech best website development company india, we are dedicated to helping individuals, brands, and startups grow their online presence and reach their vast potential audiences. We provide a wide range of technology and digital services, including website design & development services, digital marketing, and end-to-end graphic design solutions.            </p>
+                      <h3 className="box-border h-8 w-32 border-2 text-center font-semibold mb-4">Why Us?</h3>
+
+            <p className="mb-2">
+              <span className="font-semibold">Deep Industry Knowledge</span> : We understand the unique challenges and opportunities faced by businesses in your sector.
+            </p>
+            <p className="mb-2">
+            <span className="font-semibold">Proven Track Record</span> : We have a history of success in delivering impactful digital solutions for diverse clients.
+            </p>
+            <p className="mb-2">
+            <span className="font-semibold">Customized Approach</span> : We take the time to understand your specific needs and goals, tailoring our services to maximize your online impact.
+
+            </p>
+
           </div>
         </div>
         </div>
@@ -575,42 +542,42 @@ export default function Home() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Second Section: Web Design & Development Services */}
         <div className="lg:text-center">
-          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-400 sm:text-4xl">
+          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">
           Empowering businesses with technology, creative & strategic marketing solutions
           </p>
-          <p className="mt-4 max-w-7xl text-xl text-gray-500 mx-auto">
+          <p className="mt-4 max-w-7xl text-xl opacity-70 mx-auto">
           As a best web development company india, our website design & digital marketing services have been delivered for more than 20+ projects. Our goal is to achieve your goals no matter how long it takes!
           </p>
         </div> 
       <div className="mt-10 grid gap-6 grid-cols-2 sm:gap-12 lg:grid-cols-3 lg:gap-8">
       <div>
-        <h4 className="text-lg sm:text-xl font-semibold text-white">
+        <h4 className="text-lg sm:text-xl font-semibold">
           Projects Completed
         </h4>
         <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500">
           <span id="projectsCounter" className="counter">0</span>+
         </p>
-        <p className="mt-1 text-gray-400">partner with CC Tech</p>
+        <p className="mt-1 font-bold opacity-70">partner with CC Tech</p>
       </div>
       
       <div>
-        <h4 className="text-lg sm:text-xl font-semibold text-white">
+        <h4 className="text-lg sm:text-xl font-semibold">
           A team of
         </h4>
         <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500">
           <span id="teamCounter" className="counter">0</span>+
         </p>
-        <p className="mt-1 text-gray-400">working in CC Tech</p>
+        <p className="mt-1  font-bold opacity-70">working in CC Tech</p>
       </div>
       
       <div>
-        <h4 className="text-lg sm:text-xl font-semibold text-white">
+        <h4 className="text-lg sm:text-xl font-semibold">
           Happy customer
         </h4>
         <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500">
           <span id="customerCounter" className="counter">0</span>%
         </p>
-        <p className="mt-1 text-gray-400">this year alone</p>
+        <p className="mt-1 font-bold opacity-70 ">this year alone</p>
       </div>
 
         {/* End Stats */}

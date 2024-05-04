@@ -1,6 +1,7 @@
 "use client"
 import React from "react";
 import { useState } from "react";
+import ContactForm from "../components/ContactForm";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -17,83 +18,29 @@ function Contact() {
 
   return (
     <div className="min-h-screen py-12">
-      <div className="container mx-auto px-4">
-        <h1 className="text-3xl font-bold mb-2">Contact us</h1>
+      <div className="mx-auto px-4 md:px-8">
+
+        <div className="px-4">
+        <h1 className="text-3xl font-bold mb-2">Connect with Us Today</h1>
         <h3 className="text-xl mb-8">
-          Request a free estimate and analysis. Boost your digital marketing
-          success with us.
+          Share your vision and let's collaborate on creating something amazing.
         </h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
-          <div className="bg-white p-8 rounded-lg shadow-md hover:scale-105 transition-transform duration-300 ease-in-out">
-            <h2 className="text-3xl font-bold mb-2">Get in touch</h2>
-            <h4 className="text-lg mb-4">
-              Find how we can assist your business to grow. Ready to speak with
-              an expert?
-            </h4>
-            <form className="space-y-4">
-              <div className=" flex mb-4">
-                <div className="w-1/2 mr-2">
-                  <label for="name" className="block font-semibold">
-                    Your Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    className="w-full border border-gray-300 rounded-md px-4 py-2"
-                  />
-                </div>
-                <div className="w-1/2 ml-2">
-                  <label for="email" className="block font-semibold">
-                    Your Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    className="w-full border border-gray-300 rounded-md px-4 py-2"
-                  />
-                </div>
-              </div>
-              <div className="flex mb-4">
-                <div className="w-1/2 mr-2">
-                  <label for="company" className="block font-semibold">
-                    Company Name
-                  </label>
-                  <input
-                    type="text"
-                    id="company"
-                    name="company"
-                    className="w-full border border-gray-300 rounded-md px-4 py-2"
-                  />
-                </div>
-                <div className="w-1/2 ml-2">
-                  <label for="contact" className="block font-semibold">
-                    Your Number
-                  </label>
-                  <input
-                    type="number"
-                    id="number"
-                    name="contact"
-                    className="w-full border border-gray-300 rounded-md px-4 py-2"
-                  />
-                </div>
-              </div>
-              <button
-                type="submit"
-                className="bg-yellow-500 text-white font-semibold py-2 px-6 rounded-md hover:bg-yellow-600 transition duration-300"
-              >
-                Get started now
-              </button>
-            </form>
+        </div>
+
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
+          <div className="bg-base-300 p-8 rounded-lg shadow-md">
+            
+            <ContactForm />
+            
           </div>
-          <div className="grid grid-cols-1 gap-4 ">
-            <div className="bg-white p-8 rounded-lg shadow-md hover:scale-105 transition-transform duration-300 ease-in-out">
-              <h2 className="text-xl font-bold mb-4">Call us today</h2>
-              <p className="text-gray-600 flex items-start mx-2">
+          <div className="grid grid-cols-1 gap-4">
+            <div className="bg-base-300 p-8 rounded-lg shadow-md hover:scale-105 transition-transform duration-300 ease-in-out">
+              <h2 className="text-xl font-bold mb-4">Call us</h2>
+              <p className="flex items-start mx-2">
               <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6 mr-2 text-blue-500 dark:text-blue-400"
+                    className="w-6 h-6 mr-2 text-primary"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -108,12 +55,12 @@ function Contact() {
                   <span className="mx-2 ">9518-90-1902 </span>
               </p>
             </div>
-            <div className="bg-white p-8 rounded-lg shadow-md hover:scale-105 transition-transform duration-300 ease-in-out">
+            <div className="bg-base-300 p-8 rounded-lg shadow-md hover:scale-105 transition-transform duration-300 ease-in-out">
               <h2 className="text-xl font-bold mb-4">Send an email</h2>
-              <p className="text-gray-600 flex items-start mx-2">
+              <p className="flex items-start mx-2">
               <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6 mr-2 text-blue-500 dark:text-blue-400"
+                    className="w-6 h-6 mr-2 text-primary"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -128,12 +75,12 @@ function Contact() {
                   <span className="mx-2">codingchaska.info@gmail.com</span>
               </p>
             </div>
-            <div className="bg-white p-8 rounded-lg shadow-md hover:scale-105 transition-transform duration-300 ease-in-out">
+            <div className="p-8 bg-base-300 rounded-lg shadow-md hover:scale-105 transition-transform duration-300 ease-in-out">
               <h2 className="text-xl font-bold mb-4 flex items-start mx-2">Our location</h2>
-              <p className="text-gray-600 flex items-start mx-2">
+              <p className="flex items-start mx-2">
               <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6 mr-2 text-blue-500 dark:text-blue-400"
+                    className="w-6 h-6 mr-2 text-primary"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"

@@ -2,8 +2,10 @@
 import React from 'react';
 import servicesData from '../../data/services.json'; 
 import Head from 'next/head';
+import { useState } from 'react';
 import { BsArrowLeftCircle, BsArrowRightCircle } from 'react-icons/bs';
 import ContactForm from '@/app/components/ContactForm';
+import Link from 'next/link';
 
 export default function ServicePage({ params }){
    const { slug } = params;
@@ -12,6 +14,15 @@ export default function ServicePage({ params }){
       return <div>Loading service...</div>; 
     }
 
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextIndex = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % 3);
+  };
+
+  const prevIndex = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? 2 : prevIndex - 1));
+  };
 // Find the service object based on the slug parameter
 const service = servicesData.services.find(service =>
     decodeURIComponent(service.title) === decodeURIComponent(slug.replace(/-/g, ' '))
@@ -36,7 +47,7 @@ const service = servicesData.services.find(service =>
               <p className="text-left text-lg mb-8">{service.description}</p>
               <div className="flex justify-left">
                 <button className="btn btn-primary">
-                  Request Quote
+                  <Link href={"/contact"}>Request Quote</Link>
                 </button>
               </div>
             </div>
@@ -148,46 +159,39 @@ const service = servicesData.services.find(service =>
         </div>
                 {/* Render cards for Services */}
                 <div className="mt-10 relative">
-          <div className="flex  space-x-4">
-            {service.industriesServed.map((industriesServed, index) => (
-              <div
-                key={index}
-                className="card w-96 glass hover:scale-105 transition-transform duration-300 ease-in-out"
-              >
-                <div className="card-body">
-                  <h1 className="card-title text-2xl font-bold">
-                    {industriesServed.title}
-                  </h1>
-                  <p className="mt-2 text-sm">{industriesServed.description}</p>
-                </div>
+      <div className="flex justify-center space-x-4">
+        {[-1, 0, 1].map((offset) => {
+          const index = (currentIndex + offset + 3) % 3;
+          const industriesServed = service.industriesServed[index];
+          return (
+            <div
+              key={index}
+              className={`card w-96 glass transition-transform duration-1000 ease-in-out`}
+              style={{
+                zIndex: 3 - Math.abs(offset),
+                transform: `translateX(${1 * offset}%) scale(${offset === 0 ? 1.2 : 1})`,
+              }}
+            >
+              <div className="card-body">
+                <h1 className="card-title text-2xl font-bold">
+                  {industriesServed.title}
+                </h1>
+                <p className="mt-2 text-sm">{industriesServed.description}</p>
               </div>
-            ))}
-          </div>
-          {/* Pagination dots */}
-          <div className="flex justify-center mt-4">
-            {service.industriesServed.map((_, index) => (
-              <div
-                key={index}
-                className={`h-2.5 w-2.5 rounded-full bg-gray-300 mx-1 ${index === 1 ? 'bg-indigo-600' : ''}`}
-              ></div>
-            ))}
-          </div>
-          <div className="absolute top-1/2 transform -translate-y-1/2 flex justify-between w-full px-4">
-            <button
-              
-              className="focus:outline-none text-gray-500 hover:text-gray-900 left-0"
-            >
-              <BsArrowLeftCircle className="h-8 w-8 "/>
-            </button>
-            <button
-             
-              className="focus:outline-none text-gray-500 hover:text-gray-900 right-0"
-            >
-              <BsArrowRightCircle className="h-8 w-8" />
-            </button>
-          </div>
-        </div>
+            </div>
+          );
+        })}
+      </div>
+      <div className="absolute top-1/2 transform -translate-y-1/2 flex justify-between items-center w-full px-4 z-20">
+  <button onClick={prevIndex} className="focus:outline-none text-gray-500 hover:text-gray-900 z-10">
+    <BsArrowLeftCircle className="h-8 w-8" />
+  </button>
+  <button onClick={nextIndex} className="focus:outline-none text-gray-500 hover:text-gray-900 z-10">
+    <BsArrowRightCircle className="h-8 w-8" />
+  </button>
+</div>
 
+    </div>
       </div>
       </>
     );

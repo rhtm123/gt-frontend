@@ -14,32 +14,32 @@ export default function Services() {
     {
       title: "Website designing",
       description: "We are a professional & creative web design agency. CodeWitty offers user-centric design services with proficiency in Website Designing.",
-      imageUrl: "https://dailybayonet.com/wp-content/uploads/2020/10/5-ways-seo-web-design-go-together-5e2945dd5df37.png",
+      imageUrl: "https://cdn.pixabay.com/photo/2018/05/18/15/30/web-design-3411373_1280.jpg",
     },
     {
       title: "UI & UX services",
       description: "We offer user-centric UI & UX design solutions to solve the user’s problems which can increase user engagement and organic traffic to your website.",
-      imageUrl: "https://th.bing.com/th/id/OIP.i3LWBp_h2ifg-WZFgW4PQgHaFz?w=1025&h=804&rs=1&pid=ImgDetMain",
+      imageUrl: "https://cdn.pixabay.com/photo/2017/05/14/16/05/ui-2312399_1280.jpg",
     },
     {
       title: "Landing page designing",
       description: "CC Tech expert team developed highly convertible & performance-optimized Landing pages for your PPC marketing campaigns to generate quality leads & drive your ROI upward.",
-      imageUrl: "https://image.freepik.com/free-vector/landing-page-template_23-2148005324.jpg",
+      imageUrl: "https://cdn.pixabay.com/photo/2020/11/09/06/33/website-5725733_1280.png",
     },
     {
       title: "Website redesigning",
       description: "Your website is the first point of contact, regardless of whether it's upgrading CMS, integrating new functionality, refined blogs, or a more modern user experience, you need website redesigning services.",
-      imageUrl: "https://th.bing.com/th/id/OIP.mNvbYocJm4utaAZRsuFscQHaE6?rs=1&pid=ImgDetMain",
+      imageUrl: "https://cdn.pixabay.com/photo/2016/09/13/11/08/browser-1666995_1280.png",
     },
     {
       title: "E-mailer designing",
       description: "We offer a variety of email templates to suit your email marketing needs. From responsive layouts to simple designs with optimised HTML coding, we have you covered.",
-      imageUrl: "https://venngage-wordpress.s3.amazonaws.com/uploads/2021/05/lp-composite-email-maker-1.png",
+      imageUrl: "https://cdn.pixabay.com/photo/2016/03/31/20/04/alphabet-word-images-1295488_1280.png",
     },
     {
       title: "Graphic design services",
       description: " Design a strong & visually appealing brand identity with a conceptual & meaningful logo design from our creatively expert team.",
-      imageUrl: "https://th.bing.com/th/id/OIP.pn9XgUYbZE5lVJKVQLGvDgHaFu?rs=1&pid=ImgDetMain",
+      imageUrl: "https://cdn.pixabay.com/photo/2018/08/18/13/26/interface-3614766_1280.png",
     },
     // Add more objects for other services
   ];
@@ -49,12 +49,12 @@ export default function Services() {
     {
       title: "WordPress development",
       description: "We offer fully scalable, custom functionality, top performance, and secure WordPress Website Development solutions.",
-      imageUrl: "https://mlyvnso5vrvy.i.optimole.com/6w82sSc-QpSodU4b/w:1000/h:800/q:75/https://artechglobal.com/wp-content/uploads/2020/02/wp-development-1-1.jpg",
+      imageUrl: "https://cdn.pixabay.com/photo/2016/11/27/18/28/wordpress-1863504_1280.png",
     },
     {
-      title: "Website redesigning",
-      description: "Your website is the first point of contact, regardless of whether it's upgrading CMS, integrating new functionality, refined blogs, or a more modern user experience, you need website redesigning services.",
-      imageUrl: "https://venngage-wordpress.s3.amazonaws.com/uploads/2021/05/lp-composite-email-maker-1.png",
+      title: "Website Development",
+      description: "Your website is the first point of contact, regardless of whether it's upgrading CMS, integrating new functionality, refined blogs, or a more modern user experience, you need website development services.",
+      imageUrl: "https://cdn.pixabay.com/photo/2019/10/09/07/28/development-4536630_1280.png",
     },
     {
       title: "E-commerce Development",

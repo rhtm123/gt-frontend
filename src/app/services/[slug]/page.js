@@ -9,12 +9,10 @@ import Link from 'next/link';
 
 export default function ServicePage({ params }){
    const { slug } = params;
+   const [currentIndex, setCurrentIndex] = useState(0);
 
-   if (!slug) {
-      return <div>Loading service...</div>; 
-    }
 
-    const [currentIndex, setCurrentIndex] = useState(0);
+
 
   const nextIndex = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % 3);
@@ -24,13 +22,18 @@ export default function ServicePage({ params }){
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? 2 : prevIndex - 1));
   };
 // Find the service object based on the slug parameter
-const service = servicesData.services.find(service =>
+  const service = servicesData.services.find(service =>
     decodeURIComponent(service.title) === decodeURIComponent(slug.replace(/-/g, ' '))
   );
+
+  if (!slug) {
+    return <span className="m-8 loading loading-dots loading-sm"></span>; 
+  }
+
   
   // If the service is not found, you can display a 404 page or any other fallback content
   if (!service) {
-    return <div>Service not found</div>;
+    return <div className='p-8'>Service not found</div>;
   }
   
     return (
@@ -39,7 +42,7 @@ const service = servicesData.services.find(service =>
           <title>{service.title}</title>
         </Head>
         <div className="bg-base-200 py-10 " >
-          <div className="container mx-auto px-4 flex flex-wrap justify-center items-center">
+          <div className="mx-auto px-4  md:px-8 flex flex-wrap justify-center items-center">
             <div className="w-full lg:w-1/2 px-4 flex flex-wrap justify-content-center">
               <h1 className="text-4xl font-bold text-left mb-8">
                 Trusted {service.title} Services In India
@@ -58,7 +61,7 @@ const service = servicesData.services.find(service =>
             </div>
           </div>
         </div>
-        <div className="container mx-auto flex flex-wrap px-4 py-16">
+        <div className="mx-auto flex flex-wrap px-4 md:px-4 py-16">
           <div className="w-full lg:w-1/2 px-4">
             <h2 className="text-3xl font-bold mb-8">{service.subtitle}</h2>
             <p className="text-lg mb-8">
@@ -77,7 +80,7 @@ const service = servicesData.services.find(service =>
             </p>
           </div>
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 sm:px-6 lg:px-8">
         {/* First Section: Services */}
         <div className="lg:text-center">
           <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
@@ -108,10 +111,10 @@ const service = servicesData.services.find(service =>
         </div>
       </div>
       {/* Dashed line */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+      <div className="max-w-4xl mx-auto px-4 md:px-8 sm:px-6 mt-12">
         <hr className="my-12 border-dashed border-t border-gray-300" />
       </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 sm:px-6 mt-12">
         {/* First Section: Services */}
         <div className="lg:text-center">
           <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
@@ -174,9 +177,9 @@ const service = servicesData.services.find(service =>
             >
               <div className="card-body">
                 <h1 className="card-title text-2xl font-bold">
-                  {industriesServed.title}
+                  {industriesServed?.title}
                 </h1>
-                <p className="mt-2 text-sm">{industriesServed.description}</p>
+                <p className="mt-2 text-sm">{industriesServed?.description}</p>
               </div>
             </div>
           );

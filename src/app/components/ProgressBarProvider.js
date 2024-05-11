@@ -9,7 +9,7 @@ const Providers = ({ children }) => {
       {children}
       <ProgressBar
         height="2px"
-        color="#0000ff"
+        className="text-primary"
         options={{ showSpinner: true }}
         shallowRouting
       />

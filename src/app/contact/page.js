@@ -21,9 +21,9 @@ function Contact() {
       <div className="mx-auto px-4 md:px-8">
 
         <div className="px-4">
-        <h1 className="text-3xl font-bold mb-2">Connect with Us Today</h1>
+        <h1 className="text-3xl font-bold mb-2">Connect with us today!</h1>
         <h3 className="text-xl mb-8">
-          Share your vision and let's collaborate on creating something amazing.
+          {`Share your vision and let's collaborate on creating something amazing.`}
         </h3>
         </div>
 

@@ -19,8 +19,7 @@ export default function Footer(){
             <span>Select Theme: </span>
             <select className="select select-sm" value={theme} onChange={e => setTheme(e.target.value)}>
               <option value="light">light</option>
-              <option value="cupcake">Cupcake</option>
-              <option value="dark">Dark</option>
+              <option value="dark">dark</option>
             </select>
       </div>
 
@@ -31,7 +30,6 @@ export default function Footer(){
         <a className="link link-hover">Press kit</a> */}
         <Link href="/services" className="link link-hover">Services</Link>
         <Link href="/contact" className="link link-hover">Contact Us</Link>
-
         <Link href="/privacy-policy" className="link link-hover">Privacy Policy</Link>
 
       </nav> 

@@ -1,6 +1,86 @@
 {
     "services": [
       {
+        "title": "Website Development",
+        "slug": "website-development",
+        "description": "We develop custom websites that are functional, user-friendly, and optimized for search engines. Our team of experienced developers can build websites of all sizes and complexities, from simple brochure websites to complex e-commerce platforms.",
+        "imageUrl": "https://www.bigcommerce.com/content/dam/bigcommerce/en_US/images/illustrations/website-development-hero.svg",
+        "subtitle": "Custom Website Development Solutions",
+        "subdescription": "From concept to launch, we handle every aspect of your website development project. We work closely with you to understand your unique business needs and goals, and then design and develop a website that meets those needs and delivers measurable results. Our website development services include:",
+        "subServices": [
+          {
+            "title": "Content Management System (CMS) Development",
+            "description": "We develop websites using popular CMS platforms like WordPress, Drupal, and Magento, allowing you to easily manage your website content without any coding knowledge."
+          },
+          {
+            "title": "E-commerce Functionality",
+            "description": "We can integrate e-commerce functionality into your website, allowing you to sell products and services online. We can also develop custom features to meet your specific needs, such as shopping carts, product listings, and secure payment processing."
+          },
+          {
+            "title": "Search Engine Optimization (SEO)",
+            "description": "We optimize your website for search engines so that it can be easily found by potential customers. This includes optimizing your website content, code, and structure."
+          },
+          {
+            "title": "Website Maintenance and Support",
+            "description": "We offer ongoing website maintenance and support services to keep your website up-to-date, secure, and functioning properly."
+          },
+          {
+            "title": "Responsive Design",
+            "description": "We ensure that your website is responsive and looks great on all devices, including desktops, tablets, and smartphones."
+          }
+        ],
+        "technologies": [
+          {
+            "title": "HTML5",
+            "description": "We use HTML5 to create the structure and content of your website."
+          },
+          {
+            "title": "CSS3",
+            "description": "We use CSS3 to style your website and make it look visually appealing."
+          },
+          {
+            "title": "JavaScript",
+            "description": "We use JavaScript to add interactivity and dynamic functionality to your website."
+          },
+          {
+            "title": "PHP",
+            "description": "We can use PHP for server-side scripting to add complex functionality to your website, such as user logins and contact forms."
+          },
+          {
+            "title": "Web Development Frameworks",
+            "description": "We may use web development frameworks, such as Laravel or Symfony, to streamline the development process and build more complex websites."
+          }
+        ],
+        "industriesServed": [
+          {
+            "title": "All Industries",
+            "description": "We can develop websites for businesses of all sizes and in all industries."
+          }
+        ],
+        "additionalData": {
+          "subServicesInfo": [
+            {
+              "title": "Benefits of Custom Website Development",
+              "description": "Explore the advantages of custom website development, including increased flexibility, scalability, and control over your website's functionality and design."
+            },
+            {
+              "title": "The Website Development Process",
+              "description": "Learn about the different stages of the website development process, from initial planning and design to development, testing, and launch."
+            }
+          ],
+          "technologyInfo": [
+            {
+              "title": "Web Development Technologies",
+              "description": "Gain insights into the various technologies used in website development, such as HTML5, CSS3, JavaScript, PHP, and web development frameworks."
+            },
+            {
+              "title": "Content Management Systems (CMS)",
+              "description": "Explore popular CMS platforms, such as WordPress, Drupal, and Magento, and understand their benefits and use cases for website development projects."
+            }
+          ]
+        }
+      },      
+      {
         "title": "Website designing",
         "slug":"website-designing",
         "description": "We are a professional & creative web design agency. CC-Tech offers user-centric design services with proficiency in Website Designing.",
@@ -144,42 +224,6 @@
         }
       },
       {
-        "title": "E-mailer designing",
-        "slug":"emailer-designing",
-        "description": "We offer a variety of email templates to suit your email marketing needs. From responsive layouts to simple designs with optimised HTML coding, we have you covered.",
-        "imageUrl": "https://venngage-wordpress.s3.amazonaws.com/uploads/2021/05/lp-composite-email-maker-1.png",
-        "subtitle": "Custom Email Design",
-        "subdescription": "Delivering custom email design solutions that capture attention, drive engagement, and inspire action, we specialize in creating visually stunning and highly effective email templates for marketing campaigns, newsletters, and communications. Our email designs combine creative graphics, compelling copy, and strategic layouts to deliver messages that resonate with recipients and achieve marketing objectives.",
-        "subServices": [
-          {"title": "Responsive Email Templates", "description": "Designing responsive email templates that adapt seamlessly to various devices and screen sizes, ensuring optimal viewing experiences for recipients across desktop, mobile, and tablet platforms."},
-          {"title": "Branded Email Designs", "description": "Creating branded email designs that reflect your company's visual identity, incorporating logos, colors, and imagery to maintain consistency and reinforce brand recognition."},
-          {"title": "Promotional Campaigns", "description": "Developing email designs for promotional campaigns, sales events, and product launches, utilizing persuasive messaging and compelling visuals to drive conversions and revenue."},
-          {"title": "Newsletter Layouts", "description": "Designing newsletter layouts that engage subscribers, deliver valuable content, and encourage interactions, such as clicks, shares, and subscriptions, fostering long-term relationships and loyalty."},
-          {"title": "HTML Email Coding", "description": "Coding custom HTML email templates with clean, optimized code that ensures compatibility with popular email clients and platforms, maximizing deliverability and engagement rates."}
-        ],
-        "technologies": [
-          {"title": "HTML/CSS", "description": "Utilizing HTML and CSS for email template design and development, ensuring cross-client compatibility, responsive layouts, and visually appealing designs that render consistently across various email platforms."},
-          {"title": "Email Marketing Platforms", "description": "Integrating with leading email marketing platforms, such as Mailchimp, Constant Contact, and HubSpot, to create and distribute custom email campaigns, track performance metrics, and optimize engagement."},
-          {"title": "Responsive Design Techniques", "description": "Implementing responsive design techniques, such as media queries and fluid layouts, to ensure that email templates adapt smoothly to different screen sizes and devices, providing a seamless user experience."},
-          {"title": "Dynamic Content Personalization", "description": "Incorporating dynamic content personalization features into email designs, such as merge tags and dynamic content blocks, to deliver targeted and relevant messages that resonate with individual recipients."}
-        ],
-        "industriesServed": [
-          {"title": "E-commerce", "description": "Creating email designs for e-commerce businesses to promote products, announce sales, and recover abandoned carts, driving traffic to online stores and increasing conversion rates."},
-          {"title": "Retail", "description": "Designing email campaigns for retail brands to showcase new arrivals, offer discounts, and build customer loyalty, leveraging persuasive visuals and compelling calls-to-action (CTAs) to drive sales and engagement."},
-          {"title": "Hospitality", "description": "Developing email marketing assets for hospitality businesses, such as hotels and restaurants, to promote special offers, events, and amenities, enhancing guest experiences and driving bookings and reservations."}
-        ],
-        "additionalData": {
-          "subServicesInfo": [
-            {"title": "Types of Email Design Services", "description": "Explore our range of email design services, including responsive templates, branded designs, promotional campaigns, and newsletter layouts, tailored to meet your marketing objectives."},
-            {"title": "HTML Email Coding Standards", "description": "Discover best practices and coding standards for HTML email development, ensuring compatibility, deliverability, and performance across various email clients and devices."}
-          ],
-          "technologyInfo": [
-            {"title": "Email Marketing Platforms", "description": "Learn about the leading email marketing platforms, such as Mailchimp, Constant Contact, and HubSpot, and their features for email template design, campaign management, and analytics."},
-            {"title": "Responsive Design Tools", "description": "Explore responsive design tools and frameworks, such as Foundation for Emails and MJML, that streamline the process of creating responsive email templates and ensure optimal rendering across devices."}
-          ]
-        }
-      },
-      {
         "title": "Graphic design services",
         "slug":"graphic-design-services",
         "description": "Design a strong & visually appealing brand identity with a conceptual & meaningful logo design from our creatively expert team.",
@@ -255,7 +299,7 @@
         }
       },
       {
-        "title": "E-commerce Development",
+        "title": "Ecommerce Development",
         "slug": "ecommerce-development",
         "description": "We developed a feature-rich, best user experience & end-to-end eCommerce website that can help you increase user traffic, boost online sales & retain your customers.",
         "imageUrl": "https://th.bing.com/th/id/OIP.HCKLr50nafiaajtSwkh6VAHaD4?rs=1&pid=ImgDetMain",

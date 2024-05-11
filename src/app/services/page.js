@@ -32,11 +32,6 @@ export default function Services() {
       imageUrl: "https://cdn.pixabay.com/photo/2016/09/13/11/08/browser-1666995_1280.png",
     },
     {
-      title: "E-mailer designing",
-      description: "We offer a variety of email templates to suit your email marketing needs. From responsive layouts to simple designs with optimised HTML coding, we have you covered.",
-      imageUrl: "https://cdn.pixabay.com/photo/2016/03/31/20/04/alphabet-word-images-1295488_1280.png",
-    },
-    {
       title: "Graphic design services",
       description: " Design a strong & visually appealing brand identity with a conceptual & meaningful logo design from our creatively expert team.",
       imageUrl: "https://cdn.pixabay.com/photo/2018/08/18/13/26/interface-3614766_1280.png",
@@ -57,7 +52,7 @@ export default function Services() {
       imageUrl: "https://cdn.pixabay.com/photo/2019/10/09/07/28/development-4536630_1280.png",
     },
     {
-      title: "E-commerce Development",
+      title: "Ecommerce Development",
       description: "We developed a feature-rich, best user experience & end-to-end eCommerce website that can help you increase user traffic, boost online sales & retain your customers.",
       imageUrl: "https://th.bing.com/th/id/OIP.HCKLr50nafiaajtSwkh6VAHaD4?rs=1&pid=ImgDetMain",
     },
@@ -114,62 +109,9 @@ export default function Services() {
 
 
   return (
-    <section id="services" className="py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* First Section: Designing Services */}
-        <div className="lg:text-center">
-          <h2 className="text-secondary font-semibold tracking-wide uppercase">
-            Designing Services
-          </h2>
-          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">
-            Creatives which builds your brand image & engage the audience
-          </p>
-          <p className="mt-4 max-w-7xl text-xl mx-auto">
-            We offers strategic & performance-driven website design services be
-            it corporate website designing and development, e-commerce website
-            designing services, custom website design, website maintenance, etc.
-          </p>
-        </div>
-        {/* Render cards for Designing Services */}
-        <div className="mt-10 grid gap-10 lg:grid-cols-3">
-          {designServicesData.map((service, index) => (
-            <div
-              key={index}
-              className="card glass hover:scale-105 transition-transform duration-300 ease-in-out"
-            >
-              <figure className="h-[200px] flex items-center justify-center">
-                <img
-                  src={service.imageUrl}
-                  alt="Service"
-                  className="object-cover w-full h-full"
-                />
-              </figure>
-              <div className="card-body">
-                <h1 className="card-title text-2xl font-bold">
-                  {service.title}
-                </h1>
-                <p className="mt-2 text-sm">{service.description}</p>
-                <div className="card-actions justify-start">
-                  <Link
-                    className="btn btn-primary"
-                    href={`/services/${service.title.replace(/\s+/g, '-')}`}
-                  >
-                    {" "}
-                    Know More <IoIosArrowForward />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+    <section id="services" className="py-8 md:px-4">
 
-      {/* Dashed line */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
-        <hr className="my-12 border-dashed border-t border-gray-300" />
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
         {/* Second Section: Web Design & Development Services */}
         <div className="lg:text-center">
           <h2 className="text-secondary font-semibold tracking-wide uppercase">
@@ -190,7 +132,7 @@ export default function Services() {
           {webDevelopmentServicesData.map((service, index) => (
             <div
               key={index}
-              className="card w-96 glass hover:scale-105 transition-transform duration-300 ease-in-out"
+              className="card glass hover:scale-105 transition-transform duration-300 ease-in-out"
             >
               <figure className="h-[200px] flex items-center justify-center">
                 <img
@@ -220,8 +162,9 @@ export default function Services() {
         </div>
       </div>
 
-      {/* Dashed line */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+
+            {/* Dashed line */}
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
         <hr className="my-12 border-dashed border-t border-gray-300" />
       </div>
 
@@ -272,6 +215,73 @@ export default function Services() {
           ))}
         </div>
       </div>
+
+
+
+
+
+            {/* Dashed line */}
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+        <hr className="my-12 border-dashed border-t border-gray-300" />
+      </div>
+
+
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* First Section: Designing Services */}
+        <div className="lg:text-center">
+          <h2 className="text-secondary font-semibold tracking-wide uppercase">
+            Designing Services
+          </h2>
+          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">
+            Creatives which builds your brand image & engage the audience
+          </p>
+          <p className="mt-4 max-w-7xl text-xl mx-auto">
+            We offers strategic & performance-driven website design services be
+            it corporate website designing and development, e-commerce website
+            designing services, custom website design, website maintenance, etc.
+          </p>
+        </div>
+        {/* Render cards for Designing Services */}
+        <div className="mt-10 grid gap-10 lg:grid-cols-3">
+          {designServicesData.map((service, index) => (
+            <div
+              key={index}
+              className="card glass hover:scale-105 transition-transform duration-300 ease-in-out"
+            >
+              <figure className="h-[200px] flex items-center justify-center">
+                <img
+                  src={service.imageUrl}
+                  alt="Service"
+                  className="object-cover w-full h-full"
+                />
+              </figure>
+              <div className="card-body">
+                <h1 className="card-title text-2xl font-bold">
+                  {service.title}
+                </h1>
+                <p className="mt-2 text-sm">{service.description}</p>
+                <div className="card-actions justify-start">
+                  <Link
+                    className="btn btn-primary"
+                    href={`/services/${service.title.replace(/\s+/g, '-')}`}
+                  >
+                    {" "}
+                    Know More <IoIosArrowForward />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+
+
+
+
+
+
     </section>
   );
 }

@@ -3,8 +3,6 @@
 import { GrTechnology } from "react-icons/gr";
 import { TfiWrite } from "react-icons/tfi";
 import { LuBuilding } from "react-icons/lu";
-import { TiTickOutline } from "react-icons/ti";
-import { useEffect } from 'react';
 import Link from "next/link";
 import Head from "next/head";
 import ContactForm from "./components/ContactForm";
@@ -18,7 +16,10 @@ export default function Home() {
   return(
     <>
     <Head>
-      <title></title>
+      <title>
+
+      </title>
+      
 
     </Head>
     <section>
@@ -29,20 +30,21 @@ export default function Home() {
             className="absolute inset-0 object-cover w-full h-full"
           />
           <div className="relative mx-auto md:py-4 py-12 px-4 md:px-8 pt-18 pb-10 flex flex-wrap justify-center items-center">
-            <div className="w-full lg:w-7/12 px-4 flex flex-wrap justify-content-center">
-              <h1 className="text-4xl text-white font-bold text-left mb-8">
+            <div className="w-full md:w-7/12 px-4 flex flex-wrap justify-content-center">
+              <h1 className="text-4xl text-base-100 bg-base-content bg-opacity-60 py-2 px-4 font-bold text-left mb-8">
               Empowering your digital success
               </h1>
-              <p className="text-left font-semibold text-gray-100 text-xl mb-8">
-              Elevate Your Online Presence with Expert Website Development, Mobile App Creation, and Strategic Digital Marketing Solutions. Empower Your Brand with Our Seamless Integration of Design, Development, and Marketing Strategies.</p>
+              <h2 className="text-base-100 bg-base-content bg-opacity-50 py-2 px-4 text-xl mb-8">
+              Elevate Your Online Presence with Expert Website Development, Mobile App Creation, and Strategic Digital Marketing Solutions. Empower Your Brand with Our Seamless Integration of Design, Development, and Marketing Strategies.
+              </h2>
               <div className="flex justify-left">
                 <button href="/services" className="btn btn-primary">
                   <Link href="/services">View All Services</Link>
                 </button>
               </div>
             </div>
-            <div className="w-full lg:w-5/12 px-4 md:py-4 py-12">
-              <div className="bg-base-300 p-8 rounded-lg">
+            <div className="w-full md:w-5/12 px-4 md:py-4 py-12">
+              <div className="bg-base-300 rounded-lg p-8">
               <ContactForm />
               </div>
             </div>
@@ -55,7 +57,7 @@ export default function Home() {
   <section>
     <div  className="min-h-screen relative overflow-hidden">
   <div className="mx-auto flex flex-wrap px-4 md:px-8 py-16">
-          <div className="w-full lg:w-1/2 px-4">
+          <div className="w-full md:w-1/2 px-4">
           <img
             src="/section-2.png"
             alt="Technology"
@@ -66,7 +68,7 @@ export default function Home() {
               We specialize in the design, development, and marketing of products or services.
             </p> */}
           </div>
-          <div className="w-full lg:w-1/2 px-4">
+          <div className="w-full md:w-1/2 px-4">
           {/* <h3 className="box-border h-8 w-32 border-2 text-center font-semibold mb-4">Who We Are?</h3> */}
           <h1 className="text-4xl font-bold mb-8">Grow Your Business Online with Your Trusted IT Partner</h1>
             <p className="mb-8 font-semibold">
@@ -90,8 +92,8 @@ export default function Home() {
         </div>
   </section>
       
-<div className="bg-slate-800 overflow-hidden">
-  <div id="whyus" className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+<div className="bg-gradient-to-r from-primary to-secondary overflow-hidden">
+  <div id="whyus" className="max-w-[85rem] px-4 py-10 sm:px-6 md:px-8 md:py-14 mx-auto">
     {/* <div>
       <img
         className="w-full 	 object-cover rounded-xl"
@@ -100,22 +102,22 @@ export default function Home() {
       />
     </div> */}
     {/* Grid */}
-    <div className="mt-5 lg:mt-16 grid lg:grid-cols-3 gap-8 lg:gap-12">
-      <div className="lg:col-span-1">
-        <h2 className="font-bold text-2xl md:text-3xl text-gray-800 dark:text-gray-200">
+    <div className="mt-5 md:my-8 grid md:grid-cols-3 gap-8 md:gap-12">
+      <div className="md:col-span-1">
+        <h2 className="font-bold text-2xl md:text-3xl text-base-100">
           We tackle the IT challenges you face
         </h2>
-        <p className="mt-2 md:mt-4 text-gray-500">
+        <p className="mt-2 md:mt-4 text-base-200">
        {`In addition to collaborating with emerging businesses to drive digital transformation, we've developed enterprise-grade solutions to address common challenges encountered across diverse products and projects.`}
         </p>
       </div>
       {/* End Col */}
-      <div className="lg:col-span-2">
-        <div className="grid sm:grid-cols-2 gap-8 md:gap-12">
+      <div className="md:col-span-2">
+        <div className="grid sm:grid-cols-2 gap-8 md:gap-8">
           {/* Icon Block */}
-          <div className="flex gap-x-5">
+          <div className="flex bg-base-200 rounded-lg p-4 gap-x-5">
             <svg
-              className="flex-shrink-0 mt-1 size-6 text-blue-600 dark:text-blue-500"
+              className="flex-shrink-0 mt-1 size-6 text-secondary"
               xmlns="http://www.w3.org/2000/svg"
               width={24}
               height={24}
@@ -133,10 +135,10 @@ export default function Home() {
               <line x1={16} x2={16} y1={16} y2={16} />
             </svg>
             <div className="grow">
-              <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
+              <h3 className="text-lg font-semibold text-primary">
                 Creative minds
               </h3>
-              <p className="mt-1 text-gray-600 dark:text-gray-400">
+              <p className="mt-1">
                 We choose our teams carefully. Our people are the secret to
                 great work. Passion drives us forward in everything we do
               </p>
@@ -144,9 +146,9 @@ export default function Home() {
           </div>
           {/* End Icon Block */}
           {/* Icon Block */}
-          <div className="flex gap-x-5">
+          <div className="flex gap-x-5 bg-base-200 rounded-lg p-4">
             <svg
-              className="flex-shrink-0 mt-1 size-6 text-blue-600 dark:text-blue-500"
+              className="flex-shrink-0 mt-1 size-6 text-secondary"
               xmlns="http://www.w3.org/2000/svg"
               width={24}
               height={24}
@@ -161,19 +163,19 @@ export default function Home() {
               <path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2h0a3.13 3.13 0 0 1 3 3.88Z" />
             </svg>
             <div className="grow">
-              <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
+              <h3 className="text-lg font-semibold text-primary">
                 Affordable Pricing
               </h3>
-              <p className="mt-1 text-gray-600 dark:text-gray-400">
+              <p className="mt-1">
                 We provide customised service as per client requirements. We deliver services in your budget.
               </p>
             </div>
           </div>
           {/* End Icon Block */}
           {/* Icon Block */}
-          <div className="flex gap-x-5">
+          <div className="flex gap-x-5 bg-base-200 rounded-lg p-4">
             <svg
-              className="flex-shrink-0 mt-1 size-6 text-blue-600 dark:text-blue-500"
+              className="flex-shrink-0 mt-1 size-6 text-secondary"
               xmlns="http://www.w3.org/2000/svg"
               width={24}
               height={24}
@@ -188,19 +190,19 @@ export default function Home() {
               <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
             </svg>
             <div className="grow">
-              <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
+              <h3 className="text-lg font-semibold text-primary">
                 Industry-leading documentation
               </h3>
-              <p className="mt-1 text-gray-600 dark:text-gray-400">
+              <p className="mt-1">
                 We always document our code. It aids in accessing the product and future development.
               </p>
             </div>
           </div>
           {/* End Icon Block */}
           {/* Icon Block */}
-          <div className="flex gap-x-5">
+          <div className="flex gap-x-5 bg-base-200  rounded-lg p-4">
             <svg
-              className="flex-shrink-0 mt-1 size-6 text-blue-600 dark:text-blue-500"
+              className="flex-shrink-0 mt-1 size-6 text-secondary"
               xmlns="http://www.w3.org/2000/svg"
               width={24}
               height={24}
@@ -217,10 +219,10 @@ export default function Home() {
               <path d="M16 3.13a4 4 0 0 1 0 7.75" />
             </svg>
             <div className="grow">
-              <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
+              <h3 className="text-lg font-semibold text-primary">
                 Designing for people
               </h3>
-              <p className="mt-1 text-gray-600 dark:text-gray-400">
+              <p className="mt-1">
                 We actively pursue the right balance between functionality and
                 aesthetics, creating delightful experiences.
               </p>
@@ -235,9 +237,9 @@ export default function Home() {
   </div>
 
   </div>
-
+{/* 
   <div className="bg-gray-900 py-12">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 ">
     <h1 className="text-4xl font-bold text-white mb-6">Contact web development company India today to get started.</h1>
     <p className="text-lg text-white mb-8">Take the first step on your digital journey and contact us today to get started.</p>
     <div className="flex space-x-6 mb-8">
@@ -268,51 +270,51 @@ export default function Home() {
     </div>
     <button className="bg-white text-gray-500 px-6 py-3 rounded-lg font-semibold hover:bg-gray-400 hover:text-white transition duration-300"><Link href="/contact">Schedule a free consultation</Link></button>
   </div>
-</div>
+</div> */}
 
 
 
   <section id="projects">
   <>
   {/* Card Blog */}
-  <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+  <div className="max-w-[85rem] px-4 py-10 sm:px-6 md:px-8 md:py-14 mx-auto">
     {/* Grid */}
 
 
     <h1 className="text-4xl py-8 font-bold">Projects by CC Tech</h1>
 
     
-    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
       {/* Card */}
-      <div className="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
-        <div className="h-52 flex flex-col justify-center items-center bg-primary rounded-t-xl">
+      <div className="group flex flex-col h-full border rounded-lg">
+        <div className="h-52 flex flex-col justify-center items-center bg-base-300 rounded-lg">
           
 
-            <GrTechnology size={48} className="text-base-300" />
+            <GrTechnology size={64} className="text-secondary" />
             
 
         </div>
         <div className="p-4 md:p-6">
-          <span className="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
+          <span className="block mb-1 text-xs font-semibold uppercase text-accent">
             Online Courses
           </span>
-          <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-300">
+          <h3 className="text-xl font-semibold">
             Coding Chaska
           </h3>
-          <p className="mt-3 text-gray-500">
+          <p className="mt-3 opacity-80">
             Coding Chaska is a online learning platform where you can find interactive courses. 
           </p>
         </div>
-        <div className="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-gray-700 dark:divide-gray-700">
+        <div className="mt-auto flex border-t border-gray-200 divide-x">
           <a target="_blank"
-            className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+            className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium"
             href="https://www.codingchaska.com/"
           >
             Visit Site
           </a>
           <a 
             target="_blank"
-            className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+            className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium"
             href="https://github.com/rhtm123/cc-frontend-v2"
           >
             Github
@@ -321,33 +323,33 @@ export default function Home() {
       </div>
       {/* End Card */}
       {/* Card */}
-      <div className="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
-        <div className="h-52 flex flex-col justify-center items-center bg-secondary rounded-t-xl">
+      <div className="group flex flex-col h-full border rounded-lg">
+        <div className="h-52 flex flex-col justify-center items-center bg-base-300 rounded-lg">
           
-            <TfiWrite size={48} className="text-base-300"  />
+            <TfiWrite size={64} className="text-secondary"  />
 
         </div>
         <div className="p-4 md:p-6">
-          <span className="block mb-1 text-xs font-semibold uppercase text-secondary dark:text-rose-500">
+          <span className="block mb-1 text-xs font-semibold uppercase text-accent">
             Online Editor
           </span>
-          <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-300 ">
+          <h3 className="text-xl font-semibold">
             Coding Chaska Lab
           </h3>
-          <p className="mt-3 text-gray-500">
+          <p className="mt-3 opacity-80">
             CC Lab is lightweight online editor. You can solve coding problems too. 
           </p>
         </div>
-        <div className="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-gray-700 dark:divide-gray-700">
+        <div className="mt-auto flex border-t border-gray-200 divide-x">
           <a target="_blank"
-            className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+            className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium"
             href="https://www.codingchaskalab.com/"
           >
             Visit Site
           </a>
           <a 
             target="_blank"
-            className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+            className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium "
             href="https://github.com/rhtm123/cc-lab"
           >
             Github
@@ -356,33 +358,33 @@ export default function Home() {
       </div>
       {/* End Card */}
       {/* Card */}
-      <div className="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
-        <div className="h-52 flex flex-col justify-center items-center bg-accent rounded-t-xl">
+      <div className="group flex flex-col h-full border shadow-sm rounded-lg">
+        <div className="h-52 flex flex-col justify-center items-center bg-base-300 rounded-lg">
 
-            <LuBuilding size={48} className="text-base-300"  />
+            <LuBuilding size={64} className="text-secondary"  />
 
         </div>
         <div className="p-4 md:p-6">
           <span className="block mb-1 text-xs font-semibold uppercase text-accent">
             Manage Society
           </span>
-          <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:hover:text-white">
+          <h3 className="text-xl font-semibold ">
             SocietySathi
           </h3>
-          <p className="mt-3 text-gray-500">
+          <p className="mt-3 opacity-80">
             SocietySathi is designed to solve all critical problems of a Society. 
           </p>
         </div>
-        <div className="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-gray-700 dark:divide-gray-700">
+        <div className="mt-auto flex border-t border-gray-200 divide-x">
           <a target="_blank"
-            className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+            className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium"
             href="https://www.societysathi.com/"
           >
             Visit Site
           </a>
           <a
             target="_blank"
-            className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+            className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium"
             href="https://github.com/rhtm123/ff-frontend"
           >
             Github
@@ -404,26 +406,26 @@ export default function Home() {
 
   <>
   {/* Testimonials */}
-  <div id="testimonials" className="overflow-hidden bg-slate-800">
-    <div className="relative max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+  <div id="testimonials" className="overflow-hidden bg-accent-content bg-opacity-50">
+    <div className="relative max-w-[85rem] px-4 py-10 sm:px-6 md:px-8 md:py-14 mx-auto">
       {/* Title */}
-      <div className="max-w-2xl w-3/4 lg:w-1/2 mb-6 sm:mb-10 md:mb-16">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl text-white font-semibold">
+      <div className="max-w-2xl w-3/4 md:w-1/2 mb-6 sm:mb-10 md:mb-16">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
           Loved by business and individuals across the globe
         </h2>
       </div>
       {/* End Title */}
       {/* Grid */}
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
         {/* Card */}
         <div className="flex h-auto">
-          <div className="flex flex-col bg-white rounded-xl dark:bg-slate-900">
+          <div className="flex flex-col bg-accent-content bg-opacity-80 rounded-lg">
             <div className="flex-auto p-4 md:p-6">
-              <p className="text-base italic md:text-lg text-gray-800 dark:text-gray-200">
+              <p className="text-base italic md:text-lg text-neutral-content">
               &quot;Working with CC Tech was a game-changer for our business. Their innovative IT solutions transformed our operations, and their dedicated team provided exceptional support every step of the way.&quot;
               </p>
             </div>
-            <div className="p-4 bg-gray-100 rounded-b-xl md:px-2 dark:bg-slate-700">
+            <div className="p-4 bg-accent-content md:px-2 rounded-lg">
               <div className="flex items-center">
                 {/* <div className="flex-shrink-0">
                   <img
@@ -433,10 +435,10 @@ export default function Home() {
                   />
                 </div> */}
                 <div className="grow ms-3">
-                  <p className="text-sm sm:text-base font-semibold text-gray-800 dark:text-gray-200">
+                  <p className="text-sm sm:text-base font-semibold text-neutral-content">
                     Rohit Maurya
                   </p>
-                  <p className="text-xs text-gray-500 dark:text-gray-400">
+                  <p className="text-xs text-neutral-content">
                     Founder | Coding Chaska
                   </p>
                 </div>
@@ -446,14 +448,14 @@ export default function Home() {
         </div>
         {/* End Card */}
         {/* Card */}
-        <div className="flex h-auto">
-          <div className="flex flex-col bg-white rounded-xl dark:bg-slate-900">
+        <div className="flex h-auto bg-accent-content bg-opacity-80 rounded-lg">
+          <div className="flex flex-col ">
             <div className="flex-auto p-4 md:p-6">
-              <p className="text-base italic md:text-lg text-gray-800 dark:text-gray-200">
+              <p className="text-base italic md:text-lg text-neutral-content">
               {`"I can't recommend CC Tech enough! Their expertise in web development helped us launch a stunning website that exceeded all our expectations. Their attention to detail and commitment to excellence truly sets them apart."`}
               </p>
             </div>
-            <div className="p-4 bg-gray-100 rounded-b-xl md:px-2 dark:bg-slate-700">
+            <div className="p-4 bg-accent-content rounded-lg">
               <div className="flex items-center">
                 {/* <div className="flex-shrink-0">
                   <img
@@ -463,10 +465,10 @@ export default function Home() {
                   />
                 </div> */}
                 <div className="grow ms-3">
-                  <p className="text-sm sm:text-base font-semibold text-gray-800 dark:text-gray-200">
+                  <p className="text-sm sm:text-base font-semibold text-neutral-content">
                     Satyam Singh
                   </p>
-                  <p className="text-xs text-gray-500 dark:text-gray-400">
+                  <p className="text-xs text-neutral-content">
                     Senior Director of Operations | Society Sathi
                   </p>
                 </div>
@@ -476,14 +478,14 @@ export default function Home() {
         </div>
         {/* End Card */}
         {/* Card */}
-        <div className="flex h-auto">
-          <div className="flex flex-col bg-white rounded-xl dark:bg-slate-900">
+        <div className="flex h-auto ">
+          <div className="flex flex-col bg-accent-content bg-opacity-80 rounded-lg">
             <div className="flex-auto p-4 md:p-6">
-              <p className="text-base italic md:text-lg text-gray-800 dark:text-gray-200">
-              {`"Partnering with CC Tech has been an absolute pleasure. Their proactive IT support has allowed us to focus on growing our business, knowing that our technology needs are in capable hands. Thank you for your professionalism and dedication!"`}
+              <p className="text-base italic md:text-lg text-neutral-content">
+              {`"Partnering with CC Tech has been an absolute pleasure. Their proactive IT support has allowed us to focus on growing our business, knowing that our technology needs are in capable hands."`}
               </p>
             </div>
-            <div className="p-4 bg-gray-100 rounded-b-xl md:px-2 dark:bg-slate-700">
+            <div className="p-4 md:px-2 bg-accent-content rounded-lg">
               <div className="flex items-center">
                 {/* <div className="flex-shrink-0">
                   <img
@@ -493,10 +495,10 @@ export default function Home() {
                   />
                 </div> */}
                 <div className="grow ms-3">
-                  <p className="text-sm sm:text-base font-semibold text-gray-800 dark:text-gray-200">
+                  <p className="text-sm sm:text-base font-semibold text-neutral-content">
                     Sachin Ghosh
                   </p>
-                  <p className="text-xs text-gray-500 dark:text-gray-400">
+                  <p className="text-xs text-neutral-content">
                     Business Analyst | MastDealHai
                   </p>
                 </div>

@@ -7,12 +7,28 @@ import { BsArrowLeftCircle, BsArrowRightCircle } from 'react-icons/bs';
 import ContactForm from '@/app/components/ContactForm';
 import Link from 'next/link';
 
+
+
+async function generateMetadata({ params, searchParams }, parent) {
+  // read route params
+  const {slug } = params;
+ 
+  
+  const service = servicesData.services.find(service =>
+    decodeURIComponent(service.title) === decodeURIComponent(slug.replace(/-/g, ' '))
+  );
+ 
+  return {
+    title: `${service.title} | CC Tech`,
+    description: `${service.description}`,
+  }
+}
+
+
+
 export default function ServicePage({ params }){
    const { slug } = params;
    const [currentIndex, setCurrentIndex] = useState(0);
-
-
-
 
   const nextIndex = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % 3);
@@ -39,7 +55,9 @@ export default function ServicePage({ params }){
     return (
       <>
         <Head>
-          <title>{service.title}</title>
+          <title>{service.title} | CC Tech</title>
+          <meta name="description" content={service.description} />
+
         </Head>
         <div className="bg-base-200 py-10 " >
           <div className="mx-auto px-4  md:px-8 flex flex-wrap justify-center items-center">

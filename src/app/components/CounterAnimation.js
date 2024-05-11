@@ -68,7 +68,7 @@ function CounterAnimation() {
             Empowering businesses with technology, creative & strategic marketing solutions
           </h3>
           <p className="mt-4 max-w-7xl text-xl opacity-70 mx-auto">
-            As a best web development company india, our website design & digital marketing services have been delivered for more than 20+ projects. Our goal is to achieve your goals no matter how long it takes!
+            As a digital services provider, our website design & digital marketing services have been delivered for more than 20+ projects. Our goal is to achieve your goals no matter how long it takes!
           </p>
         </div>
         <div className="mt-10 grid gap-6 grid-cols-2 sm:gap-12 lg:grid-cols-3 lg:gap-8">

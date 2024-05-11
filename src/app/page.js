@@ -15,13 +15,7 @@ export default function Home() {
 
   return(
     <>
-    <Head>
-      <title>
 
-      </title>
-      
-
-    </Head>
     <section>
     <div className="min-h-screen relative overflow-hidden flex hero" >
     <img

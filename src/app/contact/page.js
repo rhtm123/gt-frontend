@@ -2,6 +2,7 @@
 import React from "react";
 import { useState } from "react";
 import ContactForm from "../components/ContactForm";
+import Head from "next/head";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -17,6 +18,14 @@ function Contact() {
   };
 
   return (
+    <>
+    <Head>
+      <title>
+        Contact us for IT & Digital Marketing Services | CC Tech
+      </title>
+      <meta name="description" content="CC Tech offers Website Development, Mobile App Development, Digital Marketing, Social Media Marketing and many more IT services. Contact Now!!" />
+
+    </Head>
     <div className="min-h-screen py-12">
       <div className="mx-auto px-4 md:px-8">
 
@@ -105,6 +114,7 @@ function Contact() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 export default Contact;

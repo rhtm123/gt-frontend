@@ -32,9 +32,11 @@ export default function Home() {
               Elevate Your Online Presence with Expert Website Development, Mobile App Creation, and Strategic Digital Marketing Solutions. Empower Your Brand with Our Seamless Integration of Design, Development, and Marketing Strategies.
               </h2>
               <div className="flex justify-left">
-                <button href="/services" className="btn btn-primary">
-                  <Link href="/services">View All Services</Link>
+              <Link href="/services">
+                <button className="btn btn-primary">
+                  View All Services
                 </button>
+                </Link>
               </div>
             </div>
             <div className="w-full md:w-5/12 px-4 md:py-4 py-12">

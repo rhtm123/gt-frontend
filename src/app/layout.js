@@ -7,7 +7,7 @@ import { ThemeProvider } from 'next-themes'
 
 
 export const metadata = {
-  title: "IT Services & Digital Marketing Services | CC Tech",
+  title: "IT & Digital Marketing Services | CC Tech",
   description: "CC Tech offers Website Development, Mobile App Development, Digital Marketing, Social Media Marketing and many more IT services. Contact Now!!",
 };
 

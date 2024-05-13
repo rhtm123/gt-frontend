@@ -54,11 +54,6 @@ export default function ServicePage({ params }){
   
     return (
       <>
-        <Head>
-          <title>{service.title} | CC Tech</title>
-          <meta name="description" content={service.description} />
-
-        </Head>
         <div className="bg-base-200 py-10 " >
           <div className="mx-auto px-4  md:px-8 flex flex-wrap justify-center items-center">
             <div className="w-full lg:w-1/2 px-4 flex flex-wrap justify-content-center">

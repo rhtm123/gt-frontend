@@ -79,7 +79,7 @@ function CounterAnimation() {
             <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500">
               <span ref={projectsCounterRef} className="counter">0</span>+
             </p>
-            <p className="mt-1 font-bold opacity-70">partner with CC Tech</p>
+            <p className="mt-1 font-bold opacity-70">partner with GrowTech Lab</p>
           </div>
           <div>
             <h4 className="text-lg sm:text-xl font-semibold">
@@ -88,7 +88,7 @@ function CounterAnimation() {
             <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500">
               <span ref={teamCounterRef} className="counter">0</span>+
             </p>
-            <p className="mt-1  font-bold opacity-70">working in CC Tech</p>
+            <p className="mt-1  font-bold opacity-70">working in GrowTech Lab</p>
           </div>
           <div>
             <h4 className="text-lg sm:text-xl font-semibold">

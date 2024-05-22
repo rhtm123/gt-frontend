@@ -24,7 +24,7 @@ export default function Services() {
     },
     {
       title: "Landing page designing",
-      description: "CC Tech expert team developed highly convertible & performance-optimized Landing pages for your PPC marketing campaigns to generate quality leads & drive your ROI upward.",
+      description: "GrowTech Lab expert team developed highly convertible & performance-optimized Landing pages for your PPC marketing campaigns to generate quality leads & drive your ROI upward.",
       imageUrl: "https://cdn.pixabay.com/photo/2020/11/09/06/33/website-5725733_1280.png",
     },
     {

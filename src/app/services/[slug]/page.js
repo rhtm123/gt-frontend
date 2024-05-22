@@ -19,7 +19,7 @@ async function generateMetadata({ params, searchParams }, parent) {
   );
  
   return {
-    title: `${service.title} | CC Tech`,
+    title: `${service.title} | GrowTech Lab`,
     description: `${service.description}`,
   }
 }
@@ -61,11 +61,11 @@ export default function ServicePage({ params }){
                 Trusted {service.title} Services In India
               </h1>
               <p className="text-left text-lg mb-8">{service.description}</p>
-              <div className="flex justify-left">
+              {/* <div className="flex justify-left">
                 <button className="btn btn-primary">
                   <Link href={"/contact"}>Request Quote</Link>
                 </button>
-              </div>
+              </div> */}
             </div>
             <div className="w-full lg:w-1/2 px-4">
               <div className='bg-base-300 p-8 rounded-lg'>

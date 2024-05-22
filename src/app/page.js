@@ -277,7 +277,7 @@ export default function Home() {
     {/* Grid */}
 
 
-    <h1 className="text-4xl py-8 font-bold">Projects by CC Tech</h1>
+    <h1 className="text-4xl py-8 font-bold">Projects by GrowTech Lab</h1>
 
     
     <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -418,7 +418,7 @@ export default function Home() {
           <div className="flex flex-col bg-accent-content bg-opacity-80 rounded-lg">
             <div className="flex-auto p-4 md:p-6">
               <p className="text-base italic md:text-lg text-neutral-content">
-              &quot;Working with CC Tech was a game-changer for our business. Their innovative IT solutions transformed our operations, and their dedicated team provided exceptional support every step of the way.&quot;
+              &quot;Working with GrowTech Lab was a game-changer for our business. Their innovative IT solutions transformed our operations, and their dedicated team provided exceptional support every step of the way.&quot;
               </p>
             </div>
             <div className="p-4 bg-accent-content md:px-2 rounded-lg">
@@ -448,7 +448,7 @@ export default function Home() {
           <div className="flex flex-col ">
             <div className="flex-auto p-4 md:p-6">
               <p className="text-base italic md:text-lg text-neutral-content">
-              {`"I can't recommend CC Tech enough! Their expertise in web development helped us launch a stunning website that exceeded all our expectations. Their attention to detail and commitment to excellence truly sets them apart."`}
+              {`"I can't recommend GrowTech Lab enough! Their expertise in web development helped us launch a stunning website that exceeded all our expectations. Their attention to detail and commitment to excellence truly sets them apart."`}
               </p>
             </div>
             <div className="p-4 bg-accent-content rounded-lg">
@@ -478,7 +478,7 @@ export default function Home() {
           <div className="flex flex-col bg-accent-content bg-opacity-80 rounded-lg">
             <div className="flex-auto p-4 md:p-6">
               <p className="text-base italic md:text-lg text-neutral-content">
-              {`"Partnering with CC Tech has been an absolute pleasure. Their proactive IT support has allowed us to focus on growing our business, knowing that our technology needs are in capable hands."`}
+              {`"Partnering with GrowTech Lab has been an absolute pleasure. Their proactive IT support has allowed us to focus on growing our business, knowing that our technology needs are in capable hands."`}
               </p>
             </div>
             <div className="p-4 md:px-2 bg-accent-content rounded-lg">

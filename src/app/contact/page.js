@@ -21,9 +21,9 @@ function Contact() {
     <>
     <Head>
       <title>
-        Contact us for IT & Digital Marketing Services | CC Tech
+        Contact us for IT & Digital Marketing Services | GrowTech Lab
       </title>
-      <meta name="description" content="CC Tech offers Website Development, Mobile App Development, Digital Marketing, Social Media Marketing and many more IT services. Contact Now!!" />
+      <meta name="description" content="GrowTech Lab offers Website Development, Mobile App Development, Digital Marketing, Social Media Marketing and many more IT services. Contact Now!!" />
 
     </Head>
     <div className="min-h-screen py-12">

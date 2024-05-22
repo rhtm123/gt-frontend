@@ -33,7 +33,7 @@ export async function POST(request) {
     `;
     try {
 
-        await sendEmail(["maurya.iitk@gmail.com","dhirusingh9271@gmail.com"], `${name} has contact from CC Tech`, htmlContent)
+        await sendEmail(["maurya.iitk@gmail.com","dhirusingh9271@gmail.com"], `${name} has contact from GrowTech Lab`, htmlContent)
         return NextResponse.json({ message: "Success: email was sent" })
 
     } catch (error) {

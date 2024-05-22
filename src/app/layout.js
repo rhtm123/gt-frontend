@@ -1,5 +1,5 @@
 import "./globals.css";
-import Navabar from "./components/Navbar";
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Providers from './components/ProgressBarProvider';
 
@@ -7,8 +7,8 @@ import { ThemeProvider } from 'next-themes'
 
 
 export const metadata = {
-  title: "IT & Digital Marketing Services | CC Tech",
-  description: "CC Tech offers Website Development, Mobile App Development, Digital Marketing, Social Media Marketing and many more IT services. Contact Now!!",
+  title: "IT & Digital Marketing Services | GrowTech Lab",
+  description: "GrowTech Lab offers Website Development, Mobile App Development, Digital Marketing, Social Media Marketing and many more IT services. Contact Now!!",
 };
 
 export default function RootLayout({ children }) {
@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       <ThemeProvider>
       <Providers>
 
-      <Navabar />
+      <Navbar />
 
       <main>
       {children}

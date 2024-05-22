@@ -12,7 +12,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
     );
    
     return {
-      title: `${service.title} | CC Tech`,
+      title: `${service.title} | GrowTech Lab`,
       description: `${service.description}`,
     }
   }

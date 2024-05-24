@@ -81,7 +81,7 @@ function Contact() {
                     />
                   </svg>
 
-                  <span className="mx-2">codingchaska.info@gmail.com</span>
+                  <span className="mx-2">growtechlab7@gmail.com</span>
               </p>
             </div>
             <div className="p-8 bg-base-300 rounded-lg shadow-md hover:scale-105 transition-transform duration-300 ease-in-out">
@@ -106,7 +106,7 @@ function Contact() {
                   </svg>
 
                   <span className="mx-2">
-                    005, Jay Vijay Nagar Building 3, Naigaon East
+                    005, Jay Vijay Nagar Building 3, Naigaon East, Vasai Virar, Mumbai, Maharashtra
                   </span>
               </p>
             </div>

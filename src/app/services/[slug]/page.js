@@ -74,22 +74,15 @@ export default function ServicePage({ params }){
             </div>
           </div>
         </div>
-        <div className="mx-auto flex flex-wrap px-4 md:px-4 py-16">
+        <div className="mx-auto flex flex-wrap px-4 md:px-4 py-16 items-center">
           <div className="w-full lg:w-1/2 px-4">
-            <h2 className="text-3xl font-bold mb-8">{service.subtitle}</h2>
-            <p className="text-lg mb-8">
-              {service.subdescription
-                .split(" ")
-                .slice(0, service.subdescription.split(" ").length / 2)
-                .join(" ")}
-            </p>
+            <img className='w-full rounded-lg' src={service.imageUrl} />
           </div>
           <div className="w-full lg:w-1/2 px-4">
-            <p className="text-lg mb-8">
-              {service.subdescription
-                .split(" ")
-                .slice(service.subdescription.split(" ").length / 2)
-                .join(" ")}
+          <h2 className="text-3xl font-bold mb-6">{service.subtitle}</h2>
+
+            <p className="text-lg">
+              {service.subdescription}
             </p>
           </div>
         </div>

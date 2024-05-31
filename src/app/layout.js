@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Providers from './components/ProgressBarProvider';
 
 import { ThemeProvider } from 'next-themes'
+import WhatsApp from "./components/WhatsApp";
 
 
 export const metadata = {
@@ -23,6 +24,8 @@ export default function RootLayout({ children }) {
 
       <main>
       {children}
+
+      <WhatsApp />
 
       </main>
 

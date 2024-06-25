@@ -108,6 +108,39 @@ export default function ContactForm() {
                       placeholder="Enter your contact number"
                     ></input>
                   </div>
+
+                  <div className="pt-2">
+                    <label
+                      className="block text-sm opacity-80 font-bold mb-2"
+                      htmlFor="contact"
+                    >
+                      Messsage
+                    </label>
+
+                    <textarea 
+                    required
+                    id="message"
+                    name="message"
+                    class="textarea w-full textarea-bordered"
+                    value={formData.message}
+                    onChange={handleChange}
+                     placeholder="Write your message: ">
+
+                    </textarea>
+
+
+                    {/* <input
+                      className="input w-full"
+                      id="contact"
+                      type="text"
+
+                      required
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      placeholder="Enter your contact number"
+                    ></input> */}
+                  </div>
                   
                   {!submitting &&<div className="pt-4">
                     <input onClick={handleSubmit} type="submit" className="btn btn-primary" />

@@ -29,7 +29,7 @@ export default function Home() {
               Empowering your digital success
               </h1>
               <h2 className="text-base-100 bg-base-content bg-opacity-50 py-2 px-4 text-xl mb-8">
-              Elevate Your Online Presence with Expert Website Development, Mobile App Creation, and Strategic Digital Marketing Solutions. Empower Your Brand with Our Seamless Integration of Design, Development, and Marketing Strategies.
+              Transform Your Online Presence with Expert Website Development, Mobile App Creation, and Strategic Digital Marketing Solutions. Empower Your Brand with Our Seamless Integration of Design, Development, and Marketing Strategies.
               </h2>
               <div className="flex justify-left">
               <Link href="/services">
@@ -68,7 +68,7 @@ export default function Home() {
           {/* <h3 className="box-border h-8 w-32 border-2 text-center font-semibold mb-4">Who We Are?</h3> */}
           <h1 className="text-4xl font-bold mb-8">Grow Your Business Online with Your Trusted IT Partner</h1>
             <p className="mb-8 font-semibold">
-            {`We're CC-Tech, a leading Mumbai-based IT solutions provider. We specialize in the design, development, and marketing of products or services. We help businesses of all sizes achieve their digital goals with a powerful combination of services`}
+            {`We're GrowTech Lab, a leading Mumbai-based IT solutions provider. We specialize in the design, development, and marketing of products or services. We help businesses of all sizes achieve their digital goals with a powerful combination of services`}
             </p>
                       <h3 className="box-border h-8 w-32 border-2 text-center font-semibold mb-4">Why Us?</h3>
 
@@ -402,11 +402,11 @@ export default function Home() {
 
   <>
   {/* Testimonials */}
-  <div id="testimonials" className="overflow-hidden bg-accent-content bg-opacity-50">
+  <div id="testimonials" className="overflow-hidden bg-accent-content bg-opacity-80">
     <div className="relative max-w-[85rem] px-4 py-10 sm:px-6 md:px-8 md:py-14 mx-auto">
       {/* Title */}
       <div className="max-w-2xl w-3/4 md:w-1/2 mb-6 sm:mb-10 md:mb-16">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
+        <h2 className="text-2xl text-neutral-content sm:text-3xl md:text-4xl font-semibold">
           Loved by business and individuals across the globe
         </h2>
       </div>
@@ -415,7 +415,7 @@ export default function Home() {
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
         {/* Card */}
         <div className="flex h-auto">
-          <div className="flex flex-col bg-accent-content bg-opacity-80 rounded-lg">
+          <div className="flex flex-col bg-accent-content border bg-opacity-80 rounded-lg">
             <div className="flex-auto p-4 md:p-6">
               <p className="text-base italic md:text-lg text-neutral-content">
               &quot;Working with GrowTech Lab was a game-changer for our business. Their innovative IT solutions transformed our operations, and their dedicated team provided exceptional support every step of the way.&quot;
@@ -444,15 +444,15 @@ export default function Home() {
         </div>
         {/* End Card */}
         {/* Card */}
-        <div className="flex h-auto bg-accent-content bg-opacity-80 rounded-lg">
+        <div className="flex h-auto bg-accent-content bg-opacity-80 border rounded-lg">
           <div className="flex flex-col ">
             <div className="flex-auto p-4 md:p-6">
               <p className="text-base italic md:text-lg text-neutral-content">
               {`"I can't recommend GrowTech Lab enough! Their expertise in web development helped us launch a stunning website that exceeded all our expectations. Their attention to detail and commitment to excellence truly sets them apart."`}
               </p>
             </div>
-            <div className="p-4 bg-accent-content rounded-lg">
-              <div className="flex items-center">
+            <div className="p-4 bg-accent-content bg-opacity-100 rounded-lg">
+              <div className="flex items-center ">
                 {/* <div className="flex-shrink-0">
                   <img
                     className="size-8 rounded-full sm:h-[2.875rem] sm:w-[2.875rem]"
@@ -475,7 +475,7 @@ export default function Home() {
         {/* End Card */}
         {/* Card */}
         <div className="flex h-auto ">
-          <div className="flex flex-col bg-accent-content bg-opacity-80 rounded-lg">
+          <div className="flex flex-col bg-accent-content bg-opacity-80 border rounded-lg">
             <div className="flex-auto p-4 md:p-6">
               <p className="text-base italic md:text-lg text-neutral-content">
               {`"Partnering with GrowTech Lab has been an absolute pleasure. Their proactive IT support has allowed us to focus on growing our business, knowing that our technology needs are in capable hands."`}

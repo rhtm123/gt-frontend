@@ -116,12 +116,11 @@ export default function Services() {
 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
         {/* Second Section: Web Design & Development Services */}
         <div className="lg:text-center">
-          <h2 className="text-secondary font-semibold tracking-wide uppercase">
+          <h2 className="text-primary font-semibold tracking-wide uppercase">
             Web Design & Development Services
           </h2>
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">
-            A digital storefront, built and customized to maximize your organic
-            traffic
+            Robust Web Development & Creative UI Designs
           </p>
           <p className="mt-4 max-w-7xl text-xl opacity-80 mx-auto">
             We offer strategic & performance-driven website design services be
@@ -172,7 +171,7 @@ export default function Services() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
-          <h2 className="text-secondary font-semibold tracking-wide uppercase">
+          <h2 className="text-primary font-semibold tracking-wide uppercase">
             Online Marketing Services
           </h2>
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">
@@ -232,7 +231,7 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* First Section: Designing Services */}
         <div className="lg:text-center">
-          <h2 className="text-secondary font-semibold tracking-wide uppercase">
+          <h2 className="text-primary font-semibold tracking-wide uppercase">
             Designing Services
           </h2>
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">

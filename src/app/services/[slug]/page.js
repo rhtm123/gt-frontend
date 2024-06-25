@@ -92,10 +92,10 @@ export default function ServicePage({ params }){
           <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
             {service.title}
           </h2>
-          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-400 sm:text-4xl">
+          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">
             {service.additionalData.subServicesInfo[0].title}
           </p>
-          <p className="mt-4 max-w-7xl text-xl text-gray-500 mx-auto">
+          <p className="mt-4 max-w-7xl text-xl mx-auto">
             {service.additionalData.subServicesInfo[0].description   }
           </p>
         </div>
@@ -126,10 +126,10 @@ export default function ServicePage({ params }){
           <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
           {service.additionalData.subServicesInfo[1].title}
           </h2>
-          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-400 sm:text-4xl">
+          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">
             {service.additionalData.technologyInfo[1].title}
           </p>
-          <p className="mt-4 max-w-7xl text-xl text-gray-500 mx-auto">
+          <p className="mt-4 max-w-7xl text-xl opacity-80 mx-auto">
             {service.additionalData.technologyInfo[1].description   }
           </p>
         </div>
@@ -159,10 +159,10 @@ export default function ServicePage({ params }){
           <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
           What Industries we serve?
           </h2>
-          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-400 sm:text-4xl">
+          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight opacity-90 sm:text-4xl">
           Industries we help to Grow
           </p>
-          <p className="mt-4 max-w-7xl text-xl text-gray-500 mx-auto">
+          <p className="mt-4 max-w-7xl text-xl mx-auto">
           Understand how we are helping the SMEs & Startup industries evolve, boost expertise & explore technologies.
           </p>
         </div>

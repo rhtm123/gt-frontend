@@ -10,6 +10,7 @@ export async function POST(request) {
     const name = formData?.name;
     const email = formData?.email;
     const mobile = formData?.mobile;
+    const message = formData?.message;
 
     const htmlContent = `
     <div style="font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333; padding: 20px;">
@@ -19,11 +20,12 @@ export async function POST(request) {
     <p>Hello,</p>
     <p>You have received a new message from your website:</p>
     <div style="background-color: #f9f9f9; padding: 10px; border-radius: 5px; margin-bottom: 20px;">
+        <p>Someone has contact us for IT Service or Digital Marketing Serivce.</p>
+
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Mobile:</strong> ${mobile}</p>
-        <p><strong>Message:</strong></p>
-        <p>Someone has contact us for IT Service or Digital Marketing Serivce.</p>
+        <p><strong>Message:</strong>${message}</p>
     </div>
     <p>Please respond to this message promptly.</p>
     <p>Best regards,<br>Coding Chaska Team</p>
@@ -32,8 +34,9 @@ export async function POST(request) {
 </div>
     `;
     try {
+        // console.log(name, email, mobile ,message);
 
-        await sendEmail(["maurya.iitk@gmail.com","dhirusingh9271@gmail.com"], `${name} has contact from GrowTech Lab`, htmlContent)
+        await sendEmail(["maurya.iitk@gmail.com","dhirusingh9271@gmail.com", "growtechlab7@gmail.com"], `${name} has contact from GrowTech Lab`, htmlContent)
         return NextResponse.json({ message: "Success: email was sent" })
 
     } catch (error) {

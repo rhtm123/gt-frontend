@@ -67,7 +67,7 @@ export default function ApnaBusiness(){
 <section className="bg-primary px-4 py-8 md:px-8 text-white">
   <div className="flex flex-col md:flex-row items-center text-center md:text-left">
     <div className="md:w-1/2">
-      <img src="https://pixabay.com/get/gc2005abaebba468d746d3401b681115f85f6fe3362f72b5a814fb8e4715a1fd380406dde3354168f576236e9ab0f4d4a_640.jpg" alt="Hero Image" className="w-full h-auto rounded-lg shadow-lg" />
+      <img src="/image/apna-website-hero.jpg" alt="Hero Image" className="w-full h-auto rounded-lg shadow-lg" />
     </div>
     <div className="md:w-1/2 mt-8 md:mt-0 md:ml-10">
       <h1 className="text-5xl font-bold mb-4">Apna Business Apna Website</h1>
@@ -204,12 +204,12 @@ export default function ApnaBusiness(){
       {/* <Link href="/contact" className="btn btn-primary">Contact Us</Link> */}
 
     </div>
-    <div class="text-center p-6 bg-base-100 rounded-lg flex flex-col justify-between">  
+    <div className="text-center p-6 bg-base-100 rounded-lg flex flex-col justify-between">  
       <div className="pb-4">
-      <h3 class="text-2xl font-bold mb-2">Premium</h3>
-      <p class="mb-4">For established businesses.</p>
-      <p class="text-3xl font-bold mb-4">Contact us for price*</p>
-      <ul class="text-left opacity-95">
+      <h3 className="text-2xl font-bold mb-2">Premium</h3>
+      <p className="mb-4">For established businesses.</p>
+      <p className="text-3xl font-bold mb-4">Contact us for price*</p>
+      <ul className="text-left opacity-95">
         <li>Advanced features</li>
         <li>Premium support</li>
       </ul>

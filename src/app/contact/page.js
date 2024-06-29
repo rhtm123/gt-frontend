@@ -61,7 +61,7 @@ function Contact() {
                     />
                   </svg>
 
-                  <span className="mx-2 ">9518-90-1902 </span>
+                  <span className="mx-2 ">9518-90-1902 / 9370-39-4747</span>
               </p>
             </div>
             <div className="bg-base-300 p-8 rounded-lg shadow-md hover:scale-105 transition-transform duration-300 ease-in-out">

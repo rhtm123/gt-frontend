@@ -2,19 +2,31 @@
 
 import Link from "next/link";
 import { useTheme } from 'next-themes'
-
+import React from "react";
 
 
 export default function Footer(){
 
+
+
   const { theme, setTheme } = useTheme()
 
-
+  React.useEffect(() => {
+    const script = document.createElement('script');
+  
+    script.src = "/js/gt.js";
+    script.async = true;
+  
+    document.body.appendChild(script);
+  
+    return () => {
+      document.body.removeChild(script);
+    }
+  }, []);
 
     return(
       <footer className="footer gap-y-4 footer-center p-10 bg-base-300 text-base-content rounded">
 
-      
       <div className='py-0 flex'>
             <span>Select Theme: </span>
             <select className="select select-sm" value={theme} onChange={e => setTheme(e.target.value)}>

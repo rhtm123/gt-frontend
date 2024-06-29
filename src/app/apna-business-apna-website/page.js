@@ -107,7 +107,7 @@ export default function ApnaBusiness(){
         <CgWebsite className="text-primary w-12 h-12" />
       </div>
       <h3 className="text-2xl font-bold mb-2">Custom Design</h3>
-      <p className="opacity-90">Stand out with a website design that's uniquely yours.</p>
+      <p className="opacity-90">{`Stand out with a website design that's uniquely yours.`}</p>
     </div>
     <div className="text-center p-6 bg-base-200 hover:bg-base-300 transition duration-300 rounded-lg">
     <div className="mb-4 flex justify-center">
@@ -128,7 +128,7 @@ export default function ApnaBusiness(){
         <RiSeoLine className="text-primary w-12 h-12" />
       </div>
       <h3 className="text-2xl font-bold mb-2">SEO Friendly</h3>
-      <p className="opacity-90">Boost your website's visibility with our SEO-friendly features and practices.</p>
+      <p className="opacity-90">{`Boost your website's visibility with our SEO-friendly features and practices.`}</p>
     </div>
   </div>
 </section>

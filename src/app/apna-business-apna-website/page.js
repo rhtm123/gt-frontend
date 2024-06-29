@@ -82,8 +82,8 @@ export default function ApnaBusiness(){
 </section>
 
 <section className="mx-4 py-16 md:mx-8">
-  <h2 className="text-4xl font-bold mb-6 text-center">Features</h2>
-  <p className="text-xl text-center opacity-90 mb-6">Explore the powerful features that make our service unique and efficient.</p>
+  <h2 className="text-4xl font-bold mb-4 text-center">Features</h2>
+  <p className="text-xl text-center opacity-90 mb-8">Explore the powerful features that make our service unique and efficient.</p>
   <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
     <div className="text-center p-6 bg-base-200 hover:bg-base-300 transition duration-300 rounded-lg">
       <div className="mb-4 flex justify-center" >
@@ -134,12 +134,12 @@ export default function ApnaBusiness(){
 
 
 <section className="px-4 md:px-8 py-12 bg-gradient-to-r from-primary to-secondary  rounded-lg">
-  <h2 className="text-4xl font-bold text-base-100 mb-6 text-center">Pricing</h2>
-  <p className="text-xl text-center text-base-200 mb-6">Choose a plan that fits your needs and budget.</p>
+  <h2 className="text-4xl font-bold text-base-100 mb-4 text-center">Pricing</h2>
+  <p className="text-xl text-center text-base-200 mb-8">Choose a plan that fits your needs and budget.</p>
 
   <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-    <div className="text-center p-6 bg-base-100 rounded-lg flex flex-col justify-between">
-      <div className="pb-4">
+    <div className="p-6 bg-base-100 rounded-lg flex flex-col justify-between">
+      <div className="pb-4 text-center">
       <h3 className="text-2xl font-bold mb-2">Starter</h3>
       <p className="opacity-90 mb-4">Ideal for beginners.</p>
       <p className="text-3xl font-bold mb-4">₹2,499</p>
@@ -151,15 +151,19 @@ export default function ApnaBusiness(){
         <li>1st year domain name</li>
         <li>1st year hosting</li>
         <li>24/7 support</li>
+
       </ul>
       </div>
-      <button className="btn btn-primary" onClick={()=>showModal("Starter")}>Choose Now</button>
+      <div>
+        <p className="pb-2 font-semibold">*No hidden charges</p>
+        <button className="btn btn-primary w-full" onClick={()=>showModal("Starter")}>Choose Now</button>
+      </div>
 
       {/* <Link href="/contact" className="btn btn-primary">Contact Us</Link> */}
 
     </div>
-    <div className="text-center p-6 bg-base-100 rounded-lg flex flex-col justify-between">
-      <div className="pb-4">
+    <div className=" p-6 bg-base-100 rounded-lg flex flex-col justify-between">
+      <div className="text-center pb-4">
       <h3 className="text-2xl font-bold mb-2">Basic</h3>
       <p className="mb-4">Perfect for starting out.</p>
       <p className="text-3xl font-bold mb-4">₹4,499</p>
@@ -174,13 +178,17 @@ export default function ApnaBusiness(){
       </ul>
 
       </div>
-      <button className="btn btn-primary" onClick={()=>showModal("Basic")}>Choose Now</button>
+
+      <div>
+        <p className="pb-2 font-semibold">*No hidden charges</p>
+        <button className="btn btn-primary w-full" onClick={()=>showModal("Basic")}>Choose Now</button>
+      </div>
 
       {/* <Link href="/contact" className="btn btn-primary">Contact Us</Link> */}
 
     </div>
-    <div className="text-center p-6 bg-base-100 rounded-lg flex flex-col justify-between">
-      <div className="pb-4">
+    <div className="p-6 bg-base-100 rounded-lg flex flex-col justify-between">
+      <div className="pb-4 text-center ">
       <h3 className="text-2xl font-bold mb-2">Standard</h3>
       <p className="mb-4">For growing businesses.</p>
       <p className="text-3xl font-bold mb-4">₹19,499</p>
@@ -197,7 +205,11 @@ export default function ApnaBusiness(){
       </ul>
       </div>
 
-      <button className="btn btn-primary" onClick={()=>showModal("Standard")}>Choose Now</button>
+      <div>
+        <p className="pb-2 font-semibold">*No hidden charges</p>
+        <button className="btn btn-primary w-full" onClick={()=>showModal("Standard")}>Choose Now</button>
+      </div>
+
 
       {/* <Link href="/contact" className="btn btn-primary">Contact Us</Link> */}
 

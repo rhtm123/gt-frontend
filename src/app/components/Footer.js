@@ -12,7 +12,7 @@ export default function Footer(){
 
 
     return(
-      <footer className="footer gap-y-4 footer-center p-10 bg-base-200 text-base-content rounded">
+      <footer className="footer gap-y-4 footer-center p-10 bg-base-300 text-base-content rounded">
 
       
       <div className='py-0 flex'>
@@ -29,6 +29,8 @@ export default function Footer(){
         <a className="link link-hover">Jobs</a>
         <a className="link link-hover">Press kit</a> */}
         <Link href="/services" className="link link-hover">Services</Link>
+        <Link href="/apna-business-apna-website" className="link link-hover">Apna Website</Link>
+
         <Link href="/contact" className="link link-hover">Contact Us</Link>
         <Link href="/privacy-policy" className="link link-hover">Privacy Policy</Link>
 

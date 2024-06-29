@@ -20,7 +20,7 @@ export async function POST(request) {
     <p>Hello,</p>
     <p>You have received a new message from your website:</p>
     <div style="background-color: #f9f9f9; padding: 10px; border-radius: 5px; margin-bottom: 20px;">
-        <p>Someone has contact us for IT Service or Digital Marketing Serivce.</p>
+        <p>Someone has contacted us for IT Services</p>
 
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>

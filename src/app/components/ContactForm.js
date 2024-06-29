@@ -47,7 +47,7 @@ export default function ContactForm() {
 
     return (
 
-        <form >
+        <form onSubmit={handleSubmit}>
                 <h2 className="text-3xl font-bold mb-2">Get a Free Quote</h2>
                 
                   <div className="pt-2">
@@ -142,18 +142,20 @@ export default function ContactForm() {
                     ></input> */}
                   </div>
                   
-                  {!submitting &&<div className="pt-4">
-                    <input onClick={handleSubmit} type="submit" className="btn btn-primary" />
-                  </div>}
+                  {!submitting && (
+                      <div className="pt-4">
+                        <input type="submit" className="btn btn-primary" />
+                      </div>
+                    )}
 
-                  {submitting && <div className="pt-4">
-                    <button className="btn">
-                      <span className="loading loading-spinner"></span>
-                      loading
-                    </button>
-                  </div>
-
-                  }
+                    {submitting && (
+                      <div className="pt-4">
+                        <button className="btn">
+                          <span className="loading loading-spinner"></span>
+                          loading
+                        </button>
+                      </div>
+                    )}
 
 
               </form>

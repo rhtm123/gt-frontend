@@ -20,10 +20,7 @@ export default function ApnaBusiness(){
     const [formData, setFormData] = React.useState({});
     const [submitting , setSubmitting] = React.useState(false);
     const [submitted, setSubmitted] = React.useState(false);
-  
 
-
-    
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -57,6 +54,7 @@ export default function ApnaBusiness(){
 
 
     const showModal = (selected) => {
+      setSubmitted(false);
       setSelected(selected);
       document.getElementById('my_modal_2').showModal()
     }
@@ -148,9 +146,9 @@ export default function ApnaBusiness(){
       <ul className="text-left opacity-90">
         <li>1 Landing Page</li>
         <li>Built with React+Tailwind</li>
-        <li>SEO friendly Page</li>
-        <li>Responsive Designing</li>
-        <li>1st Year domain name</li>
+        <li>SEO friendly page</li>
+        <li>Responsive designing</li>
+        <li>1st year domain name</li>
         <li>1st year hosting</li>
         <li>24/7 support</li>
       </ul>
@@ -166,11 +164,11 @@ export default function ApnaBusiness(){
       <p className="mb-4">Perfect for starting out.</p>
       <p className="text-3xl font-bold mb-4">₹4,499</p>
       <ul className="text-left">
-        <li>5 static Pages</li>
+        <li>5 static pages</li>
         <li>Built with React+Tailwind</li>
-        <li>SEO friendly Page</li>
-        <li>Responsive Designing</li>
-        <li>1st Year domain name</li>
+        <li>SEO friendly page</li>
+        <li>Responsive designing</li>
+        <li>1st year domain name</li>
         <li>1st year hosting</li>
         <li>24/7 support</li>
       </ul>
@@ -187,14 +185,14 @@ export default function ApnaBusiness(){
       <p className="mb-4">For growing businesses.</p>
       <p className="text-3xl font-bold mb-4">₹19,499</p>
       <ul className="text-left">
-        <li>5 static Pages</li>
+        <li>5 static pages</li>
         <li>Built with React+Tailwind</li>
-        <li>SEO friendly Page</li>
-        <li>Responsive Designing</li>
-        <li>1st Year domain name</li>
+        <li>SEO friendly page</li>
+        <li>Responsive designing</li>
+        <li>1st year domain name</li>
         <li>1st year hosting</li>
-        <li>Unlimited page Creation [WYSIWYG editor]</li>
-        <li>Unlimited Blogs Creation [WYSIWYG editor]</li>
+        <li>Unlimited page creation [WYSIWYG editor]</li>
+        <li>Unlimited blogs creation [WYSIWYG editor]</li>
         <li>24/7 support</li>
       </ul>
       </div>

@@ -5,6 +5,8 @@ import { LuClock } from "react-icons/lu";
 
 import { CgWebsite } from "react-icons/cg";
 import { RiReactjsFill } from "react-icons/ri";
+import { FaRegCheckCircle } from "react-icons/fa";
+
 
 import { BiLeaf } from "react-icons/bi";
 
@@ -144,13 +146,13 @@ export default function ApnaBusiness(){
       <p className="opacity-90 mb-4">Ideal for beginners.</p>
       <p className="text-3xl font-bold mb-4">₹2,499</p>
       <ul className="text-left opacity-90">
-        <li>1 Landing Page</li>
-        <li>Built with React+Tailwind</li>
-        <li>SEO friendly page</li>
-        <li>Responsive designing</li>
-        <li>1st year domain name</li>
-        <li>1st year hosting</li>
-        <li>24/7 support</li>
+        <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />1 Landing Page</li>
+        <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />Built with React+Tailwind</li>
+        <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />SEO friendly page</li>
+        <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />Responsive designing</li>
+        <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />1st year domain name</li>
+        <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />1st year hosting</li>
+        <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />24/7 support</li>
 
       </ul>
       </div>
@@ -168,13 +170,13 @@ export default function ApnaBusiness(){
       <p className="mb-4">Perfect for starting out.</p>
       <p className="text-3xl font-bold mb-4">₹4,499</p>
       <ul className="text-left">
-        <li>5 static pages</li>
-        <li>Built with React+Tailwind</li>
-        <li>SEO friendly page</li>
-        <li>Responsive designing</li>
-        <li>1st year domain name</li>
-        <li>1st year hosting</li>
-        <li>24/7 support</li>
+        <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />5 static pages</li>
+        <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />Built with React+Tailwind</li>
+        <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />SEO friendly page</li>
+        <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />Responsive designing</li>
+        <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />1st year domain name</li>
+        <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />1st year hosting</li>
+        <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />24/7 support</li>
       </ul>
 
       </div>
@@ -193,15 +195,15 @@ export default function ApnaBusiness(){
       <p className="mb-4">For growing businesses.</p>
       <p className="text-3xl font-bold mb-4">₹19,499</p>
       <ul className="text-left">
-        <li>5 static pages</li>
-        <li>Built with React+Tailwind</li>
-        <li>SEO friendly page</li>
-        <li>Responsive designing</li>
-        <li>1st year domain name</li>
-        <li>1st year hosting</li>
-        <li>Unlimited page creation [WYSIWYG editor]</li>
-        <li>Unlimited blogs creation [WYSIWYG editor]</li>
-        <li>24/7 support</li>
+        <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />5 static pages</li>
+        <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />Built with React+Tailwind</li>
+        <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />SEO friendly page</li>
+        <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />Responsive designing</li>
+        <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />1st year domain name</li>
+        <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />1st year hosting</li>
+        <li className="flex items-center"><FaRegCheckCircle className="text-success w-6 h-6 mr-2" />Unlimited page creation [WYSIWYG editor]</li>
+        <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-6 h-6" />Unlimited blogs creation [WYSIWYG editor]</li>
+        <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />24/7 support</li>
       </ul>
       </div>
 
@@ -218,10 +220,10 @@ export default function ApnaBusiness(){
       <div className="pb-4">
       <h3 className="text-2xl font-bold mb-2">Premium</h3>
       <p className="mb-4">For established businesses.</p>
-      <p className="text-3xl font-bold mb-4">Contact us for price*</p>
+      <p className="text-3xl font-bold mb-4">Contact us*</p>
       <ul className="text-left opacity-95">
-        <li>Advanced features</li>
-        <li>Premium support</li>
+        <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />Advanced features</li>
+        <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />Premium support</li>
       </ul>
       </div>
       <button className="btn btn-primary" onClick={()=>showModal("Premium")}>Choose Now</button>

@@ -193,7 +193,7 @@ export default function ApnaBusiness(){
       <div className="pb-4 text-center ">
       <h3 className="text-2xl font-bold mb-2">Standard</h3>
       <p className="mb-4">For growing businesses.</p>
-      <p className="text-3xl font-bold mb-4">₹19,499</p>
+      <p className="text-3xl font-bold mb-4">₹14,499</p>
       <ul className="text-left">
         <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />5 static pages</li>
         <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />Built with React+Tailwind</li>
@@ -201,7 +201,6 @@ export default function ApnaBusiness(){
         <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />Responsive designing</li>
         <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />1st year domain name</li>
         <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />1st year hosting</li>
-        <li className="flex items-center"><FaRegCheckCircle className="text-success w-6 h-6 mr-2" />Unlimited page creation [WYSIWYG editor]</li>
         <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-6 h-6" />Unlimited blogs creation [WYSIWYG editor]</li>
         <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />24/7 support</li>
       </ul>

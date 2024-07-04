@@ -5,6 +5,7 @@ import Providers from './components/ProgressBarProvider';
 
 import { ThemeProvider } from 'next-themes'
 import WhatsApp from "./components/WhatsApp";
+import Script from "next/script";
 
 
 export const metadata = {

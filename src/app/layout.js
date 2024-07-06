@@ -1,12 +1,13 @@
 import "./globals.css";
+import 'aos/dist/aos.css';
+
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Providers from './components/ProgressBarProvider';
 
 import { ThemeProvider } from 'next-themes'
 import WhatsApp from "./components/WhatsApp";
-import Script from "next/script";
-
+import Script from 'next/script';
 
 export const metadata = {
   title: "IT & Digital Marketing Services | GrowTech Lab",
@@ -14,6 +15,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
   return (
     <html  suppressHydrationWarning lang="en">
 
@@ -37,7 +39,7 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
-      
+
 
       <body>
       <ThemeProvider>

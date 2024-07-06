@@ -121,7 +121,7 @@ export default function ContactForm() {
                     required
                     id="message"
                     name="message"
-                    class="textarea w-full textarea-bordered"
+                    className="textarea w-full textarea-bordered"
                     value={formData.message}
                     onChange={handleChange}
                      placeholder="Write your message: ">

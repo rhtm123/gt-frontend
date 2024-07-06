@@ -4,18 +4,14 @@ import { GrTechnology } from "react-icons/gr";
 import { TfiWrite } from "react-icons/tfi";
 import { LuBuilding } from "react-icons/lu";
 import Link from "next/link";
-import Head from "next/head";
+// import Head from "next/head";
 import ContactForm from "./components/ContactForm";
-import CounterAnimation from "./components/CounterAnimation"
-
-
+import CounterAnimation from "./components/CounterAnimation";
 
 
 export default function Home() {
-
   return(
     <>
-
     <section>
     <div className="min-h-screen relative overflow-hidden flex hero" >
     <img

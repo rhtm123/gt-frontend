@@ -15,8 +15,19 @@ import Link from "next/link";
 import React from "react";
 import { myFetch } from "@/utils/myFetch";
 
+import AOS from 'aos';
+import { useEffect } from "react";
+
 
 export default function ApnaBusiness(){
+
+    useEffect(() => {
+      AOS.init({
+          duration: 600,
+          once: false,
+      })
+    }, [])
+
 
     const [selected, setSelected] = React.useState("");
     const [formData, setFormData] = React.useState({});
@@ -67,16 +78,16 @@ export default function ApnaBusiness(){
 <section className="bg-primary px-4 py-8 md:px-8 text-white">
   <div className="flex flex-col md:flex-row items-center text-center md:text-left">
     <div className="md:w-1/2">
-      <img src="/image/apna-website-hero.jpg" alt="Hero Image" className="w-full h-auto rounded-lg shadow-lg" />
+      <img data-aos="zoom-in-up" src="/image/apna-website-hero.jpg" alt="Hero Image" className="w-full h-auto rounded-lg shadow-lg" />
     </div>
     <div className="md:w-1/2 mt-8 md:mt-0 md:ml-10">
-      <h1 className="text-5xl font-bold mb-4">Apna Business Apna Website</h1>
-      <p className="text-xl mb-8">Get your own website to boost your business. We provide the best solutions for creating a professional and effective online presence.</p>
+      <h1 data-aos="fade" className="text-5xl font-bold mb-4">Apna Business Apna Website</h1>
+      <p data-aos="fade" className="text-xl mb-8">Get your own website to boost your business. We provide the best solutions for creating a professional and effective online presence.</p>
       
-      <a href="https://wa.me/+919518901902" target="_blank" rel="noopener noreferrer" className="btn mr-2">
+      <a data-aos="flip-left" href="https://wa.me/+919518901902" target="_blank" rel="noopener noreferrer" className="btn mr-2">
         WhatsApp
       </a>
-      <a href="tel:+919518901902" className="btn">
+      <a data-aos="flip-right" href="tel:+919518901902" className="btn">
         Call Us
       </a>
     </div>
@@ -87,14 +98,14 @@ export default function ApnaBusiness(){
   <h2 className="text-4xl font-bold mb-4 text-center">Features</h2>
   <p className="text-xl text-center opacity-90 mb-8">Explore the powerful features that make our service unique and efficient.</p>
   <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-    <div className="text-center p-6 bg-base-200 hover:bg-base-300 transition duration-300 rounded-lg">
+    <div className="text-center p-6 bg-base-200 hover:bg-base-300 transition duration-300 rounded-lg" data-aos="fade-up">
       <div className="mb-4 flex justify-center" >
         <BiSupport className="text-primary w-12 h-12" />
       </div>
       <h3 className="text-2xl font-bold mb-2">24/7 Support</h3>
       <p className="opacity-90">Get round-the-clock support to ensure your website is always up and running.</p>
     </div>
-    <div className="text-center p-6 bg-base-200 hover:bg-base-300 transition duration-300 rounded-lg">
+    <div className="text-center p-6 bg-base-200 hover:bg-base-300 transition duration-300 rounded-lg" data-aos="fade-up">
       <div className="mb-4 flex justify-center">
         <LuClock className="text-primary w-12 h-12" />
         
@@ -102,28 +113,28 @@ export default function ApnaBusiness(){
       <h3 className="text-2xl font-bold mb-2">Fast Setup</h3>
       <p className="opacity-90">Launch your website quickly with our streamlined setup process.</p>
     </div>
-    <div className="text-center p-6 bg-base-200 hover:bg-base-300 transition duration-300 rounded-lg">
+    <div className="text-center p-6 bg-base-200 hover:bg-base-300 transition duration-300 rounded-lg" data-aos="fade-up">
       <div className="mb-4 flex justify-center">
         <CgWebsite className="text-primary w-12 h-12" />
       </div>
       <h3 className="text-2xl font-bold mb-2">Custom Design</h3>
       <p className="opacity-90">{`Stand out with a website design that's uniquely yours.`}</p>
     </div>
-    <div className="text-center p-6 bg-base-200 hover:bg-base-300 transition duration-300 rounded-lg">
+    <div className="text-center p-6 bg-base-200 hover:bg-base-300 transition duration-300 rounded-lg" data-aos="fade-up">
     <div className="mb-4 flex justify-center">
         <RiReactjsFill className="text-primary w-12 h-12" />
       </div>
       <h3 className="text-2xl font-bold mb-2">React & Tailwind</h3>
       <p className="opacity-90">Built with modern technologies for optimal performance and customization.</p>
     </div>
-    <div className="text-center p-6 bg-base-200 hover:bg-base-300 transition duration-300 rounded-lg">
+    <div className="text-center p-6 bg-base-200 hover:bg-base-300 transition duration-300 rounded-lg" data-aos="fade-up">
     <div className="mb-4 flex justify-center">
         <BiLeaf className="text-primary w-12 h-12" />
       </div>
       <h3 className="text-2xl font-bold mb-2">Lightweight Pages</h3>
       <p className="opacity-90">Enjoy faster load times with our optimized and lightweight page designs.</p>
     </div>
-    <div className="text-center p-6 bg-base-200 hover:bg-base-300 transition duration-300 rounded-lg">
+    <div className="text-center p-6 bg-base-200 hover:bg-base-300 transition duration-300 rounded-lg" data-aos="fade-up">
     <div className="mb-4 flex justify-center">
         <RiSeoLine className="text-primary w-12 h-12" />
       </div>
@@ -140,7 +151,7 @@ export default function ApnaBusiness(){
   <p className="text-xl text-center text-base-200 mb-8">Choose a plan that fits your needs and budget.</p>
 
   <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-    <div className="p-6 bg-base-100 rounded-lg flex flex-col justify-between">
+    <div data-aos="fade" data-aos-duration="400" className="p-6 bg-base-100 rounded-lg flex flex-col justify-between">
       <div className="pb-4 text-center">
       <h3 className="text-2xl font-bold mb-2">Starter</h3>
       <p className="opacity-90 mb-4">Ideal for beginners.</p>
@@ -158,13 +169,13 @@ export default function ApnaBusiness(){
       </div>
       <div>
         <p className="pb-2 font-semibold">*No hidden charges</p>
-        <button className="btn btn-primary w-full" onClick={()=>showModal("Starter")}>Choose Now</button>
+        <button data-aos="flip-up" className="btn btn-primary w-full" onClick={()=>showModal("Starter")}>Choose Now</button>
       </div>
 
       {/* <Link href="/contact" className="btn btn-primary">Contact Us</Link> */}
 
     </div>
-    <div className=" p-6 bg-base-100 rounded-lg flex flex-col justify-between">
+    <div data-aos="fade" data-aos-duration="800" className=" p-6 bg-base-100 rounded-lg flex flex-col justify-between">
       <div className="text-center pb-4">
       <h3 className="text-2xl font-bold mb-2">Basic</h3>
       <p className="mb-4">Perfect for starting out.</p>
@@ -183,13 +194,13 @@ export default function ApnaBusiness(){
 
       <div>
         <p className="pb-2 font-semibold">*No hidden charges</p>
-        <button className="btn btn-primary w-full" onClick={()=>showModal("Basic")}>Choose Now</button>
+        <button data-aos="flip-up" className="btn btn-primary w-full" onClick={()=>showModal("Basic")}>Choose Now</button>
       </div>
 
       {/* <Link href="/contact" className="btn btn-primary">Contact Us</Link> */}
 
     </div>
-    <div className="p-6 bg-base-100 rounded-lg flex flex-col justify-between">
+    <div data-aos="fade" data-aos-duration="1200" className="p-6 bg-base-100 rounded-lg flex flex-col justify-between">
       <div className="pb-4 text-center ">
       <h3 className="text-2xl font-bold mb-2">Standard</h3>
       <p className="mb-4">For growing businesses.</p>
@@ -208,14 +219,14 @@ export default function ApnaBusiness(){
 
       <div>
         <p className="pb-2 font-semibold">*No hidden charges</p>
-        <button className="btn btn-primary w-full" onClick={()=>showModal("Standard")}>Choose Now</button>
+        <button data-aos="flip-up" className="btn btn-primary w-full" onClick={()=>showModal("Standard")}>Choose Now</button>
       </div>
 
 
       {/* <Link href="/contact" className="btn btn-primary">Contact Us</Link> */}
 
     </div>
-    <div className="text-center p-6 bg-base-100 rounded-lg flex flex-col justify-between">  
+    <div data-aos="fade" data-aos-duration="1600" className="text-center p-6 bg-base-100 rounded-lg flex flex-col justify-between">  
       <div className="pb-4">
       <h3 className="text-2xl font-bold mb-2">Premium</h3>
       <p className="mb-4">For established businesses.</p>
@@ -225,7 +236,7 @@ export default function ApnaBusiness(){
         <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />Premium support</li>
       </ul>
       </div>
-      <button className="btn btn-primary" onClick={()=>showModal("Premium")}>Choose Now</button>
+      <button data-aos="flip-up" className="btn btn-primary" onClick={()=>showModal("Premium")}>Choose Now</button>
 
       {/* <Link href="/contact" className="btn btn-primary">Contact Us</Link> */}
 
@@ -340,7 +351,7 @@ export default function ApnaBusiness(){
     <h2 className="text-4xl font-bold mb-6">What are you waiting for?</h2>
     <p className="text-xl mb-8">Contact us today and start your journey towards a successful online presence.</p>
 
-    <Link href="/contact" className="btn btn-primary">Contact Us</Link>
+    <Link data-aos="flip-up" href="/contact" className="btn btn-primary">Contact Us</Link>
   </div>
 </section>
 

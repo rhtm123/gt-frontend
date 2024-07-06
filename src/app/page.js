@@ -9,10 +9,21 @@ import ContactForm from "./components/ContactForm";
 import CounterAnimation from "./components/CounterAnimation";
 
 
+import AOS from 'aos';
+import { useEffect } from "react";
+
 export default function Home() {
+
+  useEffect(() => {
+    AOS.init({
+        duration: 600,
+        once: false,
+    })
+  }, [])
+
   return(
     <>
-    <section>
+    <section data-aos="fade">
     <div className="min-h-screen relative overflow-hidden flex hero" >
     <img
             src="https://cdn.pixabay.com/photo/2016/12/01/13/10/lightbulb-1875247_1280.jpg"
@@ -28,7 +39,7 @@ export default function Home() {
               Transform Your Online Presence with Expert Website Development, Mobile App Creation, and Strategic Digital Marketing Solutions. Empower Your Brand with Our Seamless Integration of Design, Development, and Marketing Strategies.
               </h2>
               <div className="flex justify-left">
-              <Link href="/services">
+              <Link data-aos="flip-right" href="/services">
                 <button className="btn btn-primary">
                   View All Services
                 </button>
@@ -45,13 +56,13 @@ export default function Home() {
 
 
     </section>
-    <section className="bg-gradient-to-r from-primary to-secondary overflow-hidden   px-4 py-16 md:px-8 text-white">
+    <section data-aos="fade" className="bg-gradient-to-r from-primary to-secondary overflow-hidden   px-4 py-16 md:px-8 text-white">
   <div className="flex flex-col md:flex-row items-center text-center md:text-left">
     <div className="md:w-1/2 mt-8 md:mt-0 md:ml-10">
       <h1 className="text-5xl font-bold mb-4">Apna Business Apna Website</h1>
       <p className="text-xl mb-8">Get your own website to boost your business. We provide the best solutions for creating a professional and effective online presence.</p>
       <div className="flex justify-right">
-              <Link href="/apna-business-apna-website">
+              <Link data-aos="flip-right" href="/apna-business-apna-website">
                 <button className="btn  ">
                   Know More
                 </button>
@@ -60,17 +71,17 @@ export default function Home() {
     </div>
 
 
-    <div className="md:w-1/2">
+    <div data-aos="fade" className="md:w-1/2">
       <img src="/image/apna-website-hero.jpg" alt="Hero Image" className="w-full h-auto rounded-lg shadow-lg" />
     </div>
   </div>
 </section>
 
-  <section>
+  <section data-aos="fade">
     <div  className="min-h-screen relative overflow-hidden">
   <div className="mx-auto flex flex-wrap px-4 md:px-8 py-16">
           <div className="w-full md:w-1/2 px-4">
-          <img
+          <img data-aos="fade"
             src="/section-2.png"
             alt="Technology"
             className=""
@@ -104,7 +115,7 @@ export default function Home() {
         </div>
   </section>
       
-<div className="bg-gradient-to-r from-primary to-secondary overflow-hidden">
+<div data-aos="fade" className="bg-gradient-to-r from-primary to-secondary overflow-hidden">
   <div id="whyus" className="max-w-[85rem] px-4 py-10 sm:px-6 md:px-8 md:py-14 mx-auto">
     {/* <div>
       <img
@@ -127,7 +138,7 @@ export default function Home() {
       <div className="md:col-span-2">
         <div className="grid sm:grid-cols-2 gap-8 md:gap-8">
           {/* Icon Block */}
-          <div className="flex bg-base-200 rounded-lg p-4 gap-x-5">
+          <div data-aos="flip-right" className="flex bg-base-200 rounded-lg p-4 gap-x-5">
             <svg
               className="flex-shrink-0 mt-1 size-6 text-secondary"
               xmlns="http://www.w3.org/2000/svg"
@@ -158,7 +169,7 @@ export default function Home() {
           </div>
           {/* End Icon Block */}
           {/* Icon Block */}
-          <div className="flex gap-x-5 bg-base-200 rounded-lg p-4">
+          <div data-aos="flip-right" className="flex gap-x-5 bg-base-200 rounded-lg p-4">
             <svg
               className="flex-shrink-0 mt-1 size-6 text-secondary"
               xmlns="http://www.w3.org/2000/svg"
@@ -185,7 +196,7 @@ export default function Home() {
           </div>
           {/* End Icon Block */}
           {/* Icon Block */}
-          <div className="flex gap-x-5 bg-base-200 rounded-lg p-4">
+          <div data-aos="flip-right" className="flex gap-x-5 bg-base-200 rounded-lg p-4">
             <svg
               className="flex-shrink-0 mt-1 size-6 text-secondary"
               xmlns="http://www.w3.org/2000/svg"
@@ -212,7 +223,7 @@ export default function Home() {
           </div>
           {/* End Icon Block */}
           {/* Icon Block */}
-          <div className="flex gap-x-5 bg-base-200  rounded-lg p-4">
+          <div data-aos="flip-right" className="flex gap-x-5 bg-base-200  rounded-lg p-4">
             <svg
               className="flex-shrink-0 mt-1 size-6 text-secondary"
               xmlns="http://www.w3.org/2000/svg"
@@ -286,7 +297,7 @@ export default function Home() {
 
 
 
-  <section id="projects">
+  <section data-aos="fade" id="projects">
   <>
   {/* Card Blog */}
   <div className="max-w-[85rem] px-4 py-10 sm:px-6 md:px-8 md:py-14 mx-auto">
@@ -414,9 +425,8 @@ export default function Home() {
   </section>
 
 
-  <section>
+  <section data-aos="fade">
 
-  <>
   {/* Testimonials */}
   <div id="testimonials" className="overflow-hidden bg-accent-content bg-opacity-80">
     <div className="relative max-w-[85rem] px-4 py-10 sm:px-6 md:px-8 md:py-14 mx-auto">
@@ -528,7 +538,6 @@ export default function Home() {
    <CounterAnimation />
   
   {/* End Testimonials */}
-</>
 
   </section>
 

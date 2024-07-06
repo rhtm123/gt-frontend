@@ -75,7 +75,7 @@ export default function ApnaBusiness(){
 
     return (
         <>
-<section className="bg-primary px-4 py-8 md:px-8 text-white">
+<section data-aos="fade" className="bg-primary px-4 py-8 md:px-8 text-white">
   <div className="flex flex-col md:flex-row items-center text-center md:text-left">
     <div className="md:w-1/2">
       <img data-aos="zoom-in-up" src="/image/apna-website-hero.jpg" alt="Hero Image" className="w-full h-auto rounded-lg shadow-lg" />
@@ -94,18 +94,18 @@ export default function ApnaBusiness(){
   </div>
 </section>
 
-<section className="mx-4 py-16 md:mx-8">
+<section data-aos="fade" className="mx-4 py-16 md:mx-8">
   <h2 className="text-4xl font-bold mb-4 text-center">Features</h2>
   <p className="text-xl text-center opacity-90 mb-8">Explore the powerful features that make our service unique and efficient.</p>
   <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-    <div className="text-center p-6 bg-base-200 hover:bg-base-300 transition duration-300 rounded-lg" data-aos="fade-up">
+    <div className="shadow-md text-center p-6 bg-base-200 hover:bg-base-300 transition duration-300 rounded-lg" data-aos="fade-up">
       <div className="mb-4 flex justify-center" >
         <BiSupport className="text-primary w-12 h-12" />
       </div>
       <h3 className="text-2xl font-bold mb-2">24/7 Support</h3>
       <p className="opacity-90">Get round-the-clock support to ensure your website is always up and running.</p>
     </div>
-    <div className="text-center p-6 bg-base-200 hover:bg-base-300 transition duration-300 rounded-lg" data-aos="fade-up">
+    <div className="shadow-md text-center p-6 bg-base-200 hover:bg-base-300 transition duration-300 rounded-lg" data-aos="fade-up">
       <div className="mb-4 flex justify-center">
         <LuClock className="text-primary w-12 h-12" />
         
@@ -113,28 +113,28 @@ export default function ApnaBusiness(){
       <h3 className="text-2xl font-bold mb-2">Fast Setup</h3>
       <p className="opacity-90">Launch your website quickly with our streamlined setup process.</p>
     </div>
-    <div className="text-center p-6 bg-base-200 hover:bg-base-300 transition duration-300 rounded-lg" data-aos="fade-up">
+    <div className="shadow-md text-center p-6 bg-base-200 hover:bg-base-300 transition duration-300 rounded-lg" data-aos="fade-up">
       <div className="mb-4 flex justify-center">
         <CgWebsite className="text-primary w-12 h-12" />
       </div>
       <h3 className="text-2xl font-bold mb-2">Custom Design</h3>
       <p className="opacity-90">{`Stand out with a website design that's uniquely yours.`}</p>
     </div>
-    <div className="text-center p-6 bg-base-200 hover:bg-base-300 transition duration-300 rounded-lg" data-aos="fade-up">
+    <div className="shadow-md text-center p-6 bg-base-200 hover:bg-base-300 transition duration-300 rounded-lg" data-aos="fade-up">
     <div className="mb-4 flex justify-center">
         <RiReactjsFill className="text-primary w-12 h-12" />
       </div>
       <h3 className="text-2xl font-bold mb-2">React & Tailwind</h3>
       <p className="opacity-90">Built with modern technologies for optimal performance and customization.</p>
     </div>
-    <div className="text-center p-6 bg-base-200 hover:bg-base-300 transition duration-300 rounded-lg" data-aos="fade-up">
+    <div className="shadow-md text-center p-6 bg-base-200 hover:bg-base-300 transition duration-300 rounded-lg" data-aos="fade-up">
     <div className="mb-4 flex justify-center">
         <BiLeaf className="text-primary w-12 h-12" />
       </div>
       <h3 className="text-2xl font-bold mb-2">Lightweight Pages</h3>
       <p className="opacity-90">Enjoy faster load times with our optimized and lightweight page designs.</p>
     </div>
-    <div className="text-center p-6 bg-base-200 hover:bg-base-300 transition duration-300 rounded-lg" data-aos="fade-up">
+    <div className="shadow-md text-center p-6 bg-base-200 hover:bg-base-300 transition duration-300 rounded-lg" data-aos="fade-up">
     <div className="mb-4 flex justify-center">
         <RiSeoLine className="text-primary w-12 h-12" />
       </div>
@@ -146,12 +146,12 @@ export default function ApnaBusiness(){
 
 
 
-<section className="px-4 md:px-8 py-12 bg-gradient-to-r from-primary to-secondary  rounded-lg">
+<section data-aos="fade" className="px-4 md:px-8 py-12 bg-gradient-to-r from-primary to-secondary  rounded-lg">
   <h2 className="text-4xl font-bold text-base-100 mb-4 text-center">Pricing</h2>
   <p className="text-xl text-center text-base-200 mb-8">Choose a plan that fits your needs and budget.</p>
 
   <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-    <div data-aos="fade" data-aos-duration="400" className="p-6 bg-base-100 rounded-lg flex flex-col justify-between">
+    <div data-aos="fade" data-aos-duration="400" className="shadow-lg p-6 bg-base-100 rounded-lg flex flex-col justify-between">
       <div className="pb-4 text-center">
       <h3 className="text-2xl font-bold mb-2">Starter</h3>
       <p className="opacity-90 mb-4">Ideal for beginners.</p>
@@ -175,7 +175,7 @@ export default function ApnaBusiness(){
       {/* <Link href="/contact" className="btn btn-primary">Contact Us</Link> */}
 
     </div>
-    <div data-aos="fade" data-aos-duration="800" className=" p-6 bg-base-100 rounded-lg flex flex-col justify-between">
+    <div data-aos="fade" data-aos-duration="800" className="shadow-lg p-6 bg-base-100 rounded-lg flex flex-col justify-between">
       <div className="text-center pb-4">
       <h3 className="text-2xl font-bold mb-2">Basic</h3>
       <p className="mb-4">Perfect for starting out.</p>
@@ -200,7 +200,7 @@ export default function ApnaBusiness(){
       {/* <Link href="/contact" className="btn btn-primary">Contact Us</Link> */}
 
     </div>
-    <div data-aos="fade" data-aos-duration="1200" className="p-6 bg-base-100 rounded-lg flex flex-col justify-between">
+    <div data-aos="fade" data-aos-duration="1200" className="shadow-lg p-6 bg-base-100 rounded-lg flex flex-col justify-between">
       <div className="pb-4 text-center ">
       <h3 className="text-2xl font-bold mb-2">Standard</h3>
       <p className="mb-4">For growing businesses.</p>
@@ -226,7 +226,7 @@ export default function ApnaBusiness(){
       {/* <Link href="/contact" className="btn btn-primary">Contact Us</Link> */}
 
     </div>
-    <div data-aos="fade" data-aos-duration="1600" className="text-center p-6 bg-base-100 rounded-lg flex flex-col justify-between">  
+    <div data-aos="fade" data-aos-duration="1600" className="shadow-lg text-center p-6 bg-base-100 rounded-lg flex flex-col justify-between">  
       <div className="pb-4">
       <h3 className="text-2xl font-bold mb-2">Premium</h3>
       <p className="mb-4">For established businesses.</p>
@@ -346,7 +346,7 @@ export default function ApnaBusiness(){
 
 
 
-<section className="bg-base-100 py-20">
+<section data-aos="fade" className="bg-base-100 py-20">
   <div className="container mx-auto text-center">
     <h2 className="text-4xl font-bold mb-6">What are you waiting for?</h2>
     <p className="text-xl mb-8">Contact us today and start your journey towards a successful online presence.</p>

@@ -58,12 +58,12 @@ export default function Home() {
     </section>
     <section data-aos="fade" className="bg-gradient-to-r from-primary to-secondary overflow-hidden   px-4 py-16 md:px-8 text-white">
   <div className="flex flex-col md:flex-row items-center text-center md:text-left">
-    <div className="md:w-1/2 mt-8 md:mt-0 md:ml-10">
+  <div className="md:w-1/2 mt-8 mb-8 md:mt-0 md:ml-10 md:px-4">
       <h1 className="text-5xl font-bold mb-4">Apna Business Apna Website</h1>
       <p className="text-xl mb-8">Get your own website to boost your business. We provide the best solutions for creating a professional and effective online presence.</p>
       <div className="flex justify-right">
               <Link data-aos="flip-right" href="/apna-business-apna-website">
-                <button className="btn  ">
+                <button className="btn ">
                   Know More
                 </button>
                 </Link>
@@ -71,7 +71,7 @@ export default function Home() {
     </div>
 
 
-    <div data-aos="fade" className="md:w-1/2">
+    <div data-aos="fade" className="md:w-1/2 md:px-4 md:py-4">
       <img src="/image/apna-website-hero.jpg" alt="Hero Image" className="w-full h-auto rounded-lg shadow-lg" />
     </div>
   </div>

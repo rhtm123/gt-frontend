@@ -47,9 +47,11 @@ export default function Navbar () {
 
 
       <div className="flex-none hidden md:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal px-1 items-center">
           <li><Link href="/services">Services</Link></li>
           <li><Link href="/contact">Contact Us</Link></li>
+          <li><Link className="border-dotted border-2 border-primary" href="/apna-business-apna-website">Apna website</Link></li>
+
         </ul>
       </div>
     </div>

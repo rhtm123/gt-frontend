@@ -155,7 +155,11 @@ export default function ApnaBusiness(){
       <div className="pb-4 text-center">
       <h3 className="text-2xl font-bold mb-2">Starter</h3>
       <p className="opacity-90 mb-4">Ideal for beginners.</p>
-      <p className="text-3xl font-bold mb-4">₹2,499</p>
+      <p className="mb-4">
+      <span className="text-3xl font-bold">₹2,499 </span>
+      
+      <span className="tetx-xl line-through	">₹4,499</span>
+      </p>
       <ul className="text-left opacity-90">
         <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />1 Landing Page</li>
         <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />Built with React+Tailwind</li>
@@ -179,7 +183,14 @@ export default function ApnaBusiness(){
       <div className="text-center pb-4">
       <h3 className="text-2xl font-bold mb-2">Basic</h3>
       <p className="mb-4">Perfect for starting out.</p>
-      <p className="text-3xl font-bold mb-4">₹4,499</p>
+      {/* <p className="text-3xl font-bold mb-4">₹4,499</p> */}
+
+      <p className="mb-4">
+      <span className="text-3xl font-bold">₹4,499 </span>
+      
+      <span className="tetx-xl line-through	">₹6,499</span>
+      </p>
+
       <ul className="text-left">
         <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />5 static pages</li>
         <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />Built with React+Tailwind</li>
@@ -204,7 +215,14 @@ export default function ApnaBusiness(){
       <div className="pb-4 text-center ">
       <h3 className="text-2xl font-bold mb-2">Standard</h3>
       <p className="mb-4">For growing businesses.</p>
-      <p className="text-3xl font-bold mb-4">₹14,499</p>
+      {/* <p className="text-3xl font-bold mb-4">₹14,499</p> */}
+      <p className="mb-4">
+      <span className="text-3xl font-bold ">₹14,499 </span>
+      
+      <span className="tetx-xl line-through	">₹19,499</span>
+      </p>
+
+      
       <ul className="text-left">
         <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />5 static pages</li>
         <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />Built with React+Tailwind</li>

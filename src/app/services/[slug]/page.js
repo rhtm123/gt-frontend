@@ -1,11 +1,11 @@
 "use client"
 import React from 'react';
 import servicesData from '../../data/services.json'; 
-import Head from 'next/head';
+// import Head from 'next/head';
 import { useState } from 'react';
 import { BsArrowLeftCircle, BsArrowRightCircle } from 'react-icons/bs';
 import ContactForm from '@/app/components/ContactForm';
-import Link from 'next/link';
+// import Link from 'next/link';
 
 
 
@@ -205,4 +205,6 @@ export default function ServicePage({ params }){
       </>
     );
 }
+
+
 

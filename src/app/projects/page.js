@@ -38,7 +38,7 @@ const ProjectsPage = () => {
             {/* Page Heading */}
             <h1 className="text-4xl font-bold text-center mb-4">Our Projects</h1>
             <p className="text-lg text-center mb-10">
-                Explore our latest projects and see the amazing work we've done for our clients. Each project showcases our expertise in technology and design.
+                Explore our latest projects and see the amazing work we&apos;ve done for our clients. Each project showcases our expertise in technology and design.
             </p>
 
             {/* Project Cards */}

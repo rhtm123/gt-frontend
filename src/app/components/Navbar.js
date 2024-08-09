@@ -29,6 +29,7 @@ export default function Navbar () {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content z-[1] min-w-52 bg-base-100 rounded-box  mt-3 shadow">
+          <li><Link href="/projects">Projects</Link></li>
           <li><Link href="/services">Services</Link></li>
           <li><Link href="/contact">Contact Us</Link></li>
         
@@ -48,6 +49,7 @@ export default function Navbar () {
 
       <div className="flex-none hidden md:flex">
         <ul className="menu menu-horizontal px-1 items-center">
+        <li><Link href="/projects">Projects</Link></li>
           <li><Link href="/services">Services</Link></li>
           <li><Link href="/contact">Contact Us</Link></li>
           <li><Link className="border-dotted border-2 border-primary" href="/apna-business-apna-website">Apna website</Link></li>

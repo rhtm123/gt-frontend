@@ -6,6 +6,11 @@ const nextConfig = {
     // //   appDir: true,
     // },
 
+    env: {
+        API_URL: process.env.API_URL
+      },
+
+
     // webpack: (config, { dev, isServer }) => {
     //     if (!dev && !isServer) {
     //       Object.assign(config.resolve.alias, {

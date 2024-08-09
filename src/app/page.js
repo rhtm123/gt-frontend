@@ -18,7 +18,8 @@ export default function Home() {
     AOS.init({
         duration: 600,
         once: false,
-    })
+    });
+    
   }, [])
 
   return(

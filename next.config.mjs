@@ -1,12 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true,
-    env: {
-        API_URL: process.env.API_URL
-      },
+    // reactStrictMode: true,
     // swcMinify: true,
     // experimental: {
-    //   appDir: true,
+    // //   appDir: true,
     // },
 
     // webpack: (config, { dev, isServer }) => {

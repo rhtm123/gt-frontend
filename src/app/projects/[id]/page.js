@@ -61,7 +61,7 @@ const ProjectPage = ({ params }) => {
             </div>
         );
     }
-    const imageUrl = project.img ? `http://localhost:8000${project.img}` : null;
+    // const imageUrl = project.img ? `http://localhost:8000${project.img}` : null;
 
     return (
         <div className="flex flex-col md:flex-row p-8 space-y-6 md:space-y-0 md:space-x-8">
@@ -74,10 +74,10 @@ const ProjectPage = ({ params }) => {
                 />
                 <div className="absolute top-[5%] left-[18%] right-[18%] bottom-[30%] overflow-hidden z-0">
                     <div className="scroll-container w-full h-full flex items-start justify-center">
-                        {imageUrl ? (
+                        {project.img ? (
                             <div className="scroll-content">
                                 <img
-                                    src={imageUrl}
+                                    src={project.img}
                                     alt={project.name}
                                     className="object-contain"
                                     style={{ width: '100%', height: 'auto'}}

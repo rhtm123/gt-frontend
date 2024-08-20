@@ -5,6 +5,8 @@ import Link from 'next/link';
 import { CiLocationArrow1 } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 
+import ImageSlider from '@/app/components/ImageSlider';
+
 const ProjectPage = ({ params }) => {
     const { id } = params;
     const [project, setProject] = useState(null);
@@ -62,11 +64,12 @@ const ProjectPage = ({ params }) => {
         );
     }
     // const imageUrl = project.img ? `http://localhost:8000${project.img}` : null;
+    const imageUrl = project.img ? project.img : null;
 
     return (
         <div className="flex flex-col md:flex-row p-8 space-y-6 md:space-y-0 md:space-x-8">
             <div className="flex-1">
-            <div className="relative w-full max-w-2xl h-96 rounded-xl overflow-hidden">
+            <div className="relative w-full max-w-2xl h-96 rounded-xl border overflow-hidden">
                 <img
                     src="/image/desktop.png"
                     alt="Desktop screen"
@@ -92,11 +95,20 @@ const ProjectPage = ({ params }) => {
                 </div>
             </div>
 
+
+            <div className='py-4'>
+            <ImageSlider project={project} />
+
+            </div>
+
+            
+
+        
             </div>
             <div className="flex-1 space-y-4">
-                <h1 className="text-4xl font-extrabold text-base-900">{project.name}</h1>
-                <p className="text-lg text-base-700">{project.short_description}</p>
-                <div className="text-base text-base-600" dangerouslySetInnerHTML={{ __html: project.description }}/>
+                <h1 className="text-4xl font-extrabold">{project.name}</h1>
+                <p className="text-lg">{project.short_description}</p>
+                <div className="text-base prose" dangerouslySetInnerHTML={{ __html: project.description }}/>
                 <div className="flex items-center gap-2">
                     <strong>Technologies Used:</strong>
                     {project.technology_used.map((tech) => (
@@ -108,9 +120,10 @@ const ProjectPage = ({ params }) => {
                         />
                     ))}
                 </div>
-                <div className='flex'>
+
+                <div className='flex py-4'>
                 {project.url && (
-                            <div className='ml-2 mr-2'> 
+                            <div className='mr-2'> 
                             <Link href={project.url}
                             target="_blank"
                             rel="noopener noreferrer" >
@@ -164,8 +177,15 @@ const ProjectPage = ({ params }) => {
                            </Link>
                            </div>
                         )}
-                        </div>
             </div>
+                
+            
+            
+
+            
+            </div>
+
+
         </div>
     );
 };

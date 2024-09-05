@@ -17,6 +17,7 @@ const VersionHistory = () => {
         throw new Error('Failed to fetch version history');
       }
       const data = await response.json();
+      console.log(data);
       setVersions(prevVersions => [...prevVersions, ...data.results]);
       setNextUrl(data.next);
       setIsLoading(false);
@@ -56,7 +57,7 @@ const VersionHistory = () => {
         <h1 className="text-3xl font-bold text-center text-base-content mb-8">Version History</h1>
         
         <div className="space-y-8">
-          {versions.map((version) => (
+          {versions.slice().reverse().map((version) => (
             <div key={version.id} className="card bg-base-200 shadow-xl">
               <div className="card-body">
                 <h3 className="card-title text-primary">

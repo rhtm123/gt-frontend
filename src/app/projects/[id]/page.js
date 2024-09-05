@@ -152,7 +152,7 @@ const ProjectPage = ({ params }) => {
                         )}
                         {project.github && (
                             <div className='ml-2 mr-2'>
-                             <Link href={project.url}
+                             <Link href={project.github}
                              target="_blank"
                              rel="noopener noreferrer" >
                              

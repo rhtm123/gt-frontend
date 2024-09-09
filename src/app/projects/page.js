@@ -13,7 +13,7 @@ const ProjectsPage = () => {
     const fetchProjects = async () => {
         setLoading(true);
         try {
-            const res = await fetch(`${process.env.API_URL}api/project/projects`);
+            const res = await fetch(`${process.env.API_URL}api/project/projects?published=true`);
             if (!res.ok) {
                 throw new Error('Failed to fetch projects');
             }
@@ -37,18 +37,18 @@ const ProjectsPage = () => {
     }
 
 
-    const imageUrl = projects.img ? `http://localhost:8000${projects.img}` : null;
     return (
         <div className="p-8">
             {/* Page Heading */}
-            <h1 className="text-4xl font-bold text-center mb-4">Our Projects</h1>
-            <p className="text-lg text-center mb-10">
-                Explore our latest projects and see the amazing work we&apos;ve done for our clients. Each project showcases our expertise in technology and design.
-            </p>
-
+            <div className='md:w-3/4 md:m-auto'>
+                <h1 className="text-4xl font-bold text-center mb-4">Our Projects</h1>
+                <p className="text-lg text-center mb-10">
+                    Explore our latest projects and see the amazing work we&apos;ve done for our clients. Each project showcases our expertise in technology and design.
+                </p>
+            </div>
 
             {loading && <div className='py-4'>
-            loading...    
+                <span className="loading loading-dots loading-sm"></span>
             </div>}
             {/* Project Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">

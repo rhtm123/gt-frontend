@@ -13,10 +13,8 @@ export default function Footer(){
 
   React.useEffect(() => {
     const script = document.createElement('script');
-  
-    script.src = "/js/gt.js";
+    script.src = "https://thelearningsetu.com/static/js/gt.js";
     script.async = true;
-  
     document.body.appendChild(script);
   
     return () => {
@@ -48,6 +46,8 @@ export default function Footer(){
     <h6 className="footer-title">Company</h6>
     
     <Link href="/contact" className="link link-hover">Contact Us</Link>
+    <Link href="/versions" className="link link-hover">App History</Link>
+
   </nav>
   <nav>
     <h6 className="footer-title">Legal</h6>

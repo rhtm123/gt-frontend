@@ -67,49 +67,20 @@ const ProjectPage = ({ params }) => {
     const imageUrl = project.img ? project.img : null;
 
     return (
-        <div className="flex flex-col md:flex-row p-8 space-y-6 md:space-y-0 md:space-x-8">
-            <div className="flex-1">
-            <div className="relative w-full max-w-2xl h-96 rounded-xl border overflow-hidden">
-                <img
-                    src="/image/desktop.png"
-                    alt="Desktop screen"
-                    className="absolute inset-0 w-full h-full object-contain z-10 pointer-events-none"
-                />
-                <div className="absolute top-[5%] left-[18%] right-[18%] bottom-[30%] overflow-hidden z-0">
-                    <div className="scroll-container w-full h-full flex items-start justify-center">
-                        {project.img ? (
-                            <div className="scroll-content">
-                                <img
-                                    src={project.img}
-                                    alt={project.name}
-                                    className="object-contain"
-                                    style={{ width: '100%', height: 'auto'}}
-                                />
-                            </div>
-                        ) : (
-                            <div className="w-full h-full bg-gray-300 flex items-center justify-center text-gray-600">
-                                No Image Available
-                            </div>
-                        )}
-                    </div>
-                </div>
-            </div>
+        <div className="p-8 md:w-1/2 md:m-auto">
+            <h1 className="text-4xl font-extrabold">{project.name}</h1>
+            <p className="text-lg">{project.short_description}</p>
 
 
-            <div className='py-4'>
+            <div className='py-4 w-full'>
             <ImageSlider project={project} />
 
             </div>
 
-            
+            <div className="text-base prose" dangerouslySetInnerHTML={{ __html: project.description }}/>
 
-        
-            </div>
-            <div className="flex-1 space-y-4">
-                <h1 className="text-4xl font-extrabold">{project.name}</h1>
-                <p className="text-lg">{project.short_description}</p>
-                <div className="text-base prose" dangerouslySetInnerHTML={{ __html: project.description }}/>
-                <div className="flex items-center gap-2">
+
+            <div className="flex items-center gap-2 py-4">
                     <strong>Technologies Used:</strong>
                     {project.technology_used.map((tech) => (
                         <img
@@ -119,7 +90,9 @@ const ProjectPage = ({ params }) => {
                             className="w-6 h-6"
                         />
                     ))}
-                </div>
+            </div>
+
+                     
 
                 <div className='flex py-4'>
                 {project.url && (
@@ -179,11 +152,38 @@ const ProjectPage = ({ params }) => {
                         )}
             </div>
                 
-            
-            
 
-            
+
+
+            {/* <div className="flex-1">
+            <div className="relative w-full max-w-2xl h-96 rounded-xl border overflow-hidden">
+                <img
+                    src="/image/desktop.png"
+                    alt="Desktop screen"
+                    className="absolute inset-0 w-full h-full object-contain z-10 pointer-events-none"
+                />
+                <div className="absolute top-[5%] left-[18%] right-[18%] bottom-[30%] overflow-hidden z-0">
+                    <div className="scroll-container w-full h-full flex items-start justify-center">
+                        {project.img ? (
+                            <div className="scroll-content">
+                                <img
+                                    src={project.img}
+                                    alt={project.name}
+                                    className="object-contain"
+                                    style={{ width: '100%', height: 'auto'}}
+                                />
+                            </div>
+                        ) : (
+                            <div className="w-full h-full bg-gray-300 flex items-center justify-center text-gray-600">
+                                No Image Available
+                            </div>
+                        )}
+                    </div>
+                </div>
             </div>
+
+            </div> */}
+            
 
 
         </div>

@@ -9,22 +9,22 @@ import ContactForm from "./components/ContactForm";
 import CounterAnimation from "./components/CounterAnimation";
 
 
-import AOS from 'aos';
 import { useEffect } from "react";
 
 export default function Home() {
 
-  useEffect(() => {
-    AOS.init({
-        duration: 600,
-        once: false,
-    });
+  // useEffect(() => {
+  //   AOS.init({
+  //       duration: 600,
+  //       once: false,
+  //   });
     
-  }, [])
+  // }, [])
 
   return(
     <>
-    <section data-aos="fade">
+
+    <section>
     <div className="min-h-screen relative overflow-hidden flex hero" >
     <img
             src="https://cdn.pixabay.com/photo/2016/12/01/13/10/lightbulb-1875247_1280.jpg"
@@ -33,14 +33,14 @@ export default function Home() {
           />
           <div className="relative mx-auto md:py-4 py-12 px-4 md:px-8 pt-18 pb-10 flex flex-wrap justify-center items-center">
             <div className="w-full md:w-7/12 px-4 flex flex-wrap justify-content-center">
-              <h1 className="text-4xl text-base-100 bg-base-content bg-opacity-60 py-2 px-4 font-bold text-left mb-8">
-              Empowering your digital success
+              <h1 className="text-4xl text-base-100 bg-base-content rounded-lg bg-opacity-60 py-2 px-4 font-bold text-left mb-8">
+                Empowering your digital success
               </h1>
-              <h2 className="text-base-100 bg-base-content bg-opacity-50 py-2 px-4 text-xl mb-8">
-              Transform Your Online Presence with Expert Website Development, Mobile App Creation, and Strategic Digital Marketing Solutions. Empower Your Brand with Our Seamless Integration of Design, Development, and Marketing Strategies.
+              <h2 className="text-base-100 bg-base-content rounded-lg bg-opacity-50 py-2 px-4 text-xl mb-8">
+                Transform Your Online Presence with Expert Website Development, Mobile App Creation, and Strategic Digital Marketing Solutions. Empower Your Brand with Our Seamless Integration of Design, Development, and Marketing Strategies.
               </h2>
               <div className="flex justify-left">
-              <Link data-aos="flip-right" href="/services">
+              <Link href="/services">
                 <button className="btn btn-primary">
                   View All Services
                 </button>
@@ -57,13 +57,14 @@ export default function Home() {
 
 
     </section>
-    <section data-aos="fade" className="bg-gradient-to-r from-primary to-secondary overflow-hidden   px-4 py-16 md:px-8 text-white">
+    
+    <section  className="bg-gradient-to-r from-primary to-secondary overflow-hidden   px-4 py-16 md:px-8 text-white">
   <div className="flex flex-col md:flex-row items-center text-center md:text-left">
   <div className="md:w-1/2 mt-8 mb-8 md:mt-0 md:px-4">
       <h1 className="text-5xl font-bold mb-4">Apna Business Apna Website</h1>
       <p className="text-xl mb-8">Get your own website to boost your business. We provide the best solutions for creating a professional and effective online presence.</p>
       <div className="flex justify-right">
-              <Link data-aos="flip-right" href="/apna-business-apna-website">
+              <Link  href="/apna-business-apna-website">
                 <button className="btn ">
                   Know More
                 </button>
@@ -72,17 +73,17 @@ export default function Home() {
     </div>
 
 
-    <div data-aos="fade" className="md:w-1/2 md:px-4 md:py-4">
+    <div className="md:w-1/2 md:px-4 md:py-4">
       <img src="/image/apna-website-hero.jpg" alt="Hero Image" className="w-full h-auto rounded-lg shadow-lg" />
     </div>
   </div>
 </section>
 
-  <section data-aos="fade">
+  <section>
     <div  className="min-h-screen relative overflow-hidden">
   <div className="mx-auto flex flex-wrap px-4 md:px-8 py-16">
           <div className="w-full md:w-1/2 px-4">
-          <img data-aos="fade"
+          <img 
             src="/section-2.png"
             alt="Technology"
             className=""
@@ -116,7 +117,8 @@ export default function Home() {
         </div>
   </section>
       
-<div data-aos="fade" className="bg-gradient-to-r from-primary to-secondary overflow-hidden">
+      
+<div className="bg-gradient-to-r from-primary to-secondary overflow-hidden">
   <div id="whyus" className="max-w-[85rem] px-4 py-10 sm:px-6 md:px-8 md:py-14 mx-auto">
     {/* <div>
       <img
@@ -139,7 +141,7 @@ export default function Home() {
       <div className="md:col-span-2">
         <div className="grid sm:grid-cols-2 gap-8 md:gap-8">
           {/* Icon Block */}
-          <div data-aos="flip-right" className="flex bg-base-200 rounded-lg p-4 gap-x-5">
+          <div  className="flex bg-base-200 rounded-lg p-4 gap-x-5">
             <svg
               className="flex-shrink-0 mt-1 size-6 text-secondary"
               xmlns="http://www.w3.org/2000/svg"
@@ -170,7 +172,7 @@ export default function Home() {
           </div>
           {/* End Icon Block */}
           {/* Icon Block */}
-          <div data-aos="flip-right" className="flex gap-x-5 bg-base-200 rounded-lg p-4">
+          <div className="flex gap-x-5 bg-base-200 rounded-lg p-4">
             <svg
               className="flex-shrink-0 mt-1 size-6 text-secondary"
               xmlns="http://www.w3.org/2000/svg"
@@ -197,7 +199,7 @@ export default function Home() {
           </div>
           {/* End Icon Block */}
           {/* Icon Block */}
-          <div data-aos="flip-right" className="flex gap-x-5 bg-base-200 rounded-lg p-4">
+          <div className="flex gap-x-5 bg-base-200 rounded-lg p-4">
             <svg
               className="flex-shrink-0 mt-1 size-6 text-secondary"
               xmlns="http://www.w3.org/2000/svg"
@@ -224,7 +226,7 @@ export default function Home() {
           </div>
           {/* End Icon Block */}
           {/* Icon Block */}
-          <div data-aos="flip-right" className="flex gap-x-5 bg-base-200  rounded-lg p-4">
+          <div className="flex gap-x-5 bg-base-200  rounded-lg p-4">
             <svg
               className="flex-shrink-0 mt-1 size-6 text-secondary"
               xmlns="http://www.w3.org/2000/svg"
@@ -298,243 +300,10 @@ export default function Home() {
 
 
 
-  <section data-aos="fade" id="projects">
-  <>
-  {/* Card Blog */}
-  <div className="max-w-[85rem] px-4 py-10 sm:px-6 md:px-8 md:py-14 mx-auto">
-    {/* Grid */}
 
 
-    <h1 className="text-4xl py-8 font-bold">Projects by GrowTech Lab</h1>
+  <section>
 
-    
-    <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-      {/* Card */}
-      <div className="group flex flex-col h-full border rounded-lg">
-        <div className="h-52 flex flex-col justify-center items-center bg-base-300 rounded-lg">
-          
-
-            <GrTechnology size={64} className="text-secondary" />
-            
-
-        </div>
-        <div className="p-4 md:p-6">
-          <span className="block mb-1 text-xs font-semibold uppercase text-accent">
-            Online Courses
-          </span>
-          <h3 className="text-xl font-semibold">
-            Coding Chaska
-          </h3>
-          <p className="mt-3 opacity-80">
-            Coding Chaska is a online learning platform where you can find interactive courses. 
-          </p>
-        </div>
-        <div className="mt-auto flex border-t border-gray-200 divide-x">
-          <a target="_blank"
-            className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium"
-            href="https://www.codingchaska.com/"
-          >
-            Visit Site
-          </a>
-          <a 
-            target="_blank"
-            className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium"
-            href="https://github.com/rhtm123/cc-frontend-v2"
-          >
-            Github
-          </a>
-        </div>
-      </div>
-      {/* End Card */}
-      {/* Card */}
-      <div className="group flex flex-col h-full border rounded-lg">
-        <div className="h-52 flex flex-col justify-center items-center bg-base-300 rounded-lg">
-          
-            <TfiWrite size={64} className="text-secondary"  />
-
-        </div>
-        <div className="p-4 md:p-6">
-          <span className="block mb-1 text-xs font-semibold uppercase text-accent">
-            Online Editor
-          </span>
-          <h3 className="text-xl font-semibold">
-            Coding Chaska Lab
-          </h3>
-          <p className="mt-3 opacity-80">
-            CC Lab is lightweight online editor. You can solve coding problems too. 
-          </p>
-        </div>
-        <div className="mt-auto flex border-t border-gray-200 divide-x">
-          <a target="_blank"
-            className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium"
-            href="https://www.codingchaskalab.com/"
-          >
-            Visit Site
-          </a>
-          <a 
-            target="_blank"
-            className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium "
-            href="https://github.com/rhtm123/cc-lab"
-          >
-            Github
-          </a>
-        </div>
-      </div>
-      {/* End Card */}
-      {/* Card */}
-      <div className="group flex flex-col h-full border shadow-sm rounded-lg">
-        <div className="h-52 flex flex-col justify-center items-center bg-base-300 rounded-lg">
-
-            <LuBuilding size={64} className="text-secondary"  />
-
-        </div>
-        <div className="p-4 md:p-6">
-          <span className="block mb-1 text-xs font-semibold uppercase text-accent">
-            Manage Society
-          </span>
-          <h3 className="text-xl font-semibold ">
-            SocietySathi
-          </h3>
-          <p className="mt-3 opacity-80">
-            SocietySathi is designed to solve all critical problems of a Society. 
-          </p>
-        </div>
-        <div className="mt-auto flex border-t border-gray-200 divide-x">
-          <a target="_blank"
-            className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium"
-            href="https://www.societysathi.com/"
-          >
-            Visit Site
-          </a>
-          <a
-            target="_blank"
-            className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium"
-            href="https://github.com/rhtm123/ff-frontend"
-          >
-            Github
-          </a>
-        </div>
-      </div>
-      {/* End Card */}
-    </div>
-    {/* End Grid */}
-
-  </div>
-  {/* End Card Blog */}
-</>
-
-  </section>
-
-
-  <section data-aos="fade">
-
-  {/* Testimonials */}
-  <div id="testimonials" className="overflow-hidden bg-accent-content bg-opacity-80">
-    <div className="relative max-w-[85rem] px-4 py-10 sm:px-6 md:px-8 md:py-14 mx-auto">
-      {/* Title */}
-      <div className="max-w-2xl w-3/4 md:w-1/2 mb-6 sm:mb-10 md:mb-16">
-        <h2 className="text-2xl text-neutral-content sm:text-3xl md:text-4xl font-semibold">
-          Loved by business and individuals across the globe
-        </h2>
-      </div>
-      {/* End Title */}
-      {/* Grid */}
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {/* Card */}
-        <div className="flex h-auto">
-          <div className="flex flex-col bg-accent-content border bg-opacity-80 rounded-lg">
-            <div className="flex-auto p-4 md:p-6">
-              <p className="text-base italic md:text-lg text-neutral-content">
-              &quot;Working with GrowTech Lab was a game-changer for our business. Their innovative IT solutions transformed our operations, and their dedicated team provided exceptional support every step of the way.&quot;
-              </p>
-            </div>
-            <div className="p-4 bg-accent-content md:px-2 rounded-lg">
-              <div className="flex items-center">
-                {/* <div className="flex-shrink-0">
-                  <img
-                    className="size-8 rounded-full sm:h-[2.875rem] sm:w-[2.875rem]"
-                    src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
-                    alt="Image Description"
-                  />
-                </div> */}
-                <div className="grow ms-3">
-                  <p className="text-sm sm:text-base font-semibold text-neutral-content">
-                    Rohit Maurya
-                  </p>
-                  <p className="text-xs text-neutral-content">
-                    Founder | Coding Chaska
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* End Card */}
-        {/* Card */}
-        <div className="flex h-auto bg-accent-content bg-opacity-80 border rounded-lg">
-          <div className="flex flex-col ">
-            <div className="flex-auto p-4 md:p-6">
-              <p className="text-base italic md:text-lg text-neutral-content">
-              {`"I can't recommend GrowTech Lab enough! Their expertise in web development helped us launch a stunning website that exceeded all our expectations. Their attention to detail and commitment to excellence truly sets them apart."`}
-              </p>
-            </div>
-            <div className="p-4 bg-accent-content bg-opacity-100 rounded-lg">
-              <div className="flex items-center ">
-                {/* <div className="flex-shrink-0">
-                  <img
-                    className="size-8 rounded-full sm:h-[2.875rem] sm:w-[2.875rem]"
-                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
-                    alt="Image Description"
-                  />
-                </div> */}
-                <div className="grow ms-3">
-                  <p className="text-sm sm:text-base font-semibold text-neutral-content">
-                    Satyam Singh
-                  </p>
-                  <p className="text-xs text-neutral-content">
-                    Senior Director of Operations | Society Sathi
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* End Card */}
-        {/* Card */}
-        <div className="flex h-auto ">
-          <div className="flex flex-col bg-accent-content bg-opacity-80 border rounded-lg">
-            <div className="flex-auto p-4 md:p-6">
-              <p className="text-base italic md:text-lg text-neutral-content">
-              {`"Partnering with GrowTech Lab has been an absolute pleasure. Their proactive IT support has allowed us to focus on growing our business, knowing that our technology needs are in capable hands."`}
-              </p>
-            </div>
-            <div className="p-4 md:px-2 bg-accent-content rounded-lg">
-              <div className="flex items-center">
-                {/* <div className="flex-shrink-0">
-                  <img
-                    className="size-8 rounded-full sm:h-[2.875rem] sm:w-[2.875rem]"
-                    src="https://images.unsplash.com/photo-1579017331263-ef82f0bbc748?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
-                    alt="Image Description"
-                  />
-                </div> */}
-                <div className="grow ms-3">
-                  <p className="text-sm sm:text-base font-semibold text-neutral-content">
-                    Sachin Ghosh
-                  </p>
-                  <p className="text-xs text-neutral-content">
-                    Business Analyst | MastDealHai
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* End Card */}
-        </div>
-      </div>
-      </div>
-      {/* End Grid */}
-      {/* Grid */}
       
    <CounterAnimation />
   

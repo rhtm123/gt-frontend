@@ -104,7 +104,7 @@ export default function ServicePage({ params }){
           {service.subServices.map((subServices, index) => (
             <div
               key={index}
-              className="card glass hover:scale-105 transition-transform duration-300 ease-in-out"
+              className="card hover:scale-105 transition-transform duration-300 ease-in-out"
             >
               <div className="card-body">
                 <h1 className="card-title text-2xl font-bold">
@@ -138,7 +138,7 @@ export default function ServicePage({ params }){
           {service.technologies.map((technologies, index) => (
             <div
               key={index}
-              className="card glass hover:scale-105 transition-transform duration-300 ease-in-out"
+              className="card hover:scale-105 transition-transform duration-300 ease-in-out"
             >
               <div className="card-body">
                 <h1 className="card-title text-2xl font-bold">
@@ -175,7 +175,7 @@ export default function ServicePage({ params }){
           return (
             <div
               key={index}
-              className={`card w-96 glass transition-transform duration-1000 ease-in-out`}
+              className={`card w-96  transition-transform duration-1000 ease-in-out`}
               style={{
                 zIndex: 3 - Math.abs(offset),
                 transform: `translateX(${1 * offset}%) scale(${offset === 0 ? 1.2 : 1})`,

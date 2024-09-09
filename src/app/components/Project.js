@@ -5,12 +5,10 @@ import Link from "next/link";
 
 export default function ProjectComponent({project}) {
 
-
-
     return (
 
-        <div key={project.id} className="w-full bg-base-200 rounded-3xl p-4 flex flex-col items-start justify-center gap-3 hover:bg-base-200 hover:shadow-2xl hover:shadow-secondary transition-shadow">
-                        <div className="w-full rounded-2xl overflow-hidden">
+        <div key={project.id} className="w-full bg-base-200 rounded-lg p-4 flex flex-col items-start justify-center gap-3 hover:bg-base-200">
+                        <div className="w-full rounded overflow-hidden">
                             {project?.thumbnail ? (
                                 <img src={project.thumbnail} alt={project.name} className="w-full h-full object-cover" />
                             ) : (
@@ -26,7 +24,8 @@ export default function ProjectComponent({project}) {
                                 <img key={tech.id} src={tech.icon} alt={tech.name} className="w-6 h-6 text-base-100" />
                             ))}
                             <Link href={`/projects/${project.id}`}>
-                                <button className="bg-sky-700 font-extrabold p-2 px-6 rounded-xl hover:bg-sky-500 transition-colors">See more</button>
+                                <button className="btn btn-primary btn-sm">See More</button>
+                                {/* <button className="bg-sky-700 font-extrabold p-2 px-6 rounded-xl hover:bg-sky-500 transition-colors">See more</button> */}
                             </Link>
                         </div>
                     </div>

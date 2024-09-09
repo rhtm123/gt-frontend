@@ -133,7 +133,7 @@ export default function Services() {
           {webDevelopmentServicesData.map((service, index) => (
             <div
               key={index}
-              className="card glass hover:scale-105 transition-transform duration-300 ease-in-out"
+              className="card bg-base-200 hover:scale-105 transition-transform duration-300 ease-in-out"
             >
               <figure className="h-[200px] flex items-center justify-center">
                 <img
@@ -187,7 +187,7 @@ export default function Services() {
           {onlineMarketingServicesData.map((service, index) => (
             <div
               key={index}
-              className="card w-full glass hover:scale-105 transition-transform duration-300 ease-in-out"
+              className="card w-full bg-base-200  hover:scale-105 transition-transform duration-300 ease-in-out"
             >
               <figure className="h-[200px] flex items-center justify-center">
                 <img
@@ -248,7 +248,7 @@ export default function Services() {
           {designServicesData.map((service, index) => (
             <div
               key={index}
-              className="card glass hover:scale-105 transition-transform duration-300 ease-in-out"
+              className="card bg-base-200 hover:scale-105 transition-transform duration-300 ease-in-out"
             >
               <figure className="h-[200px] flex items-center justify-center">
                 <img

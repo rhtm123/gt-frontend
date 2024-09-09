@@ -1,5 +1,4 @@
 import "./globals.css";
-import 'aos/dist/aos.css';
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -12,6 +11,7 @@ import Script from 'next/script';
 export const metadata = {
   title: "IT & Digital Marketing Services | GrowTech Lab",
   description: "GrowTech Lab offers Website Development, Mobile App Development, Digital Marketing, Social Media Marketing and many more IT services. Contact Now!!",
+  keywords: "website development, mobile app development, digital marketing, IT solutions, SEO",
 };
 
 export default function RootLayout({ children }) {

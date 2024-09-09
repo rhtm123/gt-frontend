@@ -17,9 +17,10 @@ const VersionHistory = () => {
         throw new Error('Failed to fetch version history');
       }
       const data = await response.json();
-      console.log(data);
+      // console.log(data);
       setVersions(prevVersions => [...prevVersions, ...data.results]);
       setNextUrl(data.next);
+      console.log(data);
       setIsLoading(false);
     } catch (err) {
       setError(err.message);
@@ -28,7 +29,7 @@ const VersionHistory = () => {
   };
 
   useEffect(() => {
-    fetchVersions('https://gt.thelearningsetu.com/api/version/versions?app_name=gt');
+    fetchVersions(process.env.API_URL + 'api/version/versions?app_name=gt');
   }, []);
 
   const handleLoadMore = () => {
@@ -63,9 +64,11 @@ const VersionHistory = () => {
                 <h3 className="card-title text-primary">
                   Version {version.name}
                 </h3>
-                <p className="text-sm text-base-content/70">
-                  Released on {new Date(version.release_date).toLocaleDateString()}
+                <p className="opacity-80 font-semibold">Release Date: 2024-09-14 
+                  {!version.is_published && <span className="badge badge-info ml-2">Working</span> }
+                  {version.is_published && <span className="badge badge-success ml-2">Published</span> }
                 </p>
+
                 <div className="divider"></div>
                 <div>
                   <h4 className="font-medium text-base-content mb-2">Changes</h4>

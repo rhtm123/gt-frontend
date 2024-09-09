@@ -24,6 +24,10 @@ const ImageSlider = ({project}) => {
     return () => clearInterval(slideInterval);
   }, [images.length]);
 
+  if (images.length==0) {
+    return null
+  }
+
   return (
     <div className="w-full rounded-xl overflow-hidden">
       <div className="relative w-full h-64">

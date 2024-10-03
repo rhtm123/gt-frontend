@@ -5,7 +5,7 @@ export default function Page(){
 
     return(
 
-        <div className="container mx-auto p-6">
+        <div className="md:w-2/4 mx-auto p-6">
         <h1 className="text-3xl font-bold mb-4">Payment Policy</h1>
         <p className="mb-4">Effective Date: July 19, 2024</p>
         

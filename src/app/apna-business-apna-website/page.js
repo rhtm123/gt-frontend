@@ -158,7 +158,7 @@ export default function ApnaBusiness(){
         <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />Built with React+Tailwind</li>
         <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />SEO friendly page</li>
         <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />Responsive designing</li>
-        <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />1st year domain name</li>
+        {/*<li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />1st year domain name</li>*/}
         <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />1st year hosting</li>
         <li className="flex items-center"><FaRegCheckCircle className="text-success mr-2 w-4 h-4" />24/7 support</li>
 

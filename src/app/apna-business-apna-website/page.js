@@ -149,7 +149,7 @@ export default function ApnaBusiness(){
       <h3 className="text-2xl font-bold mb-2">Starter</h3>
       <p className="opacity-90 mb-4">Ideal for beginners.</p>
       <p className="mb-4">
-      <span className="text-3xl font-bold">₹2,499 </span>
+      <span className="text-3xl font-bold">₹3,499 </span>
       
       <span className="tetx-xl line-through	">₹4,499</span>
       </p>
